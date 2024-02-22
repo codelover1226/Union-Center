@@ -37,8 +37,8 @@ const Sidebar = forwardRef((props, ref) => {
         { name: 'HOME', link: './' },
         { name: 'VISION', link: './vision' },
         { name: 'RESIDENCES', link: './residences' },
-        { name: 'AMENITIES', link: './amenties' },
-        { name: 'NEIGHBORHOOD', link: './neighborfood' },
+        { name: 'AMENITIES', link: './amenities' },
+        { name: 'NEIGHBORHOOD', link: './neighborhood' },
         { name: 'AVAILABILITY', link: './availability' },
         { name: 'GALLERY', link: './gallery' },
         { name: 'CONTACT', link: './contact' }
