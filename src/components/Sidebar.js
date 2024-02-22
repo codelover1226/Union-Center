@@ -50,7 +50,7 @@ const Sidebar = forwardRef((props, ref) => {
                     <ul class="menu">
                         {pagesData.map((item, index) => (
                             <li key={index}>
-                            <span class="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
+                                <span class="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
                             </li>
                         ))}
                     </ul>
