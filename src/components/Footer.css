@@ -1,0 +1,6 @@
+.hover-after:hover::after {
+    width:  96px;
+  }
+.hover-after::after {
+    width:  0%;
+}
