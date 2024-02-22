@@ -6,11 +6,7 @@ import Image2 from './../assets/img/2.jpg'
 import Image3 from './../assets/img/3.jpg'
 import Image4 from './../assets/img/4.jpg'
 
-  
-
-
-export default function Home() {
-    
+export default function Vision() {
     return (
         <div>
             <div className="top-0 left-0  h-screen z-[-1] home_video ">

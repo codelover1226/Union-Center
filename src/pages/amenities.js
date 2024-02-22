@@ -9,7 +9,7 @@ import Image4 from './../assets/img/4.jpg'
   
 
 
-export default function Home() {
+export default function Amenities() {
     
     return (
         <div>

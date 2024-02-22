@@ -577,10 +577,6 @@ video {
   pointer-events: auto;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .\!invisible {
   visibility: hidden !important;
 }
@@ -5997,6 +5993,11 @@ iframe {
   .md\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
