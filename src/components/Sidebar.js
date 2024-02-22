@@ -45,12 +45,12 @@ const Sidebar = forwardRef((props, ref) => {
     ];
   return ( 
         <Drawer transition={{ duration: 1.0 }} size={480} open={isDrawerOpen} className="z-[9996] bg-[#153644]">
-            <div class={outside}>	
+            <div className={outside}>	
                 <div>
-                    <ul class="menu">
+                    <ul className="menu">
                         {pagesData.map((item, index) => (
                             <li key={index}>
-                                <span class="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
+                                <span className="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
                             </li>
                         ))}
                     </ul>

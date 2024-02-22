@@ -31,7 +31,7 @@ export default function Header() {
             <div className="z-[9997] fixed w-screen">
                 <div className={`fixed w-full bg-[#153644] transition-opacity duration-300 ${isScrolled ? 'bg-opacity-100' : 'bg-opacity-0'}`} >
                 <div className="flex h-[64px] items-center">
-                <button onClick={openDrawer} class="button_close" style={{ marginLeft: 7 }}><span class={bar}></span></button>    
+                <button onClick={openDrawer} className="button_close" style={{ marginLeft: 7 }}><span className={bar}></span></button>    
                 <Typography
                     variant="subtitle2"
                     component="div"
@@ -40,7 +40,7 @@ export default function Header() {
                     color={"white"}
                     className="font-thin m-4 font-SctoGroteskA-Light"
                 >
-                    <a href="#" class="no-underline hover:underline">
+                    <a href="#" className="no-underline hover:underline">
                         SCHEDULE AN APPOINTMENT
                     </a>
                 </Typography>
@@ -52,7 +52,7 @@ export default function Header() {
                         color={"white"}
                         className="font-thin m-4 font-SctoGroteskA-Light"
                     >
-                        <a href="#" class="no-underline hover:underline">
+                        <a href="#" className="no-underline hover:underline">
                             646.863.1846
                         </a>
                     </Typography>

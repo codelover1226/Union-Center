@@ -8,7 +8,6 @@ import {ReactComponent as SerhantSvg} from './../assets/svg/serhant.svg'
 import "./Footer.css"
 export default function Footer(props) {
     
-    console.log(props.history);
     return (
         
         <div>
