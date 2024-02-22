@@ -23,7 +23,7 @@ export default function Vision() {
             </div>
 
             <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#B68064" }} >
-                <div className="md:min-h-[100vh] content-center p-10 md:py-96">
+                <div className="md:min-h-[100vh] content-center py-10 md:py-96">
                     <div className="m-auto">
                         <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
                     </div>
@@ -50,7 +50,7 @@ export default function Vision() {
             </div>
             <img src={ BackgroundIamge1}/>
             <div className="px-8 content-center py-10 z-10 relative" style={{ backgroundColor: "#B68064" }} >
-                <div className="content-center p-12">
+                <div className="content-center py-12">
                     <div className="m-auto">
                         <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">DESIGN & ARCHITECTURE</p>
                     </div>
@@ -74,9 +74,9 @@ export default function Vision() {
                         </div>
                     </div>
                 </div>
-                <div className="content-center p-12 xl:w-[1280px] m-auto">
+                <div className="content-center py-12 xl:w-[1280px] m-auto">
                     <div className="m-auto mb-10">
-                        <p className="text-center font-GTPressura-Light text-5xl text-white px-4">“We create buildings that stand out by fitting in.”</p>
+                        <p className="text-center font-GTPressura-Light text-5xl text-white">“We create buildings that stand out by fitting in.”</p>
                     </div>
                     <div className="flex items-center mt-10">
                         <div className="w-auto mx-auto xl:w-1/3">

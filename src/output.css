@@ -2578,6 +2578,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .\!pr-7 {
   padding-right: 1.75rem !important;
 }
