@@ -30,10 +30,8 @@ export default function Residences() {
                 </div>
             </div>
             
-            
             <img src={ BackgroundIamge2}/>
-
-
+            
             <div className="px-4 content-center py-10 z-10 relative" style={{ backgroundColor: "#153644" }} >
                 <div className="content-center py-12">
                     <div className="flex items-center">

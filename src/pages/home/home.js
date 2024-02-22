@@ -1,13 +1,9 @@
 import React from "react";
 import { motion } from 'framer-motion';
-
 import Image1 from './../../assets/img/1.jpg'
 import Image2 from './../../assets/img/2.jpg'
 import Image3 from './../../assets/img/3.jpg'
 import Image4 from './../../assets/img/4.jpg'
-
-  
-
 
 export default function Home() {
     
