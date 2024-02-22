@@ -5,7 +5,7 @@ export default function Footer(props) {
     const location = useLocation();
     const currentRoute = location.pathname;
     const pagesData = [
-        { name: 'Home', link: './home' },
+        { name: 'Home', link: './' },
         { name: 'Vision', link: './vision' },
         { name: 'Residences', link: './residences' },
         { name: 'Amenties', link: './amenties' },

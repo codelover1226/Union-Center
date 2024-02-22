@@ -33,20 +33,26 @@ const Sidebar = forwardRef((props, ref) => {
             openDrawer();
         }
     }));
- 
+    const pagesData = [
+        { name: 'HOME', link: './' },
+        { name: 'VISION', link: './vision' },
+        { name: 'RESIDENCES', link: './residences' },
+        { name: 'AMENITIES', link: './amenties' },
+        { name: 'NEIGHBORHOOD', link: './neighborfood' },
+        { name: 'AVAILABILITY', link: './availability' },
+        { name: 'GALLERY', link: './gallery' },
+        { name: 'CONTACT', link: './contact' }
+    ];
   return ( 
         <Drawer transition={{ duration: 1.0 }} size={480} open={isDrawerOpen} className="z-[9996] bg-[#153644]">
             <div class={outside}>	
                 <div>
                     <ul class="menu">
-                        <li><span class="fa fa-dashboard"></span><a href="#" className="hover:text-brown-400">HOME</a></li>
-                        <li><span class="fa fa-shopping-basket"></span><a href="#" className="hover:text-brown-400"> VISION</a></li>
-                        <li><span class="fa fa-shopping-cart"></span><a href="#" className="hover:text-brown-400"> RESIDENCES</a></li>
-                        <li><span class="fa fa-info-circle"></span><a href="#" className="hover:text-brown-400"> AMENITIES</a></li>
-                        <li><span class="fa fa-credit-card"></span><a href="#" className="hover:text-brown-400"> NEIGHBORHOOD</a></li>
-                        <li><span class="fa fa-leaf"></span><a href="#" className="hover:text-brown-400"> AVAILABILITY</a></li>
-                        <li><span class="fa fa-leaf"></span><a href="#" className="hover:text-brown-400"> GALLERY</a></li>
-                        <li><span class="fa fa-leaf"></span><a href="#" className="hover:text-brown-400"> CONTACT</a></li>
+                        {pagesData.map((item, index) => (
+                            <li key={index}>
+                            <span class="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
