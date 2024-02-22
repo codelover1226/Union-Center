@@ -1,0 +1,177 @@
+  .button_close {
+    position: fixed;
+    padding: 22px;
+    z-index: 9999;
+    margin-left: 40px;
+  }
+  
+    /* Icon */
+    .bar {position: relative;}
+  
+      .bar:before, 
+      .bar:after {
+        content: "";
+        position: absolute;
+      }
+  
+      .bar:before, 
+      .bar:after, 
+      .bar {
+        width: 30px;
+        height: 3px;
+        background: rgb(247, 245, 245);
+        margin: 3px 0;
+        display: block;
+      }
+  
+      .bar:before { bottom: 100%; } 
+      .bar:after { top: 100%; } 
+      .bar.active:after { top: 0; } 
+      .bar.active:before { bottom: -200%; } 
+      .bar.active { background-color: transparent; } 
+      .bar, .bar:before, .bar:after { transition: all .5s linear !important; -webkit-transition: all .5s linear !important; -moz-transition: all .5s linear !important; -ms-transition: all .5s linear !important; -o-transition: all .5s linear !important; } 
+      .bar.active:before,  .bar.active:after { transition-delay: .15s !important; } 
+      .bar.active:before { transform: rotate(45deg); } 
+      .bar.active:after { transform: rotate(-45deg); } 
+  
+    .outside {
+      width: 25%;
+      min-width: 200px;
+      max-width: 400px;
+      height: 100%;
+      transform: translateX(-101%);
+      transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+      overflow: hidden;
+      -webkit-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+      -moz-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+      -ms-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+      -o-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+}
+  
+    .in {
+    transform: translateX(0);
+    transition: 0;
+    }
+  
+    .inside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0 100% 100% 0;
+    transition: all 1.0s cubic-bezier(1,0.05,1,1.5);
+    transition-delay: 1.0s;
+    -webkit-transition: all 1.0s cubic-bezier(1,0.05,1,1.5);
+    -moz-transition: all 1.0s cubic-bezier(1,0.05,1,1.5);
+    -ms-transition: all 1.0s cubic-bezier(1,0.05,1,1.5);
+    -o-transition: all 1.0s cubic-bezier(1,0.05,1,1.5);
+}
+  
+    .in .inside {
+    border-radius: 0;
+    transition-delay: 0s;
+  
+    }
+  
+  /* material animation */
+    .inside:before {
+    content: "";
+    width: 2100px;
+    height: 2100px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    z-index: -1;
+    transition: all .75s linear;
+    transition-delay: 1.0s;
+    transform: scale(0);
+    transform-origin: top right;
+    border-radius: 1000px;
+    -webkit-transition: all .75s linear;
+    -moz-transition: all .75s linear;
+    -ms-transition: all .75s linear;
+    -o-transition: all .75s linear;
+}
+  
+      .outside.in .inside:before {
+      transform: scale(1);
+  
+      }
+  
+  /* Menu */
+  ul.menu {
+  list-style: none;
+  margin-top: 190px;
+  margin-left: 80px;
+  padding: 0;
+  line-height: 2;
+  }
+  
+  .menu li {
+  /* background: whitesmoke; */
+  opacity: 0;
+  /* padding: 12px 22px; */
+  font-size: 36px;
+  font-family: "SctoGroteskA-Light";
+  /* border-bottom: 1px solid rgba(255,255,255,.5); */
+  color: rgb(255, 254, 254);
+  transition: all .25s linear;
+  }
+  
+  .in .menu li {
+  transform: translateX(0%);
+  opacity: 1;
+  }
+  
+  .in .menu li:nth-child(1) { transition-delay: 1s; } 
+  .in .menu li:nth-child(2) { transition-delay: 1.15s; } 
+  .in .menu li:nth-child(3) { transition-delay: 1.25s; } 
+  .in .menu li:nth-child(4) { transition-delay: 1.35s; } 
+  .in .menu li:nth-child(5) { transition-delay: 1.45s; } 
+  .in .menu li:nth-child(6) { transition-delay: 1.55s; } 
+  .in .menu li:nth-child(7) { transition-delay: 1.65s; } 
+  .in .menu li:nth-child(8) { transition-delay: 1.75s; } 
+  
+  /* Animation */
+  
+  .in .inside {
+    -webkit-animation: bounce 1s both;
+  }
+  
+  
+  /* Generated with Bounce.js. Edit at https://goo.gl/zdjCb0 */
+  
+  @-webkit-keyframes bounce { 
+   0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    27.68% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    27.78% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1); }
+    29.73% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -49.785, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -49.785, 0, 0, 1); }
+    31.61% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.659, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.659, 0, 0, 1); }
+    33.06% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.527, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.527, 0, 0, 1); }
+    34.43% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -30.089, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -30.089, 0, 0, 1); }
+    36.81% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.067, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.067, 0, 0, 1); }
+    39.2% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.115, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.115, 0, 0, 1); }
+    42.09% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.347, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.347, 0, 0, 1); }
+    46.79% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.013, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.013, 0, 0, 1); }
+    49.68% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.316, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.316, 0, 0, 1); }
+    54.38% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.002, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.002, 0, 0, 1); }
+    57.27% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.643, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.643, 0, 0, 1); }
+    62.05% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.007, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.007, 0, 0, 1); }
+    64.86% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.178, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.178, 0, 0, 1); }
+    69.64% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.002, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.002, 0, 0, 1); }
+    72.53% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.049, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.049, 0, 0, 1); }
+    77.23% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    80.12% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.014, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.014, 0, 0, 1); }
+    84.82% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    87.71% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.004, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.004, 0, 0, 1); }
+    92.48% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    95.3% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); }
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  }

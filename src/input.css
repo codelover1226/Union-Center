@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+
+iframe {
+  pointer-events: none;
+}
+.bg-vimeo {
+    background-image: url('https://player.vimeo.com/video/651590904?background=1&loop=1&byline=0&title=0&autoplay=1');
+}
+
+@font-face {
+    font-family: 'GTPressura-Bold';
+    src: url('./assets/fonts/GTPressura-Bold/GTPressura-Bold.woff2') format('woff2'),
+    url('./assets/fonts/GTPressura-Bold/GTPressura-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressura-Light';
+    src: url('./assets/fonts/GTPressura-Light/GTPressura-Light.woff2') format('woff2'),
+    url('./assets/fonts/GTPressura-Light/GTPressura-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressura';
+    src: url('./assets/fonts/GTPressura/GTPressura.woff2') format('woff2'),
+    url('./assets/fonts/GTPressura/GTPressura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SctoGroteskA-Light';
+    src: url('./assets/fonts/SctoGroteskA-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SctoGroteskADemo-Regular';
+    src: url('./assets/fonts/SctoGroteskADemo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

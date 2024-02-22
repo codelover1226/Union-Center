@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.home_video:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+@font-face {
+    font-family: 'GTPressura-Bold';
+    src: url('./assets/fonts/GTPressura-Bold/GTPressura-Bold.woff2') format('woff2'),
+    url('./assets/fonts/GTPressura-Bold/GTPressura-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'GTPressura-Light';
+    src: url('./assets/fonts/GTPressura-Light/GTPressura-Light.woff2') format('woff2'),
+    url('./assets/fonts/GTPressura-Light/GTPressura-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'GTPressura';
+    src: url('./assets/fonts/GTPressura/GTPressura.woff2') format('woff2'),
+    url('./assets/fonts/GTPressura/GTPressura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SctoGroteskA-Light';
+    src: url('./assets/fonts/SctoGroteskA-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SctoGroteskADemo-Regular';
+    src: url('./assets/fonts/SctoGroteskADemo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust the background color and opacity as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 3s ease; /* Smooth transition for opacity over 3 seconds */
+  }
+  
+  .splash-screen.hidden {
+    opacity: 0; /* Hide the splash screen when opacity is 0 */
+    pointer-events: none; /* Disable pointer events when hidden */
+  }
+
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .slow-spin {
+    animation: spin 2s linear infinite; /* Adjust the duration (5s in this case) to control the speed */
+  }
