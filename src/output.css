@@ -1178,6 +1178,10 @@ video {
   width: 74px;
 }
 
+.w-\[860\] {
+  width: 860;
+}
+
 .w-auto {
   width: auto;
 }
@@ -2472,6 +2476,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2628,6 +2637,10 @@ video {
   font-family: Roboto, sans-serif;
 }
 
+.font-custom-sans {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .\!text-\[11px\] {
   font-size: 11px !important;
 }
@@ -2686,6 +2699,16 @@ video {
   line-height: 1rem;
 }
 
+.text-xs\/\[11px\] {
+  font-size: 0.75rem;
+  line-height: 11px;
+}
+
+.text-xs\/\[10px\] {
+  font-size: 0.75rem;
+  line-height: 10px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2716,6 +2739,10 @@ video {
 
 .\!leading-tight {
   line-height: 1.25 !important;
+}
+
+.leading-\[1\.357\] {
+  line-height: 1.357;
 }
 
 .leading-\[1\.3\] {
@@ -2762,6 +2789,14 @@ video {
   letter-spacing: 0em;
 }
 
+.tracking-\[\.25em\] {
+  letter-spacing: .25em;
+}
+
+.tracking-\[1px\] {
+  letter-spacing: 1px;
+}
+
 .\!text-black {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
@@ -2770,6 +2805,11 @@ video {
 .\!text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-\[\#b95a01\] {
+  --tw-text-opacity: 1;
+  color: rgb(185 90 1 / var(--tw-text-opacity));
 }
 
 .text-\[\#f2ede4\] {
@@ -3097,11 +3137,6 @@ video {
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(245 127 23 / var(--tw-text-opacity));
-}
-
-.text-\[\#b95a01\] {
-  --tw-text-opacity: 1;
-  color: rgb(185 90 1 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -3891,11 +3926,6 @@ iframe {
   height: 0.375rem;
 }
 
-.after\:h-\[2px\]::after {
-  content: var(--tw-content);
-  height: 2px;
-}
-
 .after\:h-\[1px\]::after {
   content: var(--tw-content);
   height: 1px;
@@ -4600,6 +4630,11 @@ iframe {
   color: rgb(185 90 1 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#f2ede4\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(242 237 228 / var(--tw-text-opacity));
+}
+
 .hover\:text-blue-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(96 125 139 / var(--tw-text-opacity));
@@ -4618,11 +4653,6 @@ iframe {
 .hover\:text-light-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(3 169 244 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#f2ede4\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(242 237 228 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {

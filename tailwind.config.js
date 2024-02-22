@@ -10,6 +10,7 @@ module.exports = withMT({
         'GTPressura': ['GTPressura', 'fallback-font-family'],
         'SctoGroteskA-Light': ['SctoGroteskA-Light', 'fallback-font-family'],
         'SctoGroteskADemo-Regular': ['SctoGroteskADemo-Regular', 'fallback-font-family'],
+        'custom-sans': ['Helvetica', 'Arial', 'sans-serif']
       }
     },
   },
