@@ -37,11 +37,6 @@ export default function Contact() {
         { value: false, label: 'No' }
     ];
 
-
-
-
-
-
     return (
         <div className="bg-[#F1ECE2] py-32">
             <div className="md:flex md:flex-wrap md:max-w-[1180px] m-auto content-center justify-between">
