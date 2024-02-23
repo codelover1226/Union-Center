@@ -1,0 +1,11 @@
+.image-transition {
+    transition: opacity  1s ease-in-out;
+  }
+  
+  .image-transition.fade-out {
+    opacity:  0;
+  }
+  
+  .image-transition.fade-in {
+    opacity:  1;
+  }

@@ -17,7 +17,7 @@ function CustomButton({ label, width, backgroundColor, fontColor, outline, centr
     width: width,
     backgroundColor: !hovered ? backgroundColor : '#F1ECE2',
     color: !hovered? fontColor : '#153644',
-    border: outline ? `2px solid #F1ECE2` : 'none',
+    border: outline ? `1px solid #F1ECE2` : 'none',
     cursor: 'pointer',
     transition: 'background-color 0.3s ease',
     padding: '2px',
