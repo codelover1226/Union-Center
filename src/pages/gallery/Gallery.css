@@ -1,0 +1,12 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,  1fr));
+  grid-auto-rows:  200px; /* Adjust based on desired row height */
+  gap:  10px;
+}
+
+.gallery-image {
+  width: auto;
+  height:  100%;
+  object-fit: cover; /* Ensures images cover the area without stretching */
+}
