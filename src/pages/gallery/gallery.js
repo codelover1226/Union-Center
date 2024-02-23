@@ -246,12 +246,12 @@ export default function Gallery() {
                             <div className="w-auto mx-auto xl:w-1/3">
                                 <p className="font-GTPressura-Light text-center text-1xl text-white px-4 mt-4">An iconic Greenpoint landmark, with refined residences on Brooklyn’s scenic waterfront, breathtaking views of the New York City skyline, prestigious positioning and awe-inspiring design.</p>   
                                 <div className="w-full flex mt-5">
-                                    <select className="m-auto w-1/3 bg-[#153644] outline outline-cyan-50 text-cyan-50" onChange={onchange}>
-                                        <option value="all">All</option>
-                                        <option value="exterior">Exterior</option>
-                                        <option value="residences">Residences</option>
-                                        <option value="amenities">Amenities</option>
-                                        <option value="greenpoint">Greenpoint</option>
+                                    <select className="m-auto w-1/3 bg-[#153644] border-[1px] outline-cyan-50 text-cyan-50" onChange={onchange}>
+                                        <option value="all" className="m-auto w-1/3 bg-[#153644] border-[1px] outline-cyan-50 text-cyan-50">All</option>
+                                        <option value="exterior" className="m-auto w-1/3 bg-[#153644] border-[1px] outline-cyan-50 text-cyan-50">Exterior</option>
+                                        <option value="residences" className="m-auto w-1/3 bg-[#153644] border-[1px] outline-cyan-50 text-cyan-50">Residences</option>
+                                        <option value="amenities" className="m-auto w-1/3 bg-[#153644] border-[1px] outline-cyan-50 text-cyan-50">Amenities</option>
+                                        <option value="greenpoint" className="m-auto w-1/3 bg-[#153644] border-[1px] outline-cyan-50 text-cyan-50">Greenpoint</option>
                                     </select>
                                 </div>
                             </div>
