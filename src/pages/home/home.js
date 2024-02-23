@@ -92,7 +92,7 @@ export default function Home() {
             </section>
             
             
-            <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#9EA09F" }} >
+            <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
                 <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
                 <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Waterfront Living</p>
                 <div className="flex items-center">
@@ -105,7 +105,7 @@ export default function Home() {
                         <CustomButton 
                             label="EXPLORE OUR AMENTIES"
                             width="200px"
-                            backgroundColor="#9EA09F"
+                            backgroundColor="#2C2A2B"
                             fontColor="#F1ECE2"
                             outline
                             centre
