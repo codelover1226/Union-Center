@@ -5,6 +5,7 @@ import './ResponsiveTab.css'
 const ResponsiveTab = ({data}) => {
 
     const [buttonWidth, setWidth] = useState(window.innerWidth /  4 -  10);
+    const [focus, setFocus] = useState(0);
 
     useEffect(() => {
       const handleResize = () => {
@@ -13,11 +14,9 @@ const ResponsiveTab = ({data}) => {
   
       window.addEventListener('resize', handleResize);
   
-      // Cleanup function to remove the event listener when the component unmounts
       return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const [focus, setFocus] = useState(0);
     const showContent = (id) => {
         const item = data.find(item => item.id === focus);
         if (item) {
@@ -41,7 +40,7 @@ const ResponsiveTab = ({data}) => {
                 </div>
             );
         }
-        return null; // Return null if no matching item is found
+        return null;
     }
     
     const handleButtonClick = (id) => {
