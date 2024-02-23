@@ -61,20 +61,19 @@ export default function Home() {
 
 
             <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#153644" }} >
-                <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
-                <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
-                <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
+                <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">RESIDENCES</p>
+                <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Effortlessly Refined</p>
                 <div className="flex items-center">
                     <div className="w-auto mx-auto xl:w-1/4">
-                        <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
+                        <p className="text-base font-GTPressura-Light text-center text-white px-4">A home that matches your style, where every detail is carefully crafted, framing dramatic views with inspired design, sprawling layouts and outdoor spaces.</p>
                     </div>                    
                 </div>
                 <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
-                            label="EXPLORE OUR VISION"
-                            width="200px"
-                            backgroundColor="#B68064"
+                            label="EXPLORE OUR RESIDENCES"
+                            width="250px"
+                            backgroundColor="#153644"
                             fontColor="#F1ECE2"
                             outline
                             centre
@@ -94,20 +93,19 @@ export default function Home() {
             
             
             <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#9EA09F" }} >
-                <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
-                <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
-                <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
+                <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
+                <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Waterfront Living</p>
                 <div className="flex items-center">
                     <div className="w-auto mx-auto xl:w-1/4">
-                        <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
+                        <p className="text-base font-GTPressura-Light text-center text-white px-4">Thoughtfully curated and always evolving, with every aspect created to exhilarate and inspire residents with endless possibilities.</p>
                     </div>                    
                 </div>
                 <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
-                            label="EXPLORE OUR VISION"
+                            label="EXPLORE OUR AMENTIES"
                             width="200px"
-                            backgroundColor="#B68064"
+                            backgroundColor="#9EA09F"
                             fontColor="#F1ECE2"
                             outline
                             centre
@@ -127,21 +125,20 @@ export default function Home() {
             </section>
             
             <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#F1ECE2" }} >
-            <p className="text-sm font-GTPressura-Bold text-center text-amber-950 pb-5">VISION</p>
-                <p className="text-center font-GTPressura-Light text-6xl text-amber-950 px-4">Endless</p>
-                <p className="text-center font-GTPressura-Light text-6xl text-amber-950 pb-7">Horizons</p>
+            <p className="text-sm font-GTPressura-Bold text-center text-amber-950 pb-5">NEIGHBORHOOD</p>
+                <p className="text-center font-GTPressura-Light text-6xl text-amber-950 pb-7">Deep Roots, New Beat</p>
                 <div className="flex items-center">
                     <div className="w-auto mx-auto xl:w-1/4">
-                        <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
+                        <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">Discover a unique opportunity to live in an iconic Greenpoint landmark, with residences ranging from studio to four bedrooms, and eight absolutely unique penthouses.</p>
                     </div>                    
                 </div>
                 <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
-                            label="EXPLORE OUR VISION"
-                            width="200px"
-                            backgroundColor="#B68064"
-                            fontColor="#F1ECE2"
+                            label="EXPLORE OUR NEIGHBORHOOD"
+                            width="250px"
+                            backgroundColor="#F1ECE2"
+                            fontColor="black"
                             outline
                             centre
                         />
@@ -171,12 +168,11 @@ export default function Home() {
                 <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
-                            label="EXPLORE OUR VISION"
-                            width="200px"
-                            backgroundColor="#B68064"
+                            label="CONTACT US FOR MORE INFORMATION"
+                            width="300px"
+                            backgroundColor="#75989C"
                             fontColor="#F1ECE2"
                             outline
-                            centre
                         />
                     </div>
                 </div>  
