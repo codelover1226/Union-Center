@@ -37,12 +37,14 @@ export default function Home() {
                                       
                 </div>
                 <div className="contetn-center">
-                    <div className="m-auto">
+                    <div className="m-auto my-4">
                         <CustomButton 
                             label="EXPLORE OUR VISION"
-                            width="160px"
+                            width="200px"
                             backgroundColor="#B68064"
                             fontColor="#F1ECE2"
+                            outline
+                            centre
                         />
                     </div>
                 </div>  
@@ -67,6 +69,18 @@ export default function Home() {
                         <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
                     </div>                    
                 </div>
+                <div className="contetn-center">
+                    <div className="m-auto my-4">
+                        <CustomButton 
+                            label="EXPLORE OUR VISION"
+                            width="200px"
+                            backgroundColor="#B68064"
+                            fontColor="#F1ECE2"
+                            outline
+                            centre
+                        />
+                    </div>
+                </div>  
             </div>
 
             <section className="h-screen relative">
@@ -88,6 +102,18 @@ export default function Home() {
                         <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
                     </div>                    
                 </div>
+                <div className="contetn-center">
+                    <div className="m-auto my-4">
+                        <CustomButton 
+                            label="EXPLORE OUR VISION"
+                            width="200px"
+                            backgroundColor="#B68064"
+                            fontColor="#F1ECE2"
+                            outline
+                            centre
+                        />
+                    </div>
+                </div>  
             </div>
             
             
@@ -109,6 +135,18 @@ export default function Home() {
                         <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
                     </div>                    
                 </div>
+                <div className="contetn-center">
+                    <div className="m-auto my-4">
+                        <CustomButton 
+                            label="EXPLORE OUR VISION"
+                            width="200px"
+                            backgroundColor="#B68064"
+                            fontColor="#F1ECE2"
+                            outline
+                            centre
+                        />
+                    </div>
+                </div>  
             </div>
 
 
@@ -130,6 +168,18 @@ export default function Home() {
                         <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
                     </div>                    
                 </div>
+                <div className="contetn-center">
+                    <div className="m-auto my-4">
+                        <CustomButton 
+                            label="EXPLORE OUR VISION"
+                            width="200px"
+                            backgroundColor="#B68064"
+                            fontColor="#F1ECE2"
+                            outline
+                            centre
+                        />
+                    </div>
+                </div>  
             </div>
 
             
