@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import CustomButton from "../../components/Button/CustomButton";
 import Image1 from './../../assets/img/1.jpg'
 import Image2 from './../../assets/img/2.jpg'
 import Image3 from './../../assets/img/3.jpg'
@@ -32,9 +33,19 @@ export default function Home() {
                 <div className="flex items-center">
                     <div className="w-auto mx-auto xl:w-1/4">
                         <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
-                    </div>                    
+                    </div>
+                                      
                 </div>
-                
+                <div className="contetn-center">
+                    <div className="m-auto">
+                        <CustomButton 
+                            label="EXPLORE OUR VISION"
+                            width="160px"
+                            backgroundColor="#B68064"
+                            fontColor="#F1ECE2"
+                        />
+                    </div>
+                </div>  
             </div>
 
             <section className="h-screen relative">

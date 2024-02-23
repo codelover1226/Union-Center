@@ -25,7 +25,7 @@ export default function Residences() {
                     <div className="flex items-center">
                         <div className="w-auto mx-auto xl:w-1/3">
                             <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in the history of an ever-evolving neighborhood, The Huron is a striking tribute to Greenpoint’s heritage, interweaving past and present through stunning design and inspired creativity.</p>
-                        </div>                    
+                        </div>
                     </div>
                 </div>
             </div>
