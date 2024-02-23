@@ -1,42 +1,30 @@
 import React, { useState } from 'react';
 
-function CustomTabButton({ label, width, backgroundColor, fontColor, outline, centre, }) {
-  const [hovered, setHovered] = useState(false);
+function CustomTabButton({ label, width, backgroundColor, fontColor, outline, centre, focus, onFocus }) {
 
-  const handleMouseEnter = () => {
-    setHovered(true);
-    console.log("1");
-  };
+	const customStyles = {
+		width: width,
+		backgroundColor: !focus ? backgroundColor : '#F1ECE2',
+		color: !focus? fontColor : '#153644',
+		border: outline ? `1px solid #F1ECE2` : 'none',
+		cursor: 'pointer',
+		transition: 'background-color 1s ease',
+		padding: '2px',
+		textAlign: "center",
+		margin: centre ? 'auto' : 'none'
+	};
 
-  const handleMouseLeave = () => {
-    setHovered(false);
-    console.log("0");
-  };
-
-  const customStyles = {
-    width: width,
-    backgroundColor: !hovered ? backgroundColor : '#F1ECE2',
-    color: !hovered? fontColor : '#153644',
-    border: outline ? `2px solid #F1ECE2` : 'none',
-    cursor: 'pointer',
-    transition: 'background-color 0.3s ease',
-    padding: '2px',
-    textAlign: "center",
-    margin: centre ? 'auto' : 'none'
-  };
-
-  return (
-    <div
-      className="custom-button"
-      style={customStyles}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-        <p style={{ color: !hovered? fontColor : '#153644' }}>
-            {label}
-        </p>
-    </div>
-  );
+	return (
+		<div
+			className="custom-button"
+			style={customStyles}
+			onMouseEnter={onFocus}  
+		>
+			<p style={{ color: !focus? fontColor : '#153644' }}>
+				{label}
+			</p>
+		</div>
+	);
 }
 
 export default CustomTabButton;
