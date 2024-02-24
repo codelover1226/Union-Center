@@ -165,7 +165,7 @@ export default function Home() {
                         <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
                     </div>                    
                 </div>
-                <div className="contetn-center">
+                <div className="contetn-center flex">
                     <div className="m-auto my-4">
                         <CustomButton 
                             label="CONTACT US FOR MORE INFORMATION"
