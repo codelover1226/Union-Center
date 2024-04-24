@@ -13,7 +13,7 @@ export default function Home() {
             <div className="top-0 left-0  h-screen z-[-1] home_video ">
                 <iframe
                     src="https://player.vimeo.com/video/651590904?background=1&loop=1&byline=0&title=0&autoplay=1"
-                    className="min-h-full h-[100vw] min-w-[177.77vh] w-screen top-1/2 left-1/2 fixed  -translate-x-1/2 -translate-y-1/2"
+                    className="min-h-full h-[100vw] min-h-screen min-w-[177.77vh] w-screen top-1/2 left-1/2 fixed  -translate-x-1/2 -translate-y-1/2"
                     allowFullScreen={true}
                     frameBorder="0" 
                     allow="autoplay; fullscreen"  
@@ -37,7 +37,7 @@ export default function Home() {
                     </div>
                                       
                 </div>
-                <div className="content-center">
+                <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
                             label="EXPLORE OUR VISION"
@@ -68,7 +68,7 @@ export default function Home() {
                         <p className="text-base font-GTPressura-Light text-center text-white px-4">A home that matches your style, where every detail is carefully crafted, framing dramatic views with inspired design, sprawling layouts and outdoor spaces.</p>
                     </div>                    
                 </div>
-                <div className="content-center">
+                <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
                             label="EXPLORE OUR RESIDENCES"
@@ -100,7 +100,7 @@ export default function Home() {
                         <p className="text-base font-GTPressura-Light text-center text-white px-4">Thoughtfully curated and always evolving, with every aspect created to exhilarate and inspire residents with endless possibilities.</p>
                     </div>                    
                 </div>
-                <div className="content-center">
+                <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
                             label="EXPLORE OUR AMENTIES"
@@ -132,7 +132,7 @@ export default function Home() {
                         <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">Discover a unique opportunity to live in an iconic Greenpoint landmark, with residences ranging from studio to four bedrooms, and eight absolutely unique penthouses.</p>
                     </div>                    
                 </div>
-                <div className="content-center">
+                <div className="contetn-center">
                     <div className="m-auto my-4">
                         <CustomButton 
                             label="EXPLORE OUR NEIGHBORHOOD"
@@ -165,7 +165,7 @@ export default function Home() {
                         <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
                     </div>                    
                 </div>
-                <div className="content-center flex">
+                <div className="contetn-center flex">
                     <div className="m-auto my-4">
                         <CustomButton 
                             label="CONTACT US FOR MORE INFORMATION"
