@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@material-tailwind/react";
 import Sidebar from './Sidebar';
 import "./menu.css"
+import { Link } from "react-router-dom";
 export default function Header() {
     const [isScrolled, setIsScrolled] = React.useState(false);
     const ref = React.createRef();
@@ -40,9 +41,11 @@ export default function Header() {
                     color={"white"}
                     className="font-thin m-4 font-SctoGroteskA-Light"
                 >
-                    <a href="#" className="no-underline hover:underline">
-                        SCHEDULE AN APPOINTMENT
-                    </a>
+                    <Link to="/contact">
+                        <p className="hover-after after:bg-blue-gray-50 after:transition-all after:h-[1px] text-[11px] sm:text-[15px]">
+                            SCHEDULE AN APPOINTMENT
+                        </p> 
+                    </Link>
                 </Typography>
                 <div className="flex justify-end items-center">
                     <Typography
@@ -52,9 +55,7 @@ export default function Header() {
                         color={"white"}
                         className="font-thin m-4 font-SctoGroteskA-Light"
                     >
-                        <a href="#" className="no-underline hover:underline">
-                            646.863.1846
-                        </a>
+                        <a href="tel:+646.863.1846"><p className="text-[#f2ede4] flex-col hover-after after:bg-blue-gray-50 after:transition-all after:h-[1px] hidden md:flex"> 646 . 863 . 1846 </p></a>
                     </Typography>
                     <Button color="white" className="text-center rounded-none h-9 ml-7 mr-10 hover:bg-brown-300">CONTACT</Button>
                 </div>

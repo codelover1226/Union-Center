@@ -5,27 +5,68 @@ import Image1 from './../../assets/img/1.jpg'
 import Image2 from './../../assets/img/2.jpg'
 import Image3 from './../../assets/img/3.jpg'
 import Image4 from './../../assets/img/4.jpg'
+import HomeImage from './../../assets/img/home-1.jpg'
+import HomeImage2 from './../../assets/img/home-2.jpg'
+import Banner from './../../assets/img/banner.png'
+import lightLogo from './../../assets/img/logo1.jpg'
 
 export default function Home() {
     
   return (
       <div>
-        <div className="top-0 left-0  h-screen z-[-1] home_video ">
-          <iframe
-            src="https://player.vimeo.com/video/651590904?background=1&loop=1&byline=0&title=0&autoplay=1"
-            className="min-h-full h-[100vw] min-w-[177.77vh] w-screen top-1/2 left-1/2 fixed  -translate-x-1/2 -translate-y-1/2"
-            allowFullScreen={true}
-            frameBorder="0" 
-            allow="autoplay; fullscreen"  
-            data-ready="true" 
-            title=" "
-          />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/3 min-w-[450] z-10">
-            <p className="text-center font-SctoGroteskA-Light font-normal text-5xl text-white px-4">A GREENPOINT LANDMARK</p>
-            <p className="text-center font-GTPressura-Light font-normal text-lg text-white px-4">Two distinguished towers on Brooklyn’s iconic waterfront, designed by acclaimed architect Morris Adjmi. Strikingly refined residences, these condominiums in Brooklyn offer enduring views of the New York City skyline, over 30,000 square feet of amenities and an abundance of outdoor space. Even by unfairly high standards, The Huron is truly exceptional.</p>
+        <div className="w-full flex">
+          <div className="w-full">
+            <div className="sm:flex w-full">
+              <div className="w-full sm:w-[100%] pt-16 px-6 bg-gradient-to-br from-brown-bg to-main-bg">
+                <div className="w-full flex">
+                  <div className="mt-12 mx-auto max-w-[500px]">
+                    <img 
+                      alt=""
+                      src={Banner}
+                      className="max-w-[260px] xl:mt-[60px] 2xl:w-[500px] mb-6"
+                    />
+                    <p className="text-white text-[16px] ">A WORLD-CLASS WORKPLACE</p>
+                    <p className="text-white text-[45px] lg:text-[80px]" style={{ textShadow: '10px 10px 15px #000' }}>UNION CENTER</p>
+                    <p className="text-white text-[16px] ">LOCATED IN A VIBRANT FLUSHING DOWNTOWN COMMERCIAL HUB</p>
+                    <div className="w-full flex">
+                      <button className="p-4 text-center mx-auto my-[40px] xl:my-[120px] border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font" style={{ transition: 'background-color 0.3s ease' }}> comming soon</button>
+                    </div>
+                  </div>
+                </div>
+                  
+                </div>
+              <div className="w-full sm:w-[100%] relative">
+                {/* <img
+                  alt=""
+                  src={lightLogo}
+                  className="absolute right-4 top-24 z-0 w-[120px]"
+                /> */}
+                <img
+                  alt=""
+                  src={HomeImage}
+                  className="w-full bg-main-bg 2xl:mt-[-150px] z-10"
+                />
+              </div>
+            </div>
           </div>
         </div>
-          
+
+        <div className="w-full md:flex-row-reverse md:flex bg-main-bg">
+          <div className="w-full mx-auto bg-gradient-to-l from-brown-bg to-main-bg flex">
+            <div className="mx-auto p-6 lg:p-24 content-center">
+              <p className="text-dark-font text-[14px] lg:text-[24px]">WHERE INNOVATION MEETS SUSTAINABILITY</p>
+              <p className="text-dark-font text-[12px] lg:text-[20px] text-justify">Union Center is a cutting-edge, sustainable building offering 133,000 square feet of flexible space for office and medical use. With a sleek design featuring floor-to-ceiling windows, the building maximizes natural light and energy efficiency. It boasts an eco-friendly all-electric HVAC system, top-tier air purification, and automated three-level parking. The numerous landscaped terraces provide green spaces in the heart of a vibrant downtown hub, ensuring easy accessibility and high visibility. Union Center represents limitless possibilities, where modern comfort meets sustainability for businesses and medical practices.</p>
+            </div>
+          </div>
+          <div className="w-full mx-auto">
+            <img 
+              alt=""
+              src={HomeImage2}
+              className="lg:m-12 xl:mx-48 lg:w-[400px]"
+            />
+          </div> 
+              
+        </div>
 
         <div className="py-10 px-4 content-center md:py-36  z-10 relative" style={{ backgroundColor: "#B68064" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
@@ -38,7 +79,7 @@ export default function Home() {
           </div>
           <div className="content-center">
             <div className="m-auto my-4">
-              <CustomButton 
+              <CustomButton
                 label="EXPLORE OUR VISION"
                 width="200px"
                 backgroundColor="#B68064"
@@ -50,7 +91,7 @@ export default function Home() {
           </div>  
         </div>
 
-        <section className="h-screen relative">
+        <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover " style={{ backgroundImage: `url(${Image1})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
@@ -81,7 +122,7 @@ export default function Home() {
           </div>  
         </div>
 
-        <section className="h-screen relative">
+        <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image2})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
@@ -114,7 +155,7 @@ export default function Home() {
         </div>
         
         
-        <section className="h-screen relative xl:h-screen xl:relative">
+        <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image3})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
@@ -146,7 +187,7 @@ export default function Home() {
         </div>
 
 
-        <section className="h-screen relative">
+        <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image4})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
@@ -166,7 +207,7 @@ export default function Home() {
           </div>
           <div className="content-center flex">
             <div className="m-auto my-4">
-              <CustomButton 
+              <CustomButton
                 label="CONTACT US FOR MORE INFORMATION"
                 width="300px"
                 backgroundColor="#75989C"
