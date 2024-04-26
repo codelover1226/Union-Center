@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="w-full md:flex-row-reverse md:flex bg-main-bg relative">
           <img alt=""  src={SVG} className="absolute z-0"/>
-          <div className="w-full mx-auto bg-gradient-to-l from-brown-bg flex relative">
+          <div className="w-full mx-auto bg-gradient-to-l from-main-bg flex relative">
             <div className="mx-auto p-6 lg:p-24 content-center">
               <p className="text-dark-font text-[14px] lg:text-[24px]">WHERE INNOVATION MEETS SUSTAINABILITY</p>
               <p className="text-dark-font text-[12px] lg:text-[20px] text-justify">Union Center is a cutting-edge, sustainable building offering 133,000 square feet of flexible space for office and medical use. With a sleek design featuring floor-to-ceiling windows, the building maximizes natural light and energy efficiency. It boasts an eco-friendly all-electric HVAC system, top-tier air purification, and automated three-level parking. The numerous landscaped terraces provide green spaces in the heart of a vibrant downtown hub, ensuring easy accessibility and high visibility. Union Center represents limitless possibilities, where modern comfort meets sustainability for businesses and medical practices.</p>
