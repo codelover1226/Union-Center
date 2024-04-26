@@ -11,6 +11,12 @@ import HomeImage5 from './../../assets/img/home-5.jpg'
 import lightLogo from './../../assets/img/logo1.png'
 import darkLogo from './../../assets/img/logo2.png'
 import SVG from './../../assets/img/Union_8.svg'
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import FolderSharedIcon from '@mui/icons-material/FolderShared';
+import RemoveDoneIcon from '@mui/icons-material/RemoveDone';
+import LocalParkingIcon from '@mui/icons-material/LocalParking';
+import InterestsIcon from '@mui/icons-material/Interests';
+import FaxIcon from '@mui/icons-material/Fax';
 
 export default function Home() {
     
@@ -54,41 +60,39 @@ export default function Home() {
         </div> 
 
         <div className="w-full">
-          <div className="w-full bg-main-bg">
-            <div className="w-full flex pt-10">
-              <div className="w-full max-w-[1280px] mx-auto my-6">
-                <p className="text-brown-bg px-5 my-6 text-lg">Approx</p>
-                <div className="w-full md:flex md:justify-between">
-                  <div className="w-full md:w-[230px] px-6 md:px-4">
-                    <p className="text-title-font-1 text-[40px] font-sans">85, 000</p>
-                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                  </div>
-                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                  <div className="w-full md:w-[230px] px-6 md:px-4">
-                    <p className="text-title-font-1 text-[40px] font-sans">25 - YEAR</p>
-                    <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
-                  </div>
-                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                  <div className="w-full md:w-[230px] px-6 md:px-4">
-                    <p className="text-title-font-1 text-[40px] font-sans">3</p>
-                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                  </div>
+          <div className="w-full bg-main-bg flex pt-10">
+            <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto px-6 md:px-12">
+              <p className="text-brown-bg px-5 my-6 text-lg">Approx</p>
+              <div className="w-full md:flex md:justify-between">
+                <div className="w-full md:w-[260px] px-6 md:px-4">
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><WbSunnyIcon fontSize="large"/> </span> 85, 000</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
                 </div>
-                <div className="w-full md:flex md:justify-between my-6">
-                  <div className="w-full md:w-[230px] px-6 md:px-4">
-                    <p className="text-title-font-1 text-[40px] font-sans">12</p>
-                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                  </div>
-                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                  <div className="w-full md:w-[230px] px-6 md:px-4">
-                    <p className="text-title-font-1 text-[40px] font-sans">24</p>
-                    <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
-                  </div>
-                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                  <div className="w-full md:w-[230px] px-6 md:px-4">
-                    <p className="text-title-font-1 text-[40px] font-sans">12</p>
-                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                  </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4">
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><InterestsIcon fontSize="large"/> </span> 25-YEAR</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4">
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><RemoveDoneIcon fontSize="large"/> </span> 3</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                </div>
+              </div>
+              <div className="w-full md:flex md:justify-between my-6">
+                <div className="w-full md:w-[260px] px-6 md:px-4">
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><LocalParkingIcon fontSize="large"/> </span> 12</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4">
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><FolderSharedIcon fontSize="large"/> </span> 24</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4">
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><FaxIcon fontSize="large"/> </span> 12</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
                 </div>
               </div>
             </div>
