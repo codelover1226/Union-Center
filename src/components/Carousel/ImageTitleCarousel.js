@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function DesignCarousel(){
+export default function ImageTitleCarousel(){
   return(
     <>
       

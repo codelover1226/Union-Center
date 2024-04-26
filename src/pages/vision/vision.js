@@ -11,6 +11,7 @@ import CarouselImage3 from './../../assets/img/text-image3.jpg'
 import SliderImage1 from './../../assets/img/slider1.jpg'
 import SliderImage2 from './../../assets/img/slider2.jpg'
 import SliderImage3 from './../../assets/img/slider3.jpg'
+import ImageTitleCarousel from "../../components/Carousel/ImageTitleCarousel";
 
 
 export default function Vision() {
@@ -63,6 +64,9 @@ export default function Vision() {
                 </div>
             </div>
             <img src={ BackgroundIamge1} alt="" className="w-full"/>
+            <div className="w-full bg-main-bg">
+                <ImageTitleCarousel />
+            </div>
             <div className="px-8 content-center py-10 z-10 relative" style={{ backgroundColor: "#B68064" }} >
                 <div className="content-center py-12">
                     <div className="m-auto">
