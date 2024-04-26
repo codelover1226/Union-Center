@@ -33,10 +33,10 @@ return (
       <div className="py-4 px-5 z-10 relative max-w-[1440px] mx-auto w-full" >
         <PageButtonLayout />
         <div className="pt-10 border-t-[1px] border-b-[1px] pb-4">
-          <div className="w-full md:flex justify-between">
+          <div className="w-full xl:flex justify-between">
             <div className="w-full md:w-[700px] sm:flex">
               <img alt="" src={director} className="rounded-full border-[5px]  border-main-bg w-[240px] mx-6"/>
-              <div className="py-8 w-full space-y-1 md:border-r-[1px]">
+              <div className="py-8 w-full space-y-1 xl:border-r-[1px]">
                 <p className="text-main-bg"> Team Leader of BLT</p>
                 <p className="text-main-bg "> Team Mentor of B2STARS</p>
                 <div className="flex w-full space-x-4">
@@ -65,22 +65,25 @@ return (
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-auto py-5 md:py-10 flex-none">
-              <p className="text-main-bg mb-6">More information </p>
-              <div>
-                <input placeholder="Please sign up" className="p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg" style={{ background: 'none' }}>
-                </input>
+            <div className="md:flex">
+              <div className="w-full sm:w-auto py-5 md:py-10 flex-none">
+                <p className="text-main-bg mb-6">More information </p>
+                <div>
+                  <input placeholder="Please sign up" className="p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg" style={{ background: 'none' }}>
+                  </input>
+                </div>
+                <button className="animate-duaration bg-brown-bg p-4 w-[100px] text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
+                  sign up
+                </button>
               </div>
-              <button className="animate-duaration bg-brown-bg p-4 w-[100px] text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
-                sign up
-              </button>
+              <div className="w-full sm:w-[200px] py-5 md:py-10 md:mx-6">
+                <p className="text-main-bg mb-6">More information </p>
+                <button className="animate-duaration bg-brown-bg p-4 w-full text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
+                  contact us <span className="md:float-right">{'>'}</span>
+                </button>
+              </div>
             </div>
-            <div className="w-full sm:w-[200px] py-5 md:py-10 md:mx-6">
-              <p className="text-main-bg mb-6">More information </p>
-              <button className="animate-duaration bg-brown-bg p-4 w-full text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
-                contact us <span className="md:float-right">{'>'}</span>
-              </button>
-            </div>
+            
             {/* <div className="w-full sm:w-[300px]">
               <div className="w-full relative">
                 <div className="absolute right-0">

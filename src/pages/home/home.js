@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="w-full md:flex-row-reverse md:flex bg-main-bg relative">
           <img alt=""  src={SVG} className="absolute z-0"/>
-          <div className="w-full mx-auto bg-gradient-to-l from-main-bg flex relative">
+          <div className="w-full mx-auto bg-gradient-to-l from-brown-bg flex relative">
             <div className="mx-auto p-6 lg:p-24 content-center">
               <p className="text-dark-font text-[14px] lg:text-[24px]">WHERE INNOVATION MEETS SUSTAINABILITY</p>
               <p className="text-dark-font text-[12px] lg:text-[20px] text-justify">Union Center is a cutting-edge, sustainable building offering 133,000 square feet of flexible space for office and medical use. With a sleek design featuring floor-to-ceiling windows, the building maximizes natural light and energy efficiency. It boasts an eco-friendly all-electric HVAC system, top-tier air purification, and automated three-level parking. The numerous landscaped terraces provide green spaces in the heart of a vibrant downtown hub, ensuring easy accessibility and high visibility. Union Center represents limitless possibilities, where modern comfort meets sustainability for businesses and medical practices.</p>
@@ -84,7 +84,6 @@ export default function Home() {
           </div>
         </section>
 
-
         <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#153644" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">RESIDENCES</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Effortlessly Refined</p>
@@ -116,7 +115,6 @@ export default function Home() {
           </div>
         </section>
         
-        
         <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Waterfront Living</p>
@@ -139,7 +137,6 @@ export default function Home() {
           </div>  
         </div>
         
-        
         <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image3})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
@@ -149,13 +146,13 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#F1ECE2" }} >
+        <div className="py-10 px-4 content-center md:py-36 z-10 relative bg-main-bg">
         <p className="text-sm font-GTPressura-Bold text-center text-amber-950 pb-5">NEIGHBORHOOD</p>
           <p className="text-center font-GTPressura-Light text-6xl text-amber-950 pb-7">Deep Roots, New Beat</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
               <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">Discover a unique opportunity to live in an iconic Greenpoint landmark, with residences ranging from studio to four bedrooms, and eight absolutely unique penthouses.</p>
-            </div>                    
+            </div>                  
           </div>
           <div className="content-center">
             <div className="m-auto my-4">
@@ -170,7 +167,6 @@ export default function Home() {
             </div>
           </div>  
         </div>
-
 
         <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image4})` }}></div>
