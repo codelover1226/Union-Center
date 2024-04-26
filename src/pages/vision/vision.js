@@ -62,7 +62,7 @@ export default function Vision() {
                     />
                 </div>
             </div>
-            <img src={ BackgroundIamge1} alt=""/>
+            <img src={ BackgroundIamge1} alt="" className="w-full"/>
             <div className="px-8 content-center py-10 z-10 relative" style={{ backgroundColor: "#B68064" }} >
                 <div className="content-center py-12">
                     <div className="m-auto">
@@ -78,10 +78,10 @@ export default function Vision() {
                     </div>
                 </div>
                 <div className="content-center">
-                    <img className="max-w-[1280px] w-full m-auto " src={ SubBackgroundIamge } />
+                    <img className="max-w-[1280px] w-full m-auto " src={ SubBackgroundIamge } alt=""/>
                     <div className="max-w-[1280px] w-full m-auto mt-[90px] sm:flex  sm:flex-row-reverse">
                         <div className=" w-full right-0 sm:w-4/5">
-                            <img  src={ CarouselImage1 }/>
+                            <img  src={ CarouselImage1 } alt=""/>
                         </div>
                         <div className="w-full sm:w-1/5 left-0">
                             <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in Greenpoint’s industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
@@ -100,7 +100,7 @@ export default function Vision() {
                     
                     <div className="max-w-[1280px] w-full m-auto mt-[90px] sm:flex">
                         <div className=" w-full right-0 sm:w-3/5">
-                            <img  src={ CarouselImage3 }/>
+                            <img  src={ CarouselImage3 } alt=""/>
                         </div>
                         <div className="w-full sm:w-1/5 left-0">
                             <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in Greenpoint’s industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
@@ -108,7 +108,7 @@ export default function Vision() {
                     </div>
                     <div className="max-w-[1280px] w-full m-auto mt-[90px]  sm:flex  sm:flex-row-reverse">
                         <div className=" w-full sm:w-3/5">
-                            <img  src={ CarouselImage2 }/>
+                            <img  src={ CarouselImage2 } alt=""  className="sm:w-[400px] sm:ml-10"/>
                         </div>
                         <div className="w-full sm:w-1/5 left-0">
                             <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in Greenpoint’s industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
@@ -116,7 +116,7 @@ export default function Vision() {
                     </div>
                 </div>
             </div>
-            <img src={ BackgroundIamge2}/>
+            <img src={ BackgroundIamge2} alt="" className="w-full"/>
             
         </div>
     )

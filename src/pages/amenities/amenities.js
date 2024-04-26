@@ -19,7 +19,7 @@ export default function Amenities() {
 
     return (
         <div>
-            <img src={ BackgroundIamge1} className="inset-0"/>
+            <img src={ BackgroundIamge1} className="inset-0" alt=""/>
             <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
                 <div className="content-center py-10">
                     <div className="m-auto">
@@ -41,7 +41,7 @@ export default function Amenities() {
                 </div>
             </div>
             
-            <img src={ BackgroundIamge2}/>
+            <img src={ BackgroundIamge2}alt="" className="w-full"/>
             
         </div>
     )
