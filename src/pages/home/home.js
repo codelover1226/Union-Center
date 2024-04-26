@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="w-full md:flex-row-reverse md:flex bg-main-bg relative">
           <img alt=""  src={SVG} className="absolute z-0"/>
-          <div className="w-full mx-auto bg-gradient-to-l from-brown-bg flex relative">
+          <div className="w-full mx-auto bg-gradient-to-tr to-brown-bg flex relative">
             <div className="mx-auto p-6 lg:p-24 content-center">
               <p className="text-dark-font text-[14px] lg:text-[24px]">WHERE INNOVATION MEETS SUSTAINABILITY</p>
               <p className="text-dark-font text-[12px] lg:text-[20px] text-justify">Union Center is a cutting-edge, sustainable building offering 133,000 square feet of flexible space for office and medical use. With a sleek design featuring floor-to-ceiling windows, the building maximizes natural light and energy efficiency. It boasts an eco-friendly all-electric HVAC system, top-tier air purification, and automated three-level parking. The numerous landscaped terraces provide green spaces in the heart of a vibrant downtown hub, ensuring easy accessibility and high visibility. Union Center represents limitless possibilities, where modern comfort meets sustainability for businesses and medical practices.</p>
@@ -53,6 +53,70 @@ export default function Home() {
           </div>
         </div> 
 
+        <div className="w-full">
+          <div className="w-full bg-main-bg">
+            <div className="w-full flex pt-10">
+              <div className="w-full max-w-[1280px] mx-auto my-6">
+                <p className="text-brown-bg px-5 my-6 text-lg">Approx</p>
+                <div className="w-full md:flex md:justify-between">
+                  <div className="w-full md:w-[230px] px-6 md:px-4">
+                    <p className="text-title-font-1 text-[40px] font-sans">85, 000</p>
+                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  </div>
+                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                  <div className="w-full md:w-[230px] px-6 md:px-4">
+                    <p className="text-title-font-1 text-[40px] font-sans">25 - YEAR</p>
+                    <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
+                  </div>
+                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                  <div className="w-full md:w-[230px] px-6 md:px-4">
+                    <p className="text-title-font-1 text-[40px] font-sans">3</p>
+                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  </div>
+                </div>
+                <div className="w-full md:flex md:justify-between my-6">
+                  <div className="w-full md:w-[230px] px-6 md:px-4">
+                    <p className="text-title-font-1 text-[40px] font-sans">12</p>
+                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  </div>
+                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                  <div className="w-full md:w-[230px] px-6 md:px-4">
+                    <p className="text-title-font-1 text-[40px] font-sans">24</p>
+                    <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
+                  </div>
+                  <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                  <div className="w-full md:w-[230px] px-6 md:px-4">
+                    <p className="text-title-font-1 text-[40px] font-sans">12</p>
+                    <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full">
+            <div className="w-full flex py-10">
+                <div className="w-full max-w-[1280px] mx-auto lg:flex">
+                  <div className="w-full lg:w-[650px] px-6">
+                    <p className="text-[50px] text-title-font-2 font-sans leading-[50px] mt-3">BEAUTIFUL FORM. IMPECCABLE FUNCTION.</p>
+                  </div>
+                  <div className="w-full">
+                    <div className="w-full md:w-[640px] my-3 px-6">
+                      <p className="text-title-font-2 text-lg uppercase font-sans">TANGRAM TOWER’S HIGH CEILINGS, SOFT LIGHTING, SOOTHING MATERIALS, AND COLUMN-LESS INTERIOR UNIT DESIGN CREATE A SENSE OF OPENNESS, ACHIEVING A TIMELESS AESTHETIC IN A MODERN SPACE.</p>
+                    </div>
+                    <div className="w-full sm:flex md:my-10 ">
+                      <div className="w-full px-6 md:px-auto my-6">
+                        <p className="justify-end text-title-font-2 font-sans">The efficiently-arranged office condominium units at Tangram Tower range from approx. 1,360 to 3,070 gross square feet (approx. 126 to 285 square meters), and feature flexible layouts that are easily combined to suit your needs—including selected units with a terrace.</p>
+                      </div>
+                      <div className="w-full px-6 md:px-auto my-6">
+                        <p className="justify-end text-title-font-2 font-sans">Additional amenities, including convenient indoor access to valet parking and adjacent retail, make Tangram Tower the most distinguished choice for office space in Flushing.</p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
         <div className="py-10 px-4 content-center md:py-36  z-10 relative" style={{ backgroundColor: "#B68064" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
@@ -198,6 +262,7 @@ export default function Home() {
             </div>
           </div>  
         </div>
+        
       </div>
   )
 }
