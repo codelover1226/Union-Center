@@ -65,7 +65,7 @@ return (
                 </div>
               </div>
             </div>
-            <div className="md:flex">
+            <div className="sm:flex sm:space-x-5">
               <div className="w-full sm:w-auto py-5 md:py-10 flex-none">
                 <p className="text-main-bg mb-6">More information </p>
                 <div>
