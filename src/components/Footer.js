@@ -123,7 +123,7 @@ return (
           <p className="text-main-font text-[14px]">Another innovative development by</p>
         </div>
         <div className="w-full lg:flex mx-auto">
-          <div className="flex w-[320px] lg:w-full my-3">
+          <div className="flex w-[320px] lg:w-full my-3 mx-auto">
             <div className="w-full content-center mx-auto">
               <a href="https://www.fandtgroup.com/" className="text-center flex w-full">
                 <img
@@ -143,7 +143,7 @@ return (
               </a>
             </div>
           </div>
-          <div className="flex w-[320px] lg:w-full my-3">
+          <div className="flex w-[320px] lg:w-full my-3 mx-auto">
             <div className="w-full content-center mx-auto">
               <a href="https://www.fandtgroup.com/" className="text-center flex w-full">
                 <div className="mx-auto w-[120px]">
