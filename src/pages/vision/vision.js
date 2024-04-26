@@ -62,7 +62,7 @@ export default function Vision() {
                     />
                 </div>
             </div>
-            <img src={ BackgroundIamge1}/>
+            <img src={ BackgroundIamge1} alt=""/>
             <div className="px-8 content-center py-10 z-10 relative" style={{ backgroundColor: "#B68064" }} >
                 <div className="content-center py-12">
                     <div className="m-auto">

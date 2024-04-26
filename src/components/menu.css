@@ -109,7 +109,7 @@
   ul.menu {
   list-style: none;
   margin-top: 190px;
-  margin-left: 80px;
+  margin-left: 20px;
   padding: 0;
   line-height: 2;
   }
@@ -118,7 +118,7 @@
   /* background: whitesmoke; */
   opacity: 0;
   /* padding: 12px 22px; */
-  font-size: 36px;
+  font-size: 24px;
   font-family: "SctoGroteskA-Light";
   /* border-bottom: 1px solid rgba(255,255,255,.5); */
   color: rgb(255, 254, 254);
@@ -175,3 +175,13 @@
     95.3% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); }
     100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
   }
+
+/* .sidebar {
+  max-width: 100% !important;
+} */
+
+@media screen and (min-width:768px) {
+  .menu li{
+    font-size: 36px;
+  }
+}

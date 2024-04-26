@@ -44,7 +44,7 @@ const Sidebar = forwardRef((props, ref) => {
         { name: 'CONTACT', link: './contact' }
     ];
   return ( 
-        <Drawer transition={{ duration: 1.0 }} size={480} open={isDrawerOpen} className="z-[9996] bg-[#153644]">
+        <Drawer transition={{ duration: 1.0 }} size={360} open={isDrawerOpen} className="z-[9996] bg-[#153644]">
             <div className={outside}>	
                 <div>
                     <ul className="menu">
