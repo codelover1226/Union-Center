@@ -37,7 +37,7 @@ export default function Home() {
               className="xl:mt-[60px] w-full sm:w-[400px] mx-auto px-4"
             />  
             <div className="w-full flex my-6">
-              <button className="p-4 my-16 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duaration" > comming soon</button>
+              <button className="p-4 my-16 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duaration" > coming soon</button>
             </div>
           </div>
         </div>
@@ -59,19 +59,26 @@ export default function Home() {
           </div>
         </div> 
 
+
+        {/* <div className="w-full">
+            <div className="w-full flex py-10">
+                <div className="w-full max-w-[1280px] mx-auto lg:flex">
+                  <div className="w-full lg:w-[650px] px-6"> */}
+
         <div className="w-full">
           <div className="w-full bg-main-bg flex pt-10">
-            <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto px-6 md:px-12">
-              <p className="text-brown-bg px-5 my-6 text-lg">Approx</p>
-              <div className="w-full md:flex md:justify-between">
+            {/* <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto px-6 md:px-12"> */}
+            <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto">
+              <p className="text-brown-bg px-5 my-6 text-lg">Approximately</p>
+              {/* <div className="w-full md:flex md:justify-between">
                 <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><WbSunnyIcon fontSize="large"/> </span> 85, 000</p>
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><WbSunnyIcon fontSize="large"/> </span> 85,000</p>
                   <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
                 </div>
                 <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
                 <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><InterestsIcon fontSize="large"/> </span> 25-YEAR</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
+                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><InterestsIcon fontSize="large"/> </span> 25 YEAR</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Tax Abatement Program</p>
                 </div>
                 <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
                 <div className="w-full md:w-[260px] px-6 md:px-4">
@@ -95,6 +102,41 @@ export default function Home() {
                   <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
                 </div>
               </div>
+            </div> */}
+
+
+<div className="w-full md:flex md:justify-between">
+                <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
+                  <p className="text-title-font-1 text-[40px] font-sans">85,000</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
+                  <p className="text-title-font-1 text-[40px] font-sans">25 YEAR</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Tax Abatement Program</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
+                  <p className="text-title-font-1 text-[40px] font-sans">3</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                </div>
+              </div>
+              <div className="w-full md:flex md:justify-between my-6">
+                <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
+                  <p className="text-title-font-1 text-[40px] font-sans">12</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
+                  <p className="text-title-font-1 text-[40px] font-sans">24</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Tax Abatement Program</p>
+                </div>
+                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
+                <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
+                  <p className="text-title-font-1 text-[40px] font-sans">12</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -106,14 +148,14 @@ export default function Home() {
                   </div>
                   <div className="w-full">
                     <div className="w-full md:w-[640px] my-3 px-6">
-                      <p className="text-title-font-2 text-lg uppercase font-sans">TANGRAM TOWER’S HIGH CEILINGS, SOFT LIGHTING, SOOTHING MATERIALS, AND COLUMN-LESS INTERIOR UNIT DESIGN CREATE A SENSE OF OPENNESS, ACHIEVING A TIMELESS AESTHETIC IN A MODERN SPACE.</p>
+                      <p className="text-title-font-2 text-lg uppercase font-sans">UNION CENTER’S HIGH CEILINGS, SOFT LIGHTING, SOOTHING MATERIALS, AND COLUMN-LESS INTERIOR UNIT DESIGN CREATE A SENSE OF OPENNESS, ACHIEVING A TIMELESS AESTHETIC IN A MODERN SPACE.</p>
                     </div>
                     <div className="w-full sm:flex md:my-10 ">
                       <div className="w-full px-6 md:px-auto my-6">
-                        <p className="justify-end text-title-font-2 font-sans">The efficiently-arranged office condominium units at Tangram Tower range from approx. 1,360 to 3,070 gross square feet (approx. 126 to 285 square meters), and feature flexible layouts that are easily combined to suit your needs—including selected units with a terrace.</p>
+                        <p className="justify-end text-title-font-2 font-sans">The efficiently-arranged office condominium units at Union Center range from approx. 1,360 to 3,070 gross square feet (approx. 126 to 285 square meters), and feature flexible layouts that are easily combined to suit your needs—including selected units with a terrace.</p>
                       </div>
                       <div className="w-full px-6 md:px-auto my-6">
-                        <p className="justify-end text-title-font-2 font-sans">Additional amenities, including convenient indoor access to valet parking and adjacent retail, make Tangram Tower the most distinguished choice for office space in Flushing.</p>
+                        <p className="justify-end text-title-font-2 font-sans">Additional amenities, including convenient indoor access to valet parking and adjacent retail, make Union Center the most distinguished choice for office space in Flushing.</p>
                       </div> 
                     </div>
                   </div>
@@ -157,7 +199,7 @@ export default function Home() {
           <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Effortlessly Refined</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">A home that matches your style, where every detail is carefully crafted, framing dramatic views with inspired design, sprawling layouts and outdoor spaces.</p>
+              <p className="text-base font-GTPressura-Light text-center text-white px-4">An office that matches your style, where every detail is carefully crafted, framing dramatic views with inspired design, sprawling layouts and outdoor spaces.</p>
             </div>  
           </div>
           <div className="content-center">
@@ -185,7 +227,7 @@ export default function Home() {
         
         <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
-          <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Waterfront Living</p>
+          <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Office Elegance</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
               <p className="text-base font-GTPressura-Light text-center text-white px-4">Thoughtfully curated and always evolving, with every aspect created to exhilarate and inspire residents with endless possibilities.</p>
@@ -219,7 +261,7 @@ export default function Home() {
           <p className="text-center font-GTPressura-Light text-6xl text-amber-950 pb-7">Deep Roots, New Beat</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">Discover a unique opportunity to live in an iconic Greenpoint landmark, with residences ranging from studio to four bedrooms, and eight absolutely unique penthouses.</p>
+              <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">Discover a unique opportunity to have an office in an iconic Flushing landmark, with residences ranging from 500-1000 sqft offices.</p>
             </div>                  
           </div>
           <div className="content-center">

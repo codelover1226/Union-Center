@@ -43,15 +43,15 @@ return (
                 <p className="text-main-bg text-[14px]"> Team Mentor of B2STARS</p>
                 <div className="flex w-full space-x-4">
                   <p className="text-main-bg uppercase text-[14px]">call us at: +</p>
-                  <a href="tel:+646.863.1846"><p className="text-main-bg flex flex-col hover-after after:bg-blue-gray-50 after:transition-all after:h-[1px]"> 646.863.1846</p></a>
+                  <a href="tel:+646.889.9988"><p className="text-main-bg flex flex-col hover-after after:bg-blue-gray-50 after:transition-all after:h-[1px]"> 646.889.9988</p></a>
                 </div>
                 <div className="flex w-full space-x-4" style={{ alignItems: 'center' }}>
                   <p className="text-main-bg uppercase text-[14px]">Email us at: </p>
                   <a href="mailto:info@barbieliteam.com"><p className="text-main-bg font-GTPressura-Bold italic text-[16px]"> info@barbieliteam.com</p></a>
                 </div>
                 <div className="flex space-x-4" style={{ alignItems: 'center' }}>
-                  <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
-                  <p className="text-main-bg">barbie_li_ny_broke</p>
+                  <a href="https://www.instagram.com/barbielibroker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
+                  <p className="text-main-bg">barbielibroker</p>
                 </div>
                 <div className="flex space-x-4" style={{ alignItems: 'center' }}>
                   <Tooltip 
