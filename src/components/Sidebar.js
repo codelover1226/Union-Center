@@ -12,6 +12,10 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import "./menu.css"
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YoutubeIcon from '@mui/icons-material/YouTube';
 
 
 const Sidebar = forwardRef((props, ref) => {
@@ -59,11 +63,15 @@ const Sidebar = forwardRef((props, ref) => {
       <div className="mt-10">
         <div className="w-full flex">
           <div className="w-[250px] ml-6">
-            <button className="animate-duaration bg-brown-bg p-4 text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
-              contact us
-            </button>
+            <div className="mt-4 flex">
+              <div className="flex space-x-4" style={{ alignItems: 'center' }}>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><FacebookIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><YoutubeIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><TwitterIcon/></p></a>
+              </div>
+            </div>
           </div>
-          
         </div>
       </div>
     </Drawer>

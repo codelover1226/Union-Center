@@ -45,7 +45,7 @@ return (
                 </div>
                 <div className="flex w-full space-x-4" style={{ alignItems: 'center' }}>
                   <p className="text-main-bg uppercase ">Email us at: </p>
-                  <a href=" info@barbieliteam.com"><p className="text-main-bg font-GTPressura-Bold italic text-[18px]"> info@barbieliteam.com</p></a>
+                  <a href="mailto:info@barbieliteam.com"><p className="text-main-bg font-GTPressura-Bold italic text-[18px]"> info@barbieliteam.com</p></a>
                 </div>
                 <div className="flex space-x-4" style={{ alignItems: 'center' }}>
                   <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
@@ -65,8 +65,7 @@ return (
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-auto py-10 flex-none">
-              
+            <div className="w-full sm:w-auto py-5 md:py-10 flex-none">
               <p className="text-main-bg mb-6">More information </p>
               <div>
                 <input placeholder="Please sign up" className="p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg" style={{ background: 'none' }}>
@@ -76,7 +75,7 @@ return (
                 sign up
               </button>
             </div>
-            <div className="w-full sm:w-[200px] py-10 md:mx-6">
+            <div className="w-full sm:w-[200px] py-5 md:py-10 md:mx-6">
               <p className="text-main-bg mb-6">More information </p>
               <button className="animate-duaration bg-brown-bg p-4 w-full text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
                 contact us <span className="md:float-right">{'>'}</span>
