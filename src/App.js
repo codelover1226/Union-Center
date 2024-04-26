@@ -17,18 +17,21 @@ function App() {
   return (
     <BrowserRouter>
       <Wrapper>
-        <Header />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/amenities" exact element={<Amenities />} />
-          <Route path="/availability" exact element={<Availability />} />
-          <Route path="/contact" exact element={<Contact />} />
-          <Route path="/neighborhood" exact element={<Neighborhood />} />
-          <Route path="/gallery" exact element={<Gallery />} />
-          <Route path="/residences" exact element={<Residences />} />
-          <Route path="/vision" exact element={<Vision />} />
-        </Routes>
-        <Footer />
+        <div className='w-full overflow-hidden'>
+          <Header />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/amenities" exact element={<Amenities />} />
+            <Route path="/availability" exact element={<Availability />} />
+            <Route path="/contact" exact element={<Contact />} />
+            <Route path="/neighborhood" exact element={<Neighborhood />} />
+            <Route path="/gallery" exact element={<Gallery />} />
+            <Route path="/residences" exact element={<Residences />} />
+            <Route path="/vision" exact element={<Vision />} />
+          </Routes>
+          <Footer />
+        </div>
+        
       </Wrapper>
     </BrowserRouter>
   )

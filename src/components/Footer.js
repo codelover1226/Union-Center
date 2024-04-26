@@ -35,7 +35,10 @@ return (
         <div className="pt-10 border-t-[1px] border-b-[1px] pb-4">
           <div className="w-full xl:flex justify-between">
             <div className="w-full md:w-[700px] sm:flex">
-              <img alt="" src={director} className="rounded-full border-[5px]  border-main-bg w-[240px] mx-6"/>
+              <div>
+
+              </div>
+              <img alt="" src={director} className="rounded-full border-[5px] mx-auto md:mx-6 border-main-bg w-[240px]"/>
               <div className="py-8 w-full space-y-1 xl:border-r-[1px]">
                 <p className="text-main-bg"> Team Leader of BLT</p>
                 <p className="text-main-bg "> Team Mentor of B2STARS</p>

@@ -16,22 +16,22 @@ export default function Home() {
     
   return (
       <div>
-        <section className="h-[50vh] md:h-screen relative">
+        <section className="h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover bg-black opacity-30" style={{ backgroundImage: `url(${HomeImage5})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
             </motion.div>
           </div>
         </section>
-        <div className="w-full flex absolute top-0 right-0 left-0">
-          <div className="mx-auto mt-16">
+        <div className="w-full flex absolute top-0 right-0 left-0 h-screen items-center">
+          <div className="mx-auto my-6">
             <img 
               alt=""
               src={darkLogo}
-              className="xl:mt-[60px] w-full sm:w-[400px] mb-6 mx-auto px-4"
+              className="xl:mt-[60px] w-full sm:w-[400px] mx-auto px-4"
             />  
-            <div className="w-full flex md:mt-[400px]">
-              <button className="p-4 text-center mx-auto my-[40px] xl:my-[120px] border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duaration" > comming soon</button>
+            <div className="w-full flex my-6">
+              <button className="p-4 my-16 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duaration" > comming soon</button>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
 
         <section className="h-[50vh] md:h-screen relative">
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover " style={{ backgroundImage: `url(${Image1})` }}></div>
+          <div className="absolute inset-0 bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover " style={{ backgroundImage: `url(${Image1})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
             </motion.div>
