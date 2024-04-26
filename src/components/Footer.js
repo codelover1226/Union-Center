@@ -65,7 +65,9 @@ return (
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-auto py-12 flex-none">
+            <div className="w-full sm:w-auto py-10 flex-none">
+              
+              <p className="text-main-bg mb-6">More information </p>
               <div>
                 <input placeholder="Please sign up" className="p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg" style={{ background: 'none' }}>
                 </input>

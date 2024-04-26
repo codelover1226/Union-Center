@@ -15,48 +15,58 @@ import "./menu.css"
 
 
 const Sidebar = forwardRef((props, ref) => {
-    const closeDrawer = () => setIsDrawerOpen(false);
-    const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-    const [outside, setOutside] = React.useState("outside");
-    const openDrawer = () => {
-        setIsDrawerOpen(!isDrawerOpen);
-        if (outside === 'outside') {
-            setOutside("in");
-        }else{
-            closeDrawer();
-            setOutside("outside");
-        }
+  const closeDrawer = () => setIsDrawerOpen(false);
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+  const [outside, setOutside] = React.useState("outside");
+  const openDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+    if (outside === 'outside') {
+      setOutside("in");
+    }else{
+      closeDrawer();
+      setOutside("outside");
     }
-    
-    useImperativeHandle(ref, () => ({
-        log() {
-            openDrawer();
-        }
-    }));
-    const pagesData = [
-        { name: 'HOME', link: './' },
-        { name: 'VISION', link: './vision' },
-        { name: 'RESIDENCES', link: './residences' },
-        { name: 'AMENITIES', link: './amenities' },
-        { name: 'NEIGHBORHOOD', link: './neighborhood' },
-        { name: 'AVAILABILITY', link: './availability' },
-        { name: 'GALLERY', link: './gallery' },
-        { name: 'CONTACT', link: './contact' }
-    ];
+  }
+  
+  useImperativeHandle(ref, () => ({
+    log() {
+        openDrawer();
+    }
+  }));
+  const pagesData = [
+    { name: 'HOME', link: './' },
+    { name: 'VISION', link: './vision' },
+    { name: 'RESIDENCES', link: './residences' },
+    { name: 'AMENITIES', link: './amenities' },
+    { name: 'NEIGHBORHOOD', link: './neighborhood' },
+    { name: 'AVAILABILITY', link: './availability' },
+    { name: 'GALLERY', link: './gallery' },
+    { name: 'CONTACT', link: './contact' }
+  ];
   return ( 
-        <Drawer transition={{ duration: 1.0 }} size={360} open={isDrawerOpen} className="z-[9996] bg-[#153644]">
-            <div className={outside}>	
-                <div>
-                    <ul className="menu">
-                        {pagesData.map((item, index) => (
-                            <li key={index}>
-                                <span className="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        </Drawer>
+    <Drawer transition={{ duration: 1.0 }} size={360} open={isDrawerOpen} className="z-[9996] bg-[#153644]">
+      <div className={outside}>	
+        <div>
+          <ul className="menu">
+            {pagesData.map((item, index) => (
+              <li key={index}>
+                <span className="fa fa-dashboard"></span><a href={item.link} className="hover:text-brown-400">{item.name}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="mt-10">
+        <div className="w-full flex">
+          <div className="w-[250px] ml-6">
+            <button className="animate-duaration bg-brown-bg p-4 text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
+              contact us
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </Drawer>
 )});
 
 Sidebar.displayName = "Sidebar";
