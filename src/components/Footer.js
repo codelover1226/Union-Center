@@ -53,7 +53,7 @@ return (
                   <a href="mailto:info@barbieliteam.com"><p className="text-main-bg font-GTPressura-Bold italic text-[16px]"> info@barbieliteam.com</p></a>
                 </div>
                 <div className="flex space-x-4" style={{ alignItems: 'center' }}>
-                  <a href="https://www.instagram.com/barbielibroker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
+                  <a href="https://www.instagram.com/barbielibroker"><p className="text-main-bg hover:text-brown-bg animate-duration"><InstagramIcon/></p></a>
                   <p className="text-main-bg">barbielibroker</p>
                 </div>
                 {/* <div className="flex space-x-4" style={{ alignItems: 'center' }}>
@@ -77,13 +77,13 @@ return (
                   <input placeholder="Please sign up" className="p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg" style={{ background: 'none' }}>
                   </input>
                 </div>
-                <button className="animate-duaration bg-brown-bg p-4 w-full md:w-[100px] text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg mt-2">
+                <button className="animate-duration bg-brown-bg p-4 w-full md:w-[100px] text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg mt-2">
                   sign up
                 </button>
               </div>
               <div className="w-full md:w-[200px] py-5 md:py-10 md:mx-6">
                 <p className="text-main-bg mb-6">More information </p>
-                <button className="animate-duaration bg-brown-bg p-4 w-full text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
+                <button className="animate-duration bg-brown-bg p-4 w-full text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg">
                   contact us <span className="md:float-right">{'>'}</span>
                 </button>
               </div>

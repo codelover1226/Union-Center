@@ -131,9 +131,12 @@ code {
   transform: translateX(-3px) translateY(-50%) translateZ(0) rotate(-45deg) scale(1,1);
 }
 
-.animate-duaration {
+.animate-duration {
   transition: background-color 0.7s ease, color 0.7s ease
 }
 .animate-font-duration {
   transition: color 1.2s ease
+}
+.animate-duration-fast {
+  transition: background-color 0.3s ease, color 0.3s ease
 }

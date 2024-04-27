@@ -65,10 +65,10 @@ const Sidebar = forwardRef((props, ref) => {
           <div className="w-[250px] ml-6">
             <div className="mt-4 flex">
               <div className="flex space-x-4" style={{ alignItems: 'center' }}>
-                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
-                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><FacebookIcon/></p></a>
-                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><YoutubeIcon/></p></a>
-                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><TwitterIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duration"><InstagramIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duration"><FacebookIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duration"><YoutubeIcon/></p></a>
+                <a href="https://www.instagram.com/barbie_li_ny_broker"><p className="text-main-bg hover:text-brown-bg animate-duration"><TwitterIcon/></p></a>
               </div>
             </div>
           </div>

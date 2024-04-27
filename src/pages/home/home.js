@@ -37,7 +37,7 @@ export default function Home() {
               className="xl:mt-[60px] w-full sm:w-[400px] mx-auto px-4"
             />  
             <div className="w-full flex my-6">
-              <button className="p-4 my-16 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duaration" > coming soon</button>
+              <button className="p-4 my-16 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > coming soon</button>
             </div>
           </div>
         </div>
