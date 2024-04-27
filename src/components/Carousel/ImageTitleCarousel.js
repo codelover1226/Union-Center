@@ -40,10 +40,10 @@ export default function ImageTitleCarousel(){
 
   const onClickIndicator = (index) => {
     
-    setBefore((index -2 + len) % len);
-    setAfter((index -1 + len) % len);
+    setBefore((index -1 + len) % len);
+    setAfter((index +1 + len) % len);
     setActive((index) % len);
-    setBeforeBefore((index + 1 + len) % len);
+    setBeforeBefore((index -2 + len) % len);
     setAfterAfter((index + 2 + len) % len);
 
     if(index > active) {
