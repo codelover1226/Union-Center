@@ -40,7 +40,7 @@ const Sidebar = forwardRef((props, ref) => {
   const pagesData = [
     { name: 'HOME', link: './' },
     { name: 'VISION', link: './vision' },
-    { name: 'RESIDENCES', link: './residences' },
+    // { name: 'RESIDENCES', link: './residences' },
     { name: 'AMENITIES', link: './amenities' },
     { name: 'NEIGHBORHOOD', link: './neighborhood' },
     { name: 'AVAILABILITY', link: './availability' },
