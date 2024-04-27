@@ -37,23 +37,26 @@ return (
               <div>
 
               </div>
-              <img alt="" src={director} className="rounded-full border-[5px] mx-auto sm:mx-2 border-main-bg w-[240px] mb-6"/>
+              <img alt="" src={director} className="rounded-full border-[5px] mx-auto sm:mx-2 border-main-bg h-[240px] w-[240px] mb-6"/>
               <div className="py-8 w-full space-y-1 xl:border-r-[1px]">
+  
+                <p className="text-main-bg text-[18px] font-bold"> Barbie Li</p>
+                <p className="text-main-bg text-[14px]"> Lic. R.E. Broker</p>
                 <p className="text-main-bg text-[14px]"> Team Leader of BLT</p>
                 <p className="text-main-bg text-[14px]"> Team Mentor of B2STARS</p>
                 <div className="flex w-full space-x-4">
-                  <p className="text-main-bg uppercase text-[14px]">call us at: +</p>
+                  <p className="text-main-bg uppercase text-[14px]">call us at:</p>
                   <a href="tel:+646.889.9988"><p className="text-main-bg flex flex-col hover-after after:bg-blue-gray-50 after:transition-all after:h-[1px]"> 646.889.9988</p></a>
                 </div>
                 <div className="flex w-full space-x-4" style={{ alignItems: 'center' }}>
-                  <p className="text-main-bg uppercase text-[14px]">Email us at: </p>
+                  <p className="text-main-bg uppercase text-[14px]">Email us at:</p>
                   <a href="mailto:info@barbieliteam.com"><p className="text-main-bg font-GTPressura-Bold italic text-[16px]"> info@barbieliteam.com</p></a>
                 </div>
                 <div className="flex space-x-4" style={{ alignItems: 'center' }}>
                   <a href="https://www.instagram.com/barbielibroker"><p className="text-main-bg hover:text-brown-bg animate-duaration"><InstagramIcon/></p></a>
                   <p className="text-main-bg">barbielibroker</p>
                 </div>
-                <div className="flex space-x-4" style={{ alignItems: 'center' }}>
+                {/* <div className="flex space-x-4" style={{ alignItems: 'center' }}>
                   <Tooltip 
                     TransitionComponent={Fade}
                     TransitionProps={{ timeout: 600 }}
@@ -64,7 +67,7 @@ return (
                     <img alt="" src={wechaticon} className="w-[24px]"/>
                   </Tooltip>
                   <p className="text-main-bg uppercase">add wechat account</p>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="sm:flex sm:space-x-5 w-full lg:w-auto">

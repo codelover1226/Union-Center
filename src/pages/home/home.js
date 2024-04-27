@@ -107,34 +107,34 @@ export default function Home() {
 
 <div className="w-full md:flex md:justify-between">
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
-                  <p className="text-title-font-1 text-[40px] font-sans">85,000</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  <p className="text-title-font-1 text-[40px] font-sans">133,000</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Square Feet of Prime Class A Office & Medical Space for Sale</p>
                 </div>
                 <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
-                  <p className="text-title-font-1 text-[40px] font-sans">25 YEAR</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Tax Abatement Program</p>
+                  <p className="text-title-font-1 text-[40px] font-sans">11</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Floors of Beautiful Views</p>
                 </div>
                 <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
                   <p className="text-title-font-1 text-[40px] font-sans">3</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Levels of Automated Parking</p>
                 </div>
               </div>
               <div className="w-full md:flex md:justify-between my-6">
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
-                  <p className="text-title-font-1 text-[40px] font-sans">12</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  <p className="text-title-font-1 text-[40px] font-sans">Air</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">All Electric HVAC System with Top-Tier Air Purification. </p>
                 </div>
                 <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
-                  <p className="text-title-font-1 text-[40px] font-sans">24</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Tax Abatement Program</p>
+                  <p className="text-title-font-1 text-[40px] font-sans">Sun</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Floor to Ceiling Windows to Maximize Natural Sunlight.</p>
                 </div>
                 <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
-                  <p className="text-title-font-1 text-[40px] font-sans">12</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
+                  <p className="text-title-font-1 text-[40px] font-sans">Eco Friendly</p>
+                  <p className="text-brown-bg text-[16px] font-GTPressura">Cutting Edge Sustainable Building with Landscaped Terraces. </p>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function Home() {
           <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
+              <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
             </div>        
           </div>
           <div className="content-center">
@@ -293,7 +293,7 @@ export default function Home() {
           <p className="text-center font-normal text-6xl text-white pb-7">Horizons</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Greenpoint.</p>
+              <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
             </div>                    
           </div>
           <div className="content-center flex">
