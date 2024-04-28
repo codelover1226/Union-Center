@@ -34,9 +34,6 @@ return (
         <div className="pt-10 border-t-[1px] border-b-[1px] pb-4">
           <div className="w-full xl:flex justify-between">
             <div className="w-full md:w-[700px] sm:flex">
-              <div>
-
-              </div>
               <img alt="" src={director} className="rounded-full border-[5px] mx-auto sm:mx-2 border-main-bg h-[240px] w-[240px] mb-6"/>
               <div className="py-8 w-full space-y-1 xl:border-r-[1px]">
   
