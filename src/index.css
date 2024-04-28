@@ -135,8 +135,12 @@ code {
   transition: background-color 0.7s ease, color 0.7s ease
 }
 .animate-font-duration {
-  transition: color 1.2s ease
+  transition: background-color 1.5s ease, color 1.5s ease
 }
 .animate-duration-fast {
   transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.animate-section-duration {
+  transition: background-color 0.8s ease, color 0.8s ease
 }
