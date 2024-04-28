@@ -1,11 +1,11 @@
 import React from "react";
-import BackgroundIamge1 from './../../assets/img/amenitiesBackground1.jpg'
-import BackgroundIamge2 from './../../assets/img/residenccesBackground2.jpg'
+import BackgroundIamge1 from './../../assets/img/amenities/bg1.jpg'
+import BackgroundIamge2 from './../../assets/img/amenities/bg2.jpg'
 import ResponsiveTab from "../../components/ResponsiveTab/ResponsiveTab";
-import TabImage1 from "./../../assets/img/amenities-tab-1.jpg";
-import TabImage2 from "./../../assets/img/amenities-tab-2.jpg";
-import TabImage3 from "./../../assets/img/amenities-tab-3.jpg";
-import TabImage4 from "./../../assets/img/amenities-tab-4.jpg";
+import TabImage1 from "./../../assets/img/amenities/tab-1.jpg";
+import TabImage2 from "./../../assets/img/amenities/tab-2.jpg";
+import TabImage3 from "./../../assets/img/amenities/tab-3.jpg";
+import TabImage4 from "./../../assets/img/amenities/tab-4.jpg";
 
 export default function Amenities() {
 

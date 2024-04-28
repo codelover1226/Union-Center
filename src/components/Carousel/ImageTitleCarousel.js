@@ -2,16 +2,9 @@ import React, {useState} from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import './ImageTitleCarousel.css'
-const carouselData = [
-  {'url': './img/vision/carousel-1.jpg'},
-  {'url': './img/vision/carousel-2.jpg'},
-  {'url': './img/vision/carousel-3.jpg'},
-  {'url': './img/vision/carousel-4.jpg'},
-  {'url': './img/vision/carousel-5.jpg'},
-  {'url': './img/vision/carousel-6.jpg'},
-  {'url': './img/vision/carousel-7.jpg'}
-]
-export default function ImageTitleCarousel(){
+
+export default function ImageTitleCarousel(props){
+  const carouselData = props.carouselData
   const len = carouselData.length;
   const [after, setAfter] = useState(1)
   const [active, setActive] = useState(0)

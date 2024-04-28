@@ -64,9 +64,9 @@ export default function Vision() {
                 </div>
             </div>
             <img src={ BackgroundIamge1} alt="" className="w-full"/>
-            <div className="w-full bg-main-bg">
+            {/* <div className="w-full bg-main-bg">
                 <ImageTitleCarousel />
-            </div>
+            </div> */}
             <div className="px-8 content-center py-10 z-10 relative" style={{ backgroundColor: "#B68064" }} >
                 <div className="content-center py-12">
                     <div className="m-auto">

@@ -1,0 +1,167 @@
+{
+  "data" : [
+    
+    {
+      "src":"./img/gallery/gallery2.jpg",
+      "width": 1000, 
+      "height": 667,
+      "key": "exterior"    
+    },
+    {
+      "src":"./img/gallery/gallery3.jpg",
+      "width": 1640, 
+      "height": 1094,
+      "key": "exterior"    
+    },
+    {
+      "src":"./img/gallery/gallery4.jpg",
+      "width": 1640, 
+      "height": 1045,
+      "key": "exterior"    
+    },
+    {
+      "src":"./img/gallery/gallery5.jpg",
+      "width": 1540, 
+      "height": 2459,
+      "key": "exterior"    
+    },
+    {
+      "src":"./img/gallery/gallery6.jpg",
+      "width": 1920, 
+      "height": 1281,
+      "key": "residences"    
+    },
+    {
+      "src":"./img/gallery/gallery7.jpg",
+      "width": 1920, 
+      "height": 1103,
+      "key": "residences"    
+    },
+    {
+      "src":"./img/gallery/gallery8.jpg",
+      "width": 1920, 
+      "height": 1235,
+      "key": "residences"    
+    },
+    {
+      "src":"./img/gallery/gallery1.jpg",
+      "width": 1400, 
+      "height": 1200,
+      "key": "exterior"
+    },
+    {
+      "src":"./img/gallery/gallery9.jpg",
+      "width": 6000, 
+      "height": 4000,
+      "key": "residences"    
+    },
+    {
+        "src":"./img/gallery/gallery10.jpg",
+        "width": 3872, 
+        "height": 2583,
+        "key": "residences"    
+    },
+    {
+        "src":"./img/gallery/gallery11.jpg",
+        "width": 4032, 
+        "height": 3024,
+        "key": "residences"    
+    },
+    {
+        "src":"./img/gallery/gallery12.jpg",
+        "width": 1400, 
+        "height": 1120,
+        "key": "residences"    
+    },
+    {
+        "src":"./img/gallery/gallery13.jpg",
+        "width": 4830, 
+        "height": 3219,
+        "key": "amenities"    
+    },
+    {
+        "src":"./img/gallery/gallery14.jpg",
+        "width": 1120, 
+        "height": 1400,
+        "key": "amenities"    
+    },
+    {
+        "src":"./img/gallery/gallery26.jpg",
+        "width": 1280, 
+        "height": 720,
+        "key": "amenities"    
+    },
+    {
+        "src":"./img/gallery/gallery27.jpg",
+        "width": 1901, 
+        "height": 1027,
+        "key": "amenities"    
+    },
+    {
+        "src":"./img/gallery/gallery15.jpg",
+        "width": 4830, 
+        "height": 3219,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery16.jpg",
+        "width": 2455,
+        "height": 3500,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery17.jpg",
+        "width": 1280, 
+        "height": 961,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery18.jpg",
+        "width": 1640, 
+        "height": 1093,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery19.jpg",
+        "width": 1280, 
+        "height": 816,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery20.jpg",
+        "width": 1280, 
+        "height": 853,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery21.jpg",
+        "width": 1280, 
+        "height": 1058,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery22.jpg",
+        "width": 1280, 
+        "height": 796,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery23.jpg",
+        "width": 1871, 
+        "height": 960,
+        "key": "greenpoint"    
+    },
+    {
+        "src":"./img/gallery/gallery24.jpg",
+        "width": 1280, 
+        "height": 720,
+        "key": "greenpoint"
+    },
+    {
+      "src":"./img/gallery/gallery25.jpg",
+      "width": 1280, 
+      "height": 720,
+      "key": "greenpoint"    
+    }
+  ]
+}
