@@ -204,6 +204,7 @@ export default function Neighborhood() {
                 AN EASY CHARM
               </p>
             </div>
+            <div id="section3" ref={section3Ref}></div>
             <div className="flex items-center mb-20">
               <div className="w-auto mx-auto xl:w-2/3">
                 <p
@@ -225,7 +226,6 @@ export default function Neighborhood() {
                 </p>
               </div>
             </div>
-            <div id="section3" ref={section3Ref}></div>
             <div className=" w-full right-0 sm:w-auto md:h-[600px] sm:mb-20 overflow-hidden">
               <img src={TextImage3} alt="" className="w-full " />
             </div>
