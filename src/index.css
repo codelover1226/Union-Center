@@ -1,6 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .footer_container {
+    @apply py-4 px-5 z-10  max-w-[1440px] mx-auto w-full
+  }
+  .footer_avatar {
+    @apply rounded-full border-[5px] mx-auto sm:mx-2 border-main-bg h-[240px] w-[240px] mb-6
+  }
+  .light_text_small {
+    @apply text-main-bg text-[14px]
+  }
+  .light_text_lg {
+    @apply text-main-bg text-[18px]
+  }
+  .footer_dark_text{
+    @apply text-dark-font tracking-[1px] text-xs/[10px] border-t-[1px] pt-6 border-brown-bg leading-[1.357] font-GTPressura-Light text-justify
+  }
+  .text_phone_number {
+    @apply text-main-bg flex flex-col after:bg-blue-gray-50 after:transition-all after:h-[1px]
+  }
+  .footer_form_input {
+    @apply p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg
+  }
+  .footer_form_button {
+    @apply bg-brown-bg p-4 w-full md:w-[100px] text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg mt-2
+  }
+}
+
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

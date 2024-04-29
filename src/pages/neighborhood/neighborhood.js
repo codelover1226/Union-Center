@@ -159,7 +159,9 @@ export default function Neighborhood() {
         </div>
       </div>
       <img src={ BackgroundImage3} alt=""/>
-      <div className="w-full h-[500px] overflow-hidden">
+      <div className="w-full h-[700px] overflow-hidden content-center bg-main-bg relative">
+        <div className="absolute w-full lg:w-[75%] top-0 right-0 bottom-0 bg-brown-bg">
+        </div>
         <MapBox/>
       </div>
     </div>

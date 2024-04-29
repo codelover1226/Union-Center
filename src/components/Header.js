@@ -55,7 +55,7 @@ export default function Header() {
                 color={"white"}
                 className="font-thin m-4 font-SctoGroteskA-Light"
               >
-                <a href="tel:+646.889.9988"><p className=' flex-col hover-after after:bg-blue-gray-50 after:transition-all after:h-[1px] hidden md:flex'>1.646.889.9988 </p></a>
+                <a href="tel:+646.889.9988"><p className='text_phone_number hover-after'>1.646.889.9988 </p></a>
               </Typography>
               <Button color="white" className="text-center rounded-none h-9 ml-7 mr-10 hover:bg-brown-300">CONTACT</Button>
             </div>
