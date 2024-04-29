@@ -4,7 +4,6 @@ import { Tooltip } from '@mui/material';
 import './Map.css'
 
 import SmallMarker from './../../assets/img/icons/marker-icon.png'
-import BigMarker from './../../assets/img/icons/marker-icon-2x.png'
 
 const apiKey = process.env.REACT_APP_GOOGLE_MAP_API_KEY
 
