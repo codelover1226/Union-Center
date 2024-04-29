@@ -1,9 +1,10 @@
 import React, {useState, useEffect, useRef} from "react";
-import BackgroundIamge2 from './../../assets/img/neighbood2.jpg'
-import BackgroundIamge3 from './../../assets/img/neighbood3.jpg'
+import BackgroundImage2 from './../../assets/img/neighbood2.jpg'
+import BackgroundImage3 from './../../assets/img/neighbood3.jpg'
 import TextImage3 from './../../assets/img/nei_t3.jpg'
 import TextImage4 from './../../assets/img/nei_t4.jpg'
 import ImageTitleCarousel from "../../components/Carousel/ImageTitleCarousel";
+import MapBox from "../../components/map/MapBox";
 
 const carouselData = [
   {'url': './img/neighborhood/carousel-1.jpg'},
@@ -84,7 +85,7 @@ export default function Neighborhood() {
           <div  ref={section1Ref} id="section1"></div>
         </div>
       </div>
-
+      
       <div className="px-4 content-center z-10 relative bg-main-bg" >
         <div className={`w-full flex md:mx-32 ${isScrolledToSection.section0? 'text-dark-bg' : 'text-main-bg'} mb-12 animate-font-duration text-[24px] lg:px-6`}>
           Neighborhood<div className={`${isScrolledToSection.section0? 'bg-dark-bg' : 'bg-main-bg'} animate-duration ml-5 mt-[20px] h-[2px] w-[90px]`}></div>
@@ -157,8 +158,10 @@ export default function Neighborhood() {
           </div>
         </div>
       </div>
-      <img src={ BackgroundIamge3} alt=""/>
-
+      <img src={ BackgroundImage3} alt=""/>
+      <div className="w-full h-[500px] overflow-hidden">
+        <MapBox/>
+      </div>
     </div>
         
   )

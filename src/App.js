@@ -12,6 +12,7 @@ import Gallery from './pages/gallery/gallery';
 import Neighborhood from './pages/neighborhood/neighborhood';
 import Residences from './pages/residences/residences';
 import Vision from './pages/vision/vision';
+import Test from './pages/test';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/gallery" exact element={<Gallery />} />
             <Route path="/residences" exact element={<Residences />} />
             <Route path="/vision" exact element={<Vision />} />
+            <Route path='/test' exact element={<Test />} />
           </Routes>
           <Footer />
         </div>
