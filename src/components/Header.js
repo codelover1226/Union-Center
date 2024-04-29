@@ -61,7 +61,8 @@ export default function Header() {
             </div>
           </div>
           <Sidebar ref={ref}/>
-        </div>          
+        </div>
+      <div className={`w-full h-full z-[999] ${bar === 'bar' ? 'hidden' : 'fixed'}`}  onClick={() => {openDrawer()}}></div>    
       </div>
     </div>
   );
