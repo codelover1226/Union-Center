@@ -67,43 +67,8 @@ export default function Home() {
 
         <div className="w-full">
           <div className="w-full bg-main-bg flex pt-10">
-            {/* <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto px-6 md:px-12"> */}
             <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto">
               <p className="text-brown-bg px-5 my-6 text-lg">Approximately</p>
-              {/* <div className="w-full md:flex md:justify-between">
-                <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><WbSunnyIcon fontSize="large"/> </span> 85,000</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                </div>
-                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><InterestsIcon fontSize="large"/> </span> 25 YEAR</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Tax Abatement Program</p>
-                </div>
-                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><RemoveDoneIcon fontSize="large"/> </span> 3</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                </div>
-              </div>
-              <div className="w-full md:flex md:justify-between my-6">
-                <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><LocalParkingIcon fontSize="large"/> </span> 12</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                </div>
-                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><FolderSharedIcon fontSize="large"/> </span> 24</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Icap Tax Abatement Program</p>
-                </div>
-                <div className="w-[1px] h-24 rotate-[30deg] hidden md:block bg-black" content=""/>
-                <div className="w-full md:w-[260px] px-6 md:px-4">
-                  <p className="text-title-font-1 text-[40px] font-sans"><span className="pr-2"><FaxIcon fontSize="large"/> </span> 12</p>
-                  <p className="text-brown-bg text-[16px] font-GTPressura">Gross Square Feet of Prime, Class a Office Space for Sale</p>
-                </div>
-              </div>
-            </div> */}
-
 
 <div className="w-full md:flex md:justify-between">
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
@@ -308,7 +273,6 @@ export default function Home() {
             </div>
           </div>  
         </div>
-        
       </div>
   )
 }
