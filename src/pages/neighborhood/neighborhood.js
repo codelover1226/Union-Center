@@ -157,7 +157,6 @@ export default function Neighborhood() {
           </div>
         </div>
       </div>
-      
       <img src={ BackgroundIamge3} alt=""/>
 
     </div>
