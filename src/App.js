@@ -13,6 +13,8 @@ import Neighborhood from './pages/neighborhood/neighborhood';
 import Residences from './pages/residences/residences';
 import Vision from './pages/vision/vision';
 import Test from './pages/test';
+import ReactScrollToTop from 'react-scroll-to-top'
+import { BorderAllRounded } from '@mui/icons-material';
 
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
             <Route path="/vision" exact element={<Vision />} />
             <Route path='/test' exact element={<Test />} />
           </Routes>
+          
+          <ReactScrollToTop
+           smooth 
+           className='scroll-to-top-button border-brown-bg bg-main-bg animate-duration hover:bg-brown-bg rounded-full border-[2px]'
+           height='22'
+           />
           <Footer />
         </div>
         

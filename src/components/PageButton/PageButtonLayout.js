@@ -39,10 +39,18 @@ export default function PageButtonLayout  ()  {
       return (
         <div className="flex justify-between pb-2">
           <div className="page-button">
-            <a className="flex-grow" href={'.'+  pagesData[i-1].link}><p className="text-[#f2ede4] hover:text-[#b95a01] ml-[20px]">{pagesData[i-1].name}</p></a>
+            <a className="flex-grow" href={'.'+  pagesData[i-1].link}>
+              <p className="text-[#f2ede4] hover:text-[#b95a01] ml-[20px]">
+                {pagesData[i-1].name}
+              </p>
+            </a>
           </div>
           <div className="page-button-next">
-            <a className="flex-grow" href={'.'+  pagesData[i+1].link}><p className="text-[#f2ede4] hover:text-[#b95a01] mr-[20px]">{pagesData[i+1].name}</p></a>
+            <a className="flex-grow" href={'.'+  pagesData[i+1].link}>
+              <p className="text-[#f2ede4] hover:text-[#b95a01] mr-[20px]">
+                {pagesData[i+1].name}
+              </p>
+            </a>
           </div>
         </div>
       );

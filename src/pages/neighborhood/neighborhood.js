@@ -67,7 +67,7 @@ export default function Neighborhood() {
 
   return (
     <div>
-      <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${'./img/neighborhood/1.jpg'})` }}></div>
+      <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${'./img/neighborhood/1.jpg'})`}} />
       <div className="px-4 content-center z-10 relative bg-main-bg" >
         <div className="content-center py-20" >
           <div className="m-auto">
@@ -82,7 +82,7 @@ export default function Neighborhood() {
               <p className={`text-base font-GTPressura-Light text-center ${isScrolledToSection.section1? 'text-dark-bg' : 'text-main-bg'} animate-font-duration px-4`}>An ever-evolving, vibrant enclave, Greenpoint’s authenticity is emphatically Brooklyn. Both gritty and refined, Greenpoint is home to artists, restaurants, shops, and culture that keep New York exciting.</p>
             </div>
           </div>
-          <div  ref={section1Ref} id="section1"></div>
+          <div ref={section1Ref} id="section1"></div>
         </div>
       </div>
       

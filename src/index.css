@@ -174,3 +174,11 @@ code {
 .animate-section-duration {
   transition: background-color 0.8s ease, color 0.8s ease
 }
+
+.scroll-to-top-button {
+  z-index: 100 !important;
+  padding: 6px;
+  border-radius: 100px !important;
+  border-width: 3px !important;
+  background: #453421;
+}
