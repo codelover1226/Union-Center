@@ -2,7 +2,7 @@ import React from 'react';
 import { MapContainer, Marker, Popup } from 'react-leaflet'
 import { TileLayer } from 'react-leaflet/TileLayer' 
 import GoogleMapReact from 'google-map-react';
-const apiKey = process.env.REACT_APP_GOOGLE_MAP_API
+const apiKey = process.env.REACT_APP_GOOGLE_MAP_API_KEY
 console.log(apiKey)
 const Map = () => {
   const center = { lat: 40.7607334, lng: -73.8294727 };
