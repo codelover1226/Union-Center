@@ -27,7 +27,7 @@ export default function Header() {
       setIsScrolled(isScrolled);
     };
 
-    openDrawer()
+    // openDrawer()
     document.addEventListener("scroll", handleScroll);
 
     return () => {
