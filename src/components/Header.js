@@ -3,7 +3,8 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@material-tailwind/react";
 import Sidebar from "./Sidebar";
 import "./menu.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+
 export default function Header() {
   const navigate = useNavigate()
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -17,17 +18,22 @@ export default function Header() {
     }
     ref.current.log();
   };
-  const handleScroll = () => {
-    const isScrolled = window.scrollY > 50;
-    setIsScrolled(isScrolled);
-  };
+  
+  const location = useLocation();
 
   React.useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      setIsScrolled(isScrolled);
+    };
+
+    openDrawer()
     document.addEventListener("scroll", handleScroll);
+
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location]);
   return (
     <div>
       <div className="z-[9997] fixed w-full">
@@ -76,7 +82,7 @@ export default function Header() {
               </Typography>
               <Button
                 color="white"
-                className="text-center rounded-none h-9 ml-7 mr-10 hover:bg-brown-300"
+                className="text-center rounded-none h-9 ml-7 mr-10 hover:bg-brown-300 animate-duration"
                 onClick={() => navigate("/contact")}
               >
                 CONTACT

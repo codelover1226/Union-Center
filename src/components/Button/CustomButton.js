@@ -5,24 +5,22 @@ function CustomButton({ label, width, backgroundColor, fontColor, outline, centr
 
   const handleMouseEnter = () => {
     setHovered(true);
-    console.log("1");
   };
 
   const handleMouseLeave = () => {
     setHovered(false);
-    console.log("0");
   };
 
   const customStyles = {
     width: width,
     backgroundColor: !hovered ? backgroundColor : '#F1ECE2',
-    color: !hovered? fontColor : '#153644',
     border: outline ? `1px solid #F1ECE2` : 'none',
     cursor: 'pointer',
-    transition: 'background-color 0.3s ease',
+    transition: 'background-color 0.3s ease, color 0.3s ease',
     padding: '2px',
     textAlign: "center",
-    margin: centre ? 'auto' : 'none'
+    margin: centre ? 'auto' : 'none',
+    color: !hovered? fontColor : '#153644' 
   };
 
   return (
@@ -33,9 +31,7 @@ function CustomButton({ label, width, backgroundColor, fontColor, outline, centr
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
     >
-        <p style={{ color: !hovered? fontColor : '#153644' }}>
-            {label}
-        </p>
+      {label}
     </div>
   );
 }

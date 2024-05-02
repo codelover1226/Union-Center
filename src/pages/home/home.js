@@ -128,7 +128,7 @@ export default function Home() {
               </div>
           </div>
         </div>
-        <div className="py-10 px-4 content-center md:py-36  z-10 relative" style={{ backgroundColor: "#B68064" }} >
+        <div className="py-10 px-4 content-center md:py-24  z-10 relative" style={{ backgroundColor: "#B68064" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
@@ -138,15 +138,8 @@ export default function Home() {
             </div>        
           </div>
           <div className="content-center">
-            <div className="m-auto my-4">
-              <CustomButton
-                label="EXPLORE OUR VISION"
-                width="200px"
-                backgroundColor="#B68064"
-                fontColor="#F1ECE2"
-                outline
-                centre
-              />
+            <div className="m-auto my-4 flex">
+            <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
             </div>
           </div>  
         </div>
@@ -159,7 +152,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#153644" }} >
+        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#153644" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">RESIDENCES</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Effortlessly Refined</p>
           <div className="flex items-center">
@@ -168,15 +161,8 @@ export default function Home() {
             </div>  
           </div>
           <div className="content-center">
-            <div className="m-auto my-4">
-              <CustomButton 
-                label="EXPLORE OUR RESIDENCES"
-                width="250px"
-                backgroundColor="#153644"
-                fontColor="#F1ECE2"
-                outline
-                centre
-              />
+            <div className="m-auto my-4 flex">
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
             </div>
           </div>  
         </div>
@@ -190,7 +176,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
+        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Office Elegance</p>
           <div className="flex items-center">
@@ -199,15 +185,8 @@ export default function Home() {
             </div>                    
           </div>
           <div className="content-center">
-            <div className="m-auto my-4">
-              <CustomButton 
-                label="EXPLORE OUR AMENTIES"
-                width="200px"
-                backgroundColor="#2C2A2B"
-                fontColor="#F1ECE2"
-                outline
-                centre
-              />
+            <div className="m-auto my-4 flex">
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
             </div>
           </div>  
         </div>
@@ -221,7 +200,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-36 z-10 relative bg-main-bg">
+        <div className="py-10 px-4 content-center md:py-24 z-10 relative bg-main-bg">
         <p className="text-sm font-GTPressura-Bold text-center text-amber-950 pb-5">NEIGHBORHOOD</p>
           <p className="text-center font-GTPressura-Light text-6xl text-amber-950 pb-7">Deep Roots, New Beat</p>
           <div className="flex items-center">
@@ -230,15 +209,8 @@ export default function Home() {
             </div>                  
           </div>
           <div className="content-center">
-            <div className="m-auto my-4">
-              <CustomButton 
-                label="EXPLORE OUR NEIGHBORHOOD"
-                width="250px"
-                backgroundColor="#F1ECE2"
-                fontColor="black"
-                outline
-                centre
-              />
+            <div className="m-auto my-4 flex">
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-main-font  hover:text-main-font animate-duration" > COMING SOON</button>
             </div>
           </div>  
         </div>
@@ -252,7 +224,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-36 z-10 relative" style={{ backgroundColor: "#75989C" }} >
+        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#75989C" }} >
           <p className="text-sm font-bold text-center text-white pb-5">VISION</p>
           <p className="text-center font-normal text-6xl text-white px-4">Endless</p>
           <p className="text-center font-normal text-6xl text-white pb-7">Horizons</p>
@@ -262,14 +234,8 @@ export default function Home() {
             </div>                    
           </div>
           <div className="content-center flex">
-            <div className="m-auto my-4">
-              <CustomButton
-                label="CONTACT US FOR MORE INFORMATION"
-                width="300px"
-                backgroundColor="#75989C"
-                fontColor="#F1ECE2"
-                outline
-              />
+            <div className="m-auto my-4 flex">
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
             </div>
           </div>  
         </div>

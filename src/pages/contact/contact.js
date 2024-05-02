@@ -2,84 +2,111 @@ import React, { useState } from "react";
 import DropDownSelect from "../../components/Form/DropDownSelect";
 import Input from "../../components/Form/Input";
 import CustomButton from "./../../components/Button/CustomButton";
+import { isEmail, isEmpty, getLength, isValidName } from "../../utils/validation";
 import "./contact.css";
 
 export default function Contact() {
-  const [agent, setAgent] = useState("");
-  const [price, setPrice] = useState("");
-  const [residences, setResidences] = useState("");
-  const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
-  const [instagram, setInstagram] = useState("");
-  const [errors, setErrors] = useState({});
+
+  const [forms, setForms] = useState({
+    firstname : "",
+    lastname: "",
+    email: "",
+    comment: "",
+    instagram: "",
+    agent: "",
+    price: "",
+    residences: ""
+  })
+  const [errors, setErrors] = useState({
+  });
 
   const onValueChange = (value, id) => {
     switch (id) {
       case "firstname":
-        setFirstName(value);
+        setForms({...forms, [id]: value});
+        if(!isEmpty(value)){
+          setErrors({ ...errors, [id]: "" });
+        }
         break;
       case "lastname":
-        setLastName(value);
+        setForms({...forms, [id]: value});
+        if(!isEmpty(value)){
+          setErrors({ ...errors, [id]: "" });
+        }
         break;
       case "email":
-        setEmail(value);
+        if(!isEmpty(value)) {
+          if(isEmail(value)){
+            setErrors({ ...errors, [id]: "" });
+          } else {
+            setErrors({ ...errors, [id]: "Input Valid Email"})
+          }
+        }
+          
+        setForms({...forms, [id]: value});
         break;
       case "comment":
-        setComment(value);
+        setForms({...forms, [id]: value});
+        if(!isEmpty(value)){
+          setErrors({ ...errors, [id]: "" });
+        }
         break;
       case "instagram":
-        setInstagram(value);
+        if(!isEmpty(value)){
+          setErrors({ ...errors, [id]: "" });
+        }
+        setForms({...forms, [id]: value});
         break;
       default:
         return;
     }
     if (!value.trim()) {
       setErrors({ ...errors, [id]: "" });
-
       setErrors({ ...errors, [id]: "This field is required." });
     }
   };
   const handleDropdownChange = (event) => {
     switch (event.target.id) {
       case "agent":
-        setAgent(event.target.value);
+        setForms({...forms, [event.target.id]: event.target.value});
         break;
       case "price":
-        setPrice(event.target.value);
+        setForms({...forms, [event.target.id]: event.target.value});
         break;
       case "residences":
-        setResidences(event.target.value);
+        setForms({...forms, [event.target.id]: event.target.value});
         break;
       default:
         return;
     }
+    
+    if(!isEmpty(event.target.value)){
+      setErrors({ ...errors, [event.target.id]: ""})
+    }
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    const requiredFields = ["firstname", "lastname", "email", "comment"];
-    const allRequiredFilled = requiredFields.every((id) => {
-      switch (id) {
-        case "firstname":
-          return firstname.trim() !== "";
-        case "lastname":
-          return lastname.trim() !== "";
-        case "email":
-          return email.trim() !== "";
-        case "comment":
-          return comment.trim() !== "";
-        default:
-          return true;
+    for (let key in forms) {
+      if(key === "firstname" || key === "lastname"){
+        if(!isValidName(forms[key])){
+          setErrors(prevErrors => ({...prevErrors, [key]: "Input valid name" }));
+        }
       }
-    });
-
-    if (!allRequiredFilled) {
-      alert("Please fill out all required fields.");
-      return;
+      if(key === "email"){
+        if(!isEmail(forms[key])){
+          setErrors(prevErrors => ({...prevErrors, [key]: "Input valid email" }));
+        }
+      }
+      if (isEmpty(forms[key])) {
+        setErrors(prevErrors => ({...prevErrors, [key]: "This field is required" }));
+      }
     }
-
-    console.log(agent, price, residences);
+    const allValid = Object.values(forms).every((field) =>!isEmpty(field));
+    if(allValid){
+      if (Object.values(errors).every(value => isEmpty(value))) {
+        console.log("success");
+      }
+    }
   };
   const priceOptions = [
     { value: "", label: "Price" },
@@ -98,8 +125,8 @@ export default function Contact() {
   ];
   const agentOptions = [
     { value: "", label: "Agent" },
-    { value: true, label: "Yes" },
-    { value: false, label: "No" },
+    { value: "true", label: "Yes" },
+    { value: "false", label: "No" },
   ];
 
   return (
@@ -115,77 +142,87 @@ export default function Contact() {
           </p>
         </div>
         <div className="px-4 md:w-1/2 mb-6">
-          <form className="space-y-0">
-            <div className="w-full py-1">
+          <form className="space-y-2">
+            <div className="w-full py-1 relative">
               <Input
                 placeholder="FIRST NAME*"
                 onValueChange={onValueChange}
                 id={"firstname"}
               />
-              {errors.firstName && <p>{errors.firstName}</p>}
+              {errors.firstname && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.firstname}</p>}
             </div>
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <Input
                 placeholder="LAST NAME*"
                 onValueChange={onValueChange}
                 id={"lastname"}
               />
+              {errors.lastname && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.lastname}</p>}
             </div>
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <Input
                 placeholder="EMAIL*"
                 onValueChange={onValueChange}
                 type={"email"}
                 id={"email"}
               />
+              {errors.email && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.email}</p>}
             </div>
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <DropDownSelect
                 options={priceOptions}
                 onChange={handleDropdownChange}
                 id={"price"}
               />
+              {errors.price && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.price}</p>}
             </div>
 
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <DropDownSelect
                 options={residencesOptions}
                 onChange={handleDropdownChange}
                 id={"residences"}
               />
+              {errors.residences && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.residences}</p>}
             </div>
 
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <DropDownSelect
                 options={agentOptions}
                 onChange={handleDropdownChange}
                 id={"agent"}
               />
+              {errors.agent && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.agent}</p>}
             </div>
 
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <Input
                 placeholder="COMMENT*"
                 onValueChange={onValueChange}
                 id={"comment"}
               />
+              {errors.comment && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.comment}</p>}
             </div>
 
-            <div className="w-full py-1">
+            <div className="w-full py-1 relative">
               <Input
                 placeholder="INSTAGRAM HANDLE*"
                 onValueChange={onValueChange}
                 id={"instagram"}
               />
+              {errors.instagram && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.instagram}</p>}
             </div>
-            <CustomButton
-              backgroundColor="#153644"
-              outline={false}
-              label="Submit"
-              fontColor="#F1ECE2"
-              width={150}
-              onClick={onSubmit}
-            />
+            <div className="pt-5">
+              <CustomButton
+                backgroundColor="#153644"
+                outline={false}
+                label="Submit"
+                fontColor="#F1ECE2"
+                width={150}
+                onClick={onSubmit}
+              />
+            </div>
+            
           </form>
         </div>
         <div className="px-4 md:w-1/5">
