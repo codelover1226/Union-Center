@@ -24,7 +24,7 @@ export default function Vision() {
   
   return (
     <div>
-      <div className="position relative">
+      {/* <div className="position relative">
         <Vimeo 
           video="https://player.vimeo.com/video/789651572?background=1&player_id=full_video&loop=1&byline=0&title=0&autoplay=1"
           autoplay={true}
@@ -33,8 +33,8 @@ export default function Vision() {
           responsive={true}
           style={{ width: '100%' }}
         />
-      </div>
-
+      </div> */}
+      <div className="w-full bg-center bg-cover h-[100vh]" style={{ backgroundImage: "url(./img/gallery/gallery6.jpg )"}}></div>
       <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#B68064" }} >
         <div className="md:min-h-[100vh] content-center py-10 md:py-96">
           <div className="m-auto">

@@ -3,8 +3,9 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@material-tailwind/react";
 import Sidebar from "./Sidebar";
 import "./menu.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function Header() {
+  const navigate = useNavigate()
   const [isScrolled, setIsScrolled] = React.useState(false);
   const ref = React.createRef();
   const [bar, setBar] = React.useState("bar");
@@ -51,11 +52,13 @@ export default function Header() {
               color={"white"}
               className="font-thin m-4 font-SctoGroteskA-Light hidden sm:block"
             >
-              <a href="/contact" className="w-[60px] sm:w-full">
-                <p className="text-[11px] sm:text-[15px]">
-                  SCHEDULE AN APPOINTMENT
-                </p>
-              </a>
+              <Link to={"/"}>
+                <div className="w-[60px] sm:w-full">
+                  <p className="text-[11px] sm:text-[15px]">
+                    SCHEDULE AN APPOINTMENT
+                  </p>
+                </div>
+              </Link>
             </Typography>
             <div className="sm:flex justify-end items-center hidden">
               <Typography
@@ -74,6 +77,7 @@ export default function Header() {
               <Button
                 color="white"
                 className="text-center rounded-none h-9 ml-7 mr-10 hover:bg-brown-300"
+                onClick={() => navigate("/contact")}
               >
                 CONTACT
               </Button>

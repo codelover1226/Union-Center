@@ -7,6 +7,8 @@ import {
   CardHeader,
   CardBody,
 } from "@material-tailwind/react";
+
+import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./menu.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -57,9 +59,9 @@ const Sidebar = forwardRef((props, ref) => {
               {pagesData.map((item, index) => (
                 <li key={index}>
                   <span className="fa fa-dashboard"></span>
-                  <a href={item.link} className="hover:text-brown-400">
-                    {item.name}
-                  </a>
+                  <Link to={item.link}>
+                    <p className="hover:text-brown-400">{item.name}</p>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -110,9 +110,14 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 3s ease; /* Smooth transition for opacity over 3 seconds */
+    transition: transform 1.2s ease-out, opacity 0.2s ease-out;
+    transform: translateX(0);
+    opacity: 1;
   }
-  
+  .slide-out-left {
+    transform: translateX(100%);
+    opacity: 1;
+  }
   .splash-screen.hidden {
     opacity: 0; /* Hide the splash screen when opacity is 0 */
     pointer-events: none; /* Disable pointer events when hidden */

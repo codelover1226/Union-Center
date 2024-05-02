@@ -10,11 +10,14 @@ import wechaticon from './../assets/img/wechat.svg'
 import credit1 from './../assets/img/credits_logo1.png'
 import credit2 from './../assets/img/credits_logo2.png'
 import credit3 from './../assets/img/credits_logo3.png'
+import credit4 from './../assets/img/credits_logo4.png'
 import wechatQR from './../assets/img/wechat.jpg'
 import PageButtonLayout from "./PageButton/PageButtonLayout";
 import "./Footer.css"
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer(props) {
+  
 const title = 
 <>
   <div className="w-[250px] flex my-6">
@@ -23,6 +26,8 @@ const title =
   <p className="text-main-bg text-center text-[14px]">WeChat ID: tangramnyc</p>
   <p className="text-brown-bg text-center text-[14px]">Follow us on WeChat</p>
 </>
+const navigate = useNavigate();
+
 return (
   
   <div className="w-full">
@@ -82,7 +87,7 @@ return (
               </div>
               <div className="w-full md:w-[200px] py-5 md:py-10 md:mx-6">
                 <p className="text-main-bg mb-6">More information </p>
-                <button className="mt-0 footer_form_button w-full">
+                <button className="mt-0 footer_form_button w-full animate-duration" onClick={() => navigate("/contact")}>
                   contact us <span className="md:float-right">{'>'}</span>
                 </button>
               </div>
@@ -110,68 +115,73 @@ return (
     </div>
     
     <div className="w-full flex">
-      <div className="max-w-[1280px] footer_container flex">
-        <div className="w-[400px] p-6">
+      <div className="max-w-[1280px] footer_container md:flex">
+        <div className="w-[400px] p-6" style={{ placeSelf: "center" }}>
           <p className="text-main-font text-[14px]">Another innovative development by</p>
         </div>
         <div className="w-full lg:flex mx-auto">  
           <div className="flex w-[320px] lg:w-full mx-auto">
             <div className="w-full content-center mx-auto">
-              <a href="https://www.fandtgroup.com/" className="text-center flex w-full">
+              <a href="https://www.barbieliteam.com/" className="text-center flex w-full">
                 <img
                   alt=""
                   src={credit1}
-                  className="mx-auto w-[60px]"
+                  className="mx-auto w-[130px]"
                 />
               </a>
             </div>
             <div className="w-full content-center mx-auto">
-              <a href="https://www.fandtgroup.com/" className="text-center flex w-full">
+              <a href="https://www.barbieliteam.com/" className="text-center flex w-full">
                 <img
                   alt=""
                   src={credit2}
-                  className="mx-auto w-[60px]"
+                  className="mx-auto w-[130px]"
                 />
               </a>
             </div>
           </div>
           <div className="flex w-[320px] lg:w-full my-3 mx-auto">
             <div className="w-full content-center mx-auto">
-              <a href="https://www.fandtgroup.com/" className="text-center flex w-full">
-                <div className="mx-auto w-[120px]">
-                  <p className="text-main-font uppercase text-[12px] text-center md:text-left">marketing agent</p>
-                  <p className="text-main-font uppercase text-[14px] text-center md:text-left font-bold">行销代理</p>
-                </div>
+              <a href="https://www.yelp.com/biz/barbie-li-b-square-realty-flushing-3" className="text-center flex w-full">
+                <img 
+                  src={credit4}
+                  alt=""
+                  className="mx-auto w-[130px]"  
+                />
+
               </a>
             </div>
             <div className="w-full content-center mx-auto">
               <div className="w-full content-center mx-auto">
-                <a href="https://www.fandtgroup.com/" className="text-center flex w-full">
+                <a href="https://www.lionsgroupnyc.com/" className="text-center flex w-full">
                   <img
                     alt=""
                     src={credit3}
-                    className="mx-auto w-[60px]"
+                    className="mx-auto w-[130px]"
                   />
                 </a>
-                <p className="text-main-font uppercase text-[12px] text-center font-bold">富顿地产</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full md:w-[240px] flex justify-end p-6">
-          <a href="/contact" className="mx-auto w-full">
-            <p className="text-main-font text-[14px] text-center">contact</p>
-          </a>
-          <a href="/vision" className="mx-auto w-full text-center">
-            <p className="text-main-font text-[14px]">vision</p>
-          </a>
+        <div className="w-full md:w-[240px] flex justify-end p-6 space-x-5" style={{ placeSelf: "center" }}>
+          <Link to={"/contact"}>
+            <div className="mx-auto w-full">
+              <p className="text-main-font text-[14px] text-center">contact</p>
+            </div>
+          </Link>
+          <Link to={"/vision"}>
+            <div className="mx-auto w-full">
+              <p className="text-main-font text-[14px] text-center">vision</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
     <div className="w-full flex my-1">
       <div className="footer_container flex">
         <p className="footer_dark_text">
-          THE COMPLETE OFFERING TERMS ARE IN AN OFFERING PLAN AVAILABLE FROM THE SPONSOR. FILE NO. CD22-0064. ARTIST RENDERINGS. THE ARTIST REPRESENTATIONS AND INTERIOR DECORATIONS, FINISHES, APPLIANCES AND FURNISHINGS ARE PROVIDED FOR ILLUSTRATIVE PURPOSES ONLY. SPONSOR MAKES NO REPRESENTATIONS OR WARRANTIES EXCEPT AS SET FORTH IN THE OFFERING PLAN. SPONSOR RESERVES THE RIGHT TO SUBSTITUTE MATERIALS, APPLIANCES, EQUIPMENT, FIXTURES AND OTHER CONSTRUCTION AND DESIGN DETAILS SPECIFIED HEREIN WITH SIMILAR MATERIALS, APPLIANCES, EQUIPMENT AND/OR FIXTURES OF SUBSTANTIALLY EQUAL OR BETTER QUALITY. SPONSOR RESERVES THE RIGHT TO MAKE CHANGES IN ACCORDANCE WITH THE TERMS OF THE OFFERING PLAN. ALL DIMENSIONS ARE APPROXIMATE AND SUBJECT TO NORMAL CONSTRUCTION VARIANCES AND TOLERANCES. SQUARE FOOTAGE EXCEEDS THE USABLE FLOOR AREA. THE USE OF ANY DESIGNATIONS, LABELS OR NOMENCLATURE IS FOR MARKETING PURPOSES ONLY AND DOES NOT OBLIGATE SPONSOR TO DELIVER SUCH AREAS OR ROOMS DESIGNED OR FITTED OUT IN THE MANNER DEPICTED OR IMPLIED IN THIS ADVERTISING. ANY FURNITURE OR LANDSCAPING SHOWN ARE FOR CONCEPT ONLY AND ARE NOT COORDINATED WITH THE BUILDING SYSTEMS. IMAGES ARE ILLUSTRATIONS ONLY AND DO NOT REFLECT ACTUAL VIEWS. NO REPRESENTATION IS MADE REGARDING THE VIEWS FROM ANY WINDOWS IN THE BUILDING AND ALL VIEWS ARE SUBJECT TO CHANGE AT ANY TIME, FOR ANY REASON, AND/OR MAY BECOME OBSTRUCTED. SPONSOR: QBDK HURON LLC, 261 FIFTH AVENUE, STE. 1802, NEW YORK, NY 10016. EXCLUSIVE SALES AND MARKETING BY SERHANT. NEW DEVELOPMENT. EQUAL HOUSING OPPORTUNITY. <a href="/" className="text-[#b95a01] hover:text-dark-font">FAIR HOUSING NOTICE.</a> <a href="/" className="text-[#b95a01] hover:text-dark-font">RE LEGAL SOP</a> 
+          THE COMPLETE OFFERING TERMS ARE IN AN OFFERING PLAN AVAILABLE FROM THE SPONSOR. FILE NO. CD22-0064. ARTIST RENDERINGS. THE ARTIST REPRESENTATIONS AND INTERIOR DECORATIONS, FINISHES, APPLIANCES AND FURNISHINGS ARE PROVIDED FOR ILLUSTRATIVE PURPOSES ONLY. SPONSOR MAKES NO REPRESENTATIONS OR WARRANTIES EXCEPT AS SET FORTH IN THE OFFERING PLAN. SPONSOR RESERVES THE RIGHT TO SUBSTITUTE MATERIALS, APPLIANCES, EQUIPMENT, FIXTURES AND OTHER CONSTRUCTION AND DESIGN DETAILS SPECIFIED HEREIN WITH SIMILAR MATERIALS, APPLIANCES, EQUIPMENT AND/OR FIXTURES OF SUBSTANTIALLY EQUAL OR BETTER QUALITY. SPONSOR RESERVES THE RIGHT TO MAKE CHANGES IN ACCORDANCE WITH THE TERMS OF THE OFFERING PLAN. ALL DIMENSIONS ARE APPROXIMATE AND SUBJECT TO NORMAL CONSTRUCTION VARIANCES AND TOLERANCES. SQUARE FOOTAGE EXCEEDS THE USABLE FLOOR AREA. THE USE OF ANY DESIGNATIONS, LABELS OR NOMENCLATURE IS FOR MARKETING PURPOSES ONLY AND DOES NOT OBLIGATE SPONSOR TO DELIVER SUCH AREAS OR ROOMS DESIGNED OR FITTED OUT IN THE MANNER DEPICTED OR IMPLIED IN THIS ADVERTISING. ANY FURNITURE OR LANDSCAPING SHOWN ARE FOR CONCEPT ONLY AND ARE NOT COORDINATED WITH THE BUILDING SYSTEMS. IMAGES ARE ILLUSTRATIONS ONLY AND DO NOT REFLECT ACTUAL VIEWS. NO REPRESENTATION IS MADE REGARDING THE VIEWS FROM ANY WINDOWS IN THE BUILDING AND ALL VIEWS ARE SUBJECT TO CHANGE AT ANY TIME, FOR ANY REASON, AND/OR MAY BECOME OBSTRUCTED. SPONSOR: QBDK HURON LLC, 261 FIFTH AVENUE, STE. 1802, NEW YORK, NY 10016. EXCLUSIVE SALES AND MARKETING BY SERHANT. NEW DEVELOPMENT. EQUAL HOUSING OPPORTUNITY. <Link to="/" className="text-[#b95a01] hover:text-dark-font">FAIR HOUSING NOTICE.</Link> <Link to="/" className="text-[#b95a01] hover:text-dark-font">RE LEGAL SOP</Link> 
         </p>
       </div>
     </div>

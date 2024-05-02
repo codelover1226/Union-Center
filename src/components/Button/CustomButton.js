@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CustomButton({ label, width, backgroundColor, fontColor, outline, centre }) {
+function CustomButton({ label, width, backgroundColor, fontColor, outline, centre, onClick }) {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -31,6 +31,7 @@ function CustomButton({ label, width, backgroundColor, fontColor, outline, centr
       style={customStyles}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
     >
         <p style={{ color: !hovered? fontColor : '#153644' }}>
             {label}
