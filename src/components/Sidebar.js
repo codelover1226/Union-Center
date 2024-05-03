@@ -1,15 +1,6 @@
 import React, { forwardRef, useImperativeHandle } from "react";
-import {
-  IconButton,
-  Typography,
-  Drawer,
-  Card,
-  CardHeader,
-  CardBody,
-} from "@material-tailwind/react";
-
+import { Drawer } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./menu.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -20,7 +11,7 @@ const Sidebar = forwardRef((props, ref) => {
   const closeDrawer = () => setIsDrawerOpen(false);
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
   const [outside, setOutside] = React.useState("outside");
-  const openDrawer = () => {
+  const openSideDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
     if (outside === "outside") {
       setOutside("in");
@@ -32,13 +23,12 @@ const Sidebar = forwardRef((props, ref) => {
 
   useImperativeHandle(ref, () => ({
     log() {
-      openDrawer();
+      openSideDrawer();
     },
   }));
   const pagesData = [
     { name: "HOME", link: "./" },
     { name: "VISION", link: "./vision" },
-    // { name: 'RESIDENCES', link: './residences' },
     { name: "AMENITIES", link: "./amenities" },
     { name: "NEIGHBORHOOD", link: "./neighborhood" },
     { name: "AVAILABILITY", link: "./availability" },
@@ -59,7 +49,7 @@ const Sidebar = forwardRef((props, ref) => {
               {pagesData.map((item, index) => (
                 <li key={index}>
                   <span className="fa fa-dashboard"></span>
-                  <Link to={item.link}>
+                  <Link to={item.link} onClick={closeDrawer}>
                     <p className="hover:text-brown-400">{item.name}</p>
                   </Link>
                 </li>
@@ -104,7 +94,5 @@ const Sidebar = forwardRef((props, ref) => {
     </div>
   );
 });
-
-Sidebar.displayName = "Sidebar";
 
 export default Sidebar;

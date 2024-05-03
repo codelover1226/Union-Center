@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { Snackbar, Alert } from "@mui/material";
 import DropDownSelect from "../../components/Form/DropDownSelect";
 import Input from "../../components/Form/Input";
 import CustomButton from "./../../components/Button/CustomButton";
 import { isEmail, isEmpty, getLength, isValidName } from "../../utils/validation";
+import contactData from './../../utils/form.json'
 import "./contact.css";
 
 export default function Contact() {
-
+  
   const [forms, setForms] = useState({
-    firstname : "",
-    lastname: "",
+    first_name : "",
+    last_name: "",
     email: "",
     comment: "",
     instagram: "",
@@ -19,52 +21,62 @@ export default function Contact() {
   })
   const [errors, setErrors] = useState({
   });
+  const [open, setOpen] = React.useState(false)
+  const [message, setMessage] = React.useState("")
+  const [severity, setSeverity] = React.useState("success");
+
+  const priceOptions = contactData.data.priceOptions
+  const residencesOptions = contactData.data.residencesOptions
+  const agentOptions = contactData.data.agentOptions
+  
+  const emailTemplate =`
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>New Contact Arrived</title>
+    <style>
+      a { font-style: italic; font-weight: bold; color: black !important; }
+    </style>
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+    <div style="width: 100%; max-width: 750px; margin: 0 auto; padding: 20px;">
+      <div style="text-align: center; font-size: 33px; color: #333; margin-bottom:40px;">New contact arrived</div>
+      <div style="background-color: #F3EBDD; border-radius: 20px; width:100%; padding: 20px">
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">First Name: ${forms.first_name}</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Last Name: ${forms.last_name}</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Email: ${forms.email}</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Price: ${ forms.price }</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Agent: ${ forms.agent}</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Residences: ${ forms.residences }</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Comment: ${forms.comment}</div>
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">Instagram: ${forms.instagram}</div>
+      </div>
+      <div style="padding: 35px 0px; width: 100%;">
+        <div style="width: 100%; max-width: 400px; margin: 0 auto;">
+          <div style="font-size:14px; color: #BC9067; text-align: center"> This is newsletter from union center.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+`
 
   const onValueChange = (value, id) => {
-    switch (id) {
-      case "firstname":
-        setForms({...forms, [id]: value});
-        if(!isEmpty(value)){
-          setErrors({ ...errors, [id]: "" });
-        }
-        break;
-      case "lastname":
-        setForms({...forms, [id]: value});
-        if(!isEmpty(value)){
-          setErrors({ ...errors, [id]: "" });
-        }
-        break;
-      case "email":
-        if(!isEmpty(value)) {
-          if(isEmail(value)){
-            setErrors({ ...errors, [id]: "" });
-          } else {
-            setErrors({ ...errors, [id]: "Input Valid Email"})
-          }
-        }
-          
-        setForms({...forms, [id]: value});
-        break;
-      case "comment":
-        setForms({...forms, [id]: value});
-        if(!isEmpty(value)){
-          setErrors({ ...errors, [id]: "" });
-        }
-        break;
-      case "instagram":
-        if(!isEmpty(value)){
-          setErrors({ ...errors, [id]: "" });
-        }
-        setForms({...forms, [id]: value});
-        break;
-      default:
-        return;
+    setForms(prevForms => ({...prevForms, [id]: value }));
+
+    if (!isEmpty(value)) {
+      setErrors(prevErrors => ({...prevErrors, [id]: "" }));
+    }
+    if (id === "email") {
+      if (!isEmail(value)) {
+        setErrors(prevErrors => ({...prevErrors, [id]: "Input Valid Email" }));
+      }
     }
     if (!value.trim()) {
-      setErrors({ ...errors, [id]: "" });
-      setErrors({ ...errors, [id]: "This field is required." });
+      setErrors(prevErrors => ({...prevErrors, [id]: "This field is required." }));
     }
   };
+
   const handleDropdownChange = (event) => {
     switch (event.target.id) {
       case "agent":
@@ -84,10 +96,10 @@ export default function Contact() {
       setErrors({ ...errors, [event.target.id]: ""})
     }
   };
-  const onSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     for (let key in forms) {
-      if(key === "firstname" || key === "lastname"){
+      if(key === "first_name" || key === "last_name"){
         if(!isValidName(forms[key])){
           setErrors(prevErrors => ({...prevErrors, [key]: "Input valid name" }));
         }
@@ -104,33 +116,47 @@ export default function Contact() {
     const allValid = Object.values(forms).every((field) =>!isEmpty(field));
     if(allValid){
       if (Object.values(errors).every(value => isEmpty(value))) {
-        console.log("success");
+        try {
+          const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/send-email`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', },
+            body: JSON.stringify({
+              from: 'onboarding@resend.dev',
+              to: 'wmeng0103@gmail.com',
+              subject: 'New subscriber',
+              html: emailTemplate,
+            }),
+          });
+          if (!response.ok) throw new Error('Network response was not ok');
+          setSeverity("success")
+          setMessage("Your message has been successfully sent to our team.")
+          setOpen(true)
+        } catch (error) {
+          setSeverity("error")
+          setMessage("Network Error")
+          setOpen(true)
+        }
       }
     }
   };
-  const priceOptions = [
-    { value: "", label: "Price" },
-    { value: "1", label: "STUDIO" },
-    { value: "2", label: "BEDROOM 1" },
-    { value: "3", label: "BEDROOM 2" },
-    { value: "4", label: "BEDROOM 3" },
-    { value: "5", label: "BEDROOM 4" },
-  ];
-  const residencesOptions = [
-    { value: "", label: "Residences" },
-    { value: "1", label: "$500K-$1M" },
-    { value: "2", label: "$1M-$2M" },
-    { value: "3", label: "$2M-$3M" },
-    { value: "3", label: "$3M+" },
-  ];
-  const agentOptions = [
-    { value: "", label: "Agent" },
-    { value: "true", label: "Yes" },
-    { value: "false", label: "No" },
-  ];
-
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+  };
   return (
     <div className="bg-[#F1ECE2] py-32">
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity={severity}
+          variant="filled"
+          sx={{ width: '100%' }}
+        >
+          {message}
+        </Alert>
+      </Snackbar>
       <div className="md:flex md:flex-wrap md:max-w-[1180px] m-auto content-center justify-between">
         <div className="px-4 md:w-1/5">
           <p className="text-[#153644] font-SctoGroteskADemo-Regular text-4xl py-5">
@@ -147,17 +173,17 @@ export default function Contact() {
               <Input
                 placeholder="FIRST NAME*"
                 onValueChange={onValueChange}
-                id={"firstname"}
+                id={"first_name"}
               />
-              {errors.firstname && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.firstname}</p>}
+              {errors.first_name && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.first_name}</p>}
             </div>
             <div className="w-full py-1 relative">
               <Input
                 placeholder="LAST NAME*"
                 onValueChange={onValueChange}
-                id={"lastname"}
+                id={"last_name"}
               />
-              {errors.lastname && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.lastname}</p>}
+              {errors.last_name && <p className="float-right text-red-600 text-[12px] absolute -bottom-3 left-0">{errors.last_name}</p>}
             </div>
             <div className="w-full py-1 relative">
               <Input

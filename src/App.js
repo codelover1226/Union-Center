@@ -11,9 +11,9 @@ import Gallery from "./pages/gallery/gallery";
 import Neighborhood from "./pages/neighborhood/neighborhood";
 import Residences from "./pages/residences/residences";
 import Vision from "./pages/vision/vision";
-import Test from "./pages/test";
 import ReactScrollToTop from "react-scroll-to-top";
 import lightLogo from './assets/img/logo2.png'
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [slideOut, setSlideOut] = useState(false);
@@ -49,7 +49,6 @@ function App() {
               <Route path="/gallery" exact element={<Gallery />} />
               <Route path="/residences" exact element={<Residences />} />
               <Route path="/vision" exact element={<Vision />} />
-              <Route path="/test" exact element={<Test />} />
             </Routes>
 
             <ReactScrollToTop

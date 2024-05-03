@@ -1,11 +1,10 @@
 import * as React from "react";
-import {ReactComponent as InstagramSvg} from './../assets/svg/instagram.svg';
-import {ReactComponent as HomeSvg} from './../assets/svg/home.svg';
 import director from './../assets/img/director.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 import Tooltip from '@mui/material/Tooltip';
 import Fade from '@mui/material/Fade';
-
 import wechaticon from './../assets/img/wechat.svg'
 import credit1 from './../assets/img/credits_logo1.png'
 import credit2 from './../assets/img/credits_logo2.png'
@@ -13,103 +12,177 @@ import credit3 from './../assets/img/credits_logo3.png'
 import credit4 from './../assets/img/credits_logo4.png'
 import wechatQR from './../assets/img/wechat.jpg'
 import PageButtonLayout from "./PageButton/PageButtonLayout";
+import { isEmail, isEmpty } from './../utils/validation'
 import "./Footer.css"
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer(props) {
-  
+
+const [email, setEmail] = React.useState("")
+const [open, setOpen] = React.useState(false)
+const [message, setMessage] = React.useState("")
+const [severity, setSeverity] = React.useState("success");
+
 const title = 
 <>
   <div className="w-[250px] flex my-6">
     <img alt="" src={wechatQR} className="mx-auto w-[200px]"/>
   </div>
-  <p className="text-main-bg text-center text-[14px]">WeChat ID: tangramnyc</p>
+  <p className="text-main-bg text-center text-[14px]">WeChat ID: barbieliteam</p>
   <p className="text-brown-bg text-center text-[14px]">Follow us on WeChat</p>
 </>
 const navigate = useNavigate();
 
+const onChange = (event) => {
+  setEmail(event.target.value)
+}
+const emailTemplate =`
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>New Contact Arrived</title>
+    <style>
+      a { font-style: italic; font-weight: bold; color: black !important; }
+    </style>
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+    <div style="width: 100%; max-width: 750px; margin: 0 auto; padding: 20px;">
+      <div style="text-align: center; font-size: 33px; color: #333; margin-bottom:40px;">New contact arrived</div>
+      <div style="background-color: #F3EBDD; border-radius: 20px; width:100%; padding: 20px">
+        <div style="font-size: 18px; color: #666; margin-top:5px; margin-bottom:5px;">New Subscriber's: ${email}</div>
+      </div>
+      <div style="padding: 35px 0px; width: 100%;">
+        <div style="width: 100%; max-width: 400px; margin: 0 auto;">
+          <div style="font-size:14px; color: #BC9067; text-align: center"> This is newsletter from union center.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+`
+
+const signUp = async() => {
+  if(isEmpty(email)){
+      setSeverity("error")
+      setMessage("Please input your e-mail.")
+      setOpen(true)
+  } else {
+    if(!isEmail(email)){
+      setSeverity("error")
+      setMessage("Please input valid e-mail.")
+      setOpen(true)
+    }
+    else {
+      try {
+        const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/send-email`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', },
+          body: JSON.stringify({
+            from: 'onboarding@resend.dev',
+            to: 'wmeng0103@gmail.com',
+            subject: 'New subscriber',
+            html: emailTemplate,
+          }),
+        });
+        if (!response.ok) throw new Error('Network response was not ok');
+        setSeverity("success")
+        setMessage("You have been successfully subscribed.")
+        setOpen(true)
+      } catch (error) {
+        setSeverity("error")
+        setMessage("Network Error")
+        setOpen(true)
+      }
+    }
+  }
+}
+const handleClose = (event, reason) => {
+  if (reason === 'clickaway') {
+    return;
+  }
+  setOpen(false);
+};
+
 return (
-  
   <div className="w-full">
+    <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+      <Alert
+        onClose={handleClose}
+        severity={severity}
+        variant="filled"
+        sx={{ width: '100%' }}
+      >
+        {message}
+      </Alert>
+    </Snackbar>
     <div className="w-full flex bg-dark-bg ">
       <div className="footer_container relative" >
         <PageButtonLayout />
         <div className="pt-10 border-t-[1px] border-b-[1px] pb-4">
           <div className="w-full xl:flex justify-between">
-            <div className="w-full sm:flex  md:w-[700px]">
-              <img alt="" src={director} className="footer_avatar"/>
-              <div className="py-8 w-full space-y-1 xl:border-r-[1px]">  
-                <p className="light_text_lg font-bold"> Barbie Li</p>
-                <p className="light_text_small"> Lic. R.E. Broker</p>
-                <p className="light_text_small"> Team Leader of BLT</p>
-                <p className="light_text_small"> Team Mentor of B2STARS</p>
-                <div className="flex w-full space-x-4">
-                  <p className="light_text_small uppercase">call us at:</p>
-                  <a href="tel:+646.889.9988">
-                    <p className="text_phone_number hover-after"> 
-                      646.889.9988
-                    </p>
-                  </a>
+            <div className="w-full sm:flex  md:w-full content-center">
+              <div className="w-full flex">
+              <img alt="" src={director} className="footer_avatar mx-auto"/></div>
+              <div className="py-8 w-full space-y-1 xl:border-r-[1px] flex">
+                <div className="w-[300px] mx-auto">
+                  <p className="light_text_lg font-bold"> Barbie Li</p>
+                  <p className="light_text_small"> Lic. R.E. Broker</p>
+                  <p className="light_text_small"> Team Leader of BLT</p>
+                  <p className="light_text_small"> Team Mentor of B2STARS</p>
+                  <div className="flex w-full space-x-4">
+                    <p className="light_text_small uppercase">call us at:</p>
+                    <a href="tel:+646.889.9988">
+                      <p className="text_phone_number hover-after"> 
+                        646.889.9988
+                      </p>
+                    </a>
+                  </div>
+                  <div className="flex w-full space-x-4" style={{ alignItems: 'center' }}>
+                    <p className="light_text_small  uppercase">Email us at:</p>
+                    <a href="mailto:info@barbieliteam.com">
+                      <p className="text-main-bg font-GTPressura-Bold italic"> info@barbieliteam.com</p></a>
+                  </div>
+                  <div className="flex space-x-4" style={{ alignItems: 'center' }}>
+                    <a href="https://www.instagram.com/barbielibroker"><p className="text-main-bg hover:text-brown-bg animate-duration"><InstagramIcon/></p></a>
+                    <p className="text-main-bg">barbielibroker</p>
+                  </div>
+                  <div className="flex space-x-4" style={{ alignItems: 'center' }}>
+                    <Tooltip 
+                      TransitionComponent={Fade}
+                      TransitionProps={{ timeout: 600 }}
+                      title={title}
+                      arrow
+                      placement="top-start"
+                    >
+                      <img alt="" src={wechaticon} className="w-[24px]"/>
+                    </Tooltip>
+                    <p className="text-main-bg uppercase">add wechat account</p>
+                  </div>
                 </div>
-                <div className="flex w-full space-x-4" style={{ alignItems: 'center' }}>
-                  <p className="light_text_small  uppercase">Email us at:</p>
-                  <a href="mailto:info@barbieliteam.com">
-                    <p className="text-main-bg font-GTPressura-Bold italic"> info@barbieliteam.com</p></a>
-                </div>
-                <div className="flex space-x-4" style={{ alignItems: 'center' }}>
-                  <a href="https://www.instagram.com/barbielibroker"><p className="text-main-bg hover:text-brown-bg animate-duration"><InstagramIcon/></p></a>
-                  <p className="text-main-bg">barbielibroker</p>
-                </div>
-                {/* <div className="flex space-x-4" style={{ alignItems: 'center' }}>
-                  <Tooltip 
-                    TransitionComponent={Fade}
-                    TransitionProps={{ timeout: 600 }}
-                    title={title}
-                    arrow
-                    placement="top-start"
-                  >
-                    <img alt="" src={wechaticon} className="w-[24px]"/>
-                  </Tooltip>
-                  <p className="text-main-bg uppercase">add wechat account</p>
-                </div> */}
               </div>
             </div>
-            <div className="sm:flex sm:space-x-5 w-full lg:w-auto">
-              <div className="w-full sm:w-auto py-5  lg:pl-6 md:py-10 flex-none">
+            <div className="sm:flex sm:space-x-5 w-full">
+              <div className="w-full py-5  lg:pl-6 md:py-10">
                 <p className="text-main-bg mb-6">More information </p>
                 <div>
-                  <input placeholder="Please sign up" className="footer_form_input" style={{ background: 'none' }}>
+                  <input placeholder="Please sign up" className="footer_form_input" style={{ background: 'none' }} value={email} onChange={onChange}>
                   </input>
                 </div>
-                <button className="animate-duration footer_form_button">
+                <button className="animate-duration footer_form_button" onClick={signUp}>
                   sign up
                 </button>
               </div>
-              <div className="w-full md:w-[200px] py-5 md:py-10 md:mx-6">
-                <p className="text-main-bg mb-6">More information </p>
-                <button className="mt-0 footer_form_button w-full animate-duration" onClick={() => navigate("/contact")}>
-                  contact us <span className="md:float-right">{'>'}</span>
-                </button>
+              <div className="w-full py-5 md:py-10 md:mx-6 flex">
+                <div className="w-full xl:w-[200px] mx-auto">
+                  <p className="text-main-bg mb-6">More information </p>
+                  <button className="mt-0 footer_form_button w-full animate-duration" onClick={() => navigate("/contact")}>
+                    contact us <span className="md:float-right">{'>'}</span>
+                  </button>
+                </div>
+                
               </div>
             </div>
-            
-            {/* <div className="w-full sm:w-[300px]">
-              <div className="w-full relative">
-                <div className="absolute right-0">
-                  <InstagramSvg />
-                </div>
-              </div>
-              <div className="w-full mt-6">
-                <p className="text-main-font text-[14px] uppercase  md:text-right">add wechat account</p>
-                <img 
-                  alt=""
-                  src={wechatQR}
-                  className="w-[120px] mx-xauto md:float-right"
-                />
-              </div>
-            </div> */}
           </div>
-          
         </div>
       </div>  
     </div>

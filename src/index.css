@@ -115,7 +115,7 @@ code {
     opacity: 1;
   }
   .slide-out-left {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 1;
   }
   .splash-screen.hidden {

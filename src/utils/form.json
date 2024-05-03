@@ -1,0 +1,24 @@
+{
+  "data": {
+    "priceOptions": [
+      { "value": "", "label": "Price" },
+      { "value": "Studio", "label": "STUDIO" },
+      { "value": "Bedroom 1", "label": "BEDROOM 1" },
+      { "value": "Bedroom 2", "label": "BEDROOM 2" },
+      { "value": "bedroom 3", "label": "BEDROOM 3" },
+      { "value": "Bedroom 4", "label": "BEDROOM 4" }
+    ],
+    "residencesOptions": [
+      { "value": "Residences", "label": "Residences" },
+      { "value": "$500K-$1M", "label": "$500K-$1M" },
+      { "value": "$1M-$2M", "label": "$1M-$2M" },
+      { "value": "$2M-$3M", "label": "$2M-$3M" },
+      { "value": "$3M+", "label": "$3M+" }
+    ],
+    "agentOptions": [
+      { "value": "", "label": "Agent" },
+      { "value": "Yes", "label": "Yes" },
+      { "value": "False", "label": "No" }
+    ]
+  }
+}
