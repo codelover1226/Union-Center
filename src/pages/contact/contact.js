@@ -240,10 +240,10 @@ export default function Contact() {
             </div>
             <div className="pt-5">
               <CustomButton
-                backgroundColor="#153644"
-                outline={false}
+                backgroundColor="#F3EBDD"
+                outline={true}
                 label="Submit"
-                fontColor="#F1ECE2"
+                fontColor="#212529"
                 width={150}
                 onClick={onSubmit}
               />

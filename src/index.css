@@ -23,7 +23,7 @@
     @apply text-main-bg flex flex-col after:bg-blue-gray-50 after:transition-all after:h-[1px]
   }
   .footer_form_input {
-    @apply p-4 w-full sm:w-[300px] focus:outline-none text-main-bg border-[1px] border-main-bg
+    @apply p-4 w-full focus:outline-none text-main-bg border-[1px] border-main-bg
   }
   .footer_form_button {
     @apply bg-brown-bg p-4 w-full md:w-[100px] text-left text-main-bg text-[20px] font-sans hover:text-brown-bg hover:bg-main-bg mt-2

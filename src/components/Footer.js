@@ -124,7 +124,7 @@ return (
               <div className="w-full flex">
               <img alt="" src={director} className="footer_avatar mx-auto"/></div>
               <div className="py-8 w-full space-y-1 xl:border-r-[1px] flex">
-                <div className="w-[300px] mx-auto">
+                <div className="w-[300px] sm:mx-auto">
                   <p className="light_text_lg font-bold"> Barbie Li</p>
                   <p className="light_text_small"> Lic. R.E. Broker</p>
                   <p className="light_text_small"> Team Leader of BLT</p>
@@ -173,7 +173,7 @@ return (
                 </button>
               </div>
               <div className="w-full py-5 md:py-10 md:mx-6 flex">
-                <div className="w-full xl:w-[200px] mx-auto">
+                <div className="w-full">
                   <p className="text-main-bg mb-6">More information </p>
                   <button className="mt-0 footer_form_button w-full animate-duration" onClick={() => navigate("/contact")}>
                     contact us <span className="md:float-right">{'>'}</span>

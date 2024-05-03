@@ -74,7 +74,7 @@ export default function Neighborhood() {
     <div>
       <div
         className="w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url(${"./img/neighborhood/1.jpg"})` }}
+        style={{ backgroundImage: `url(${"./img/neighborhood/carousel-6.jpg"})` }}
       />
       <div className="px-4 content-center z-10 relative bg-main-bg">
         <div className="content-center py-20">

@@ -34,27 +34,14 @@ export default function Vision() {
           style={{ width: '100%' }}
         />
       </div> */}
-      <div className="w-full bg-center bg-cover h-[100vh]" style={{ backgroundImage: "url(./img/gallery/gallery6.jpg )"}}></div>
+      <div className="w-full bg-center bg-cover h-[100vh]" style={{ backgroundImage: "url(./img/gallery/gallery20.jpg )"}}></div>
       <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#B68064" }} >
-        <div className="md:min-h-[100vh] content-center py-10 md:py-96">
-          <div className="m-auto">
-            <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
-          </div>
-          <div className="xl:w-[600px] m-auto">
-            <p className="text-center font-GTPressura-Light text-4xl text-white px-4">The Huron: Our Vision for Greenpoint’s Newest Condos</p>
-          </div>
-          <div className="flex items-center">
-            <div className="w-auto mx-auto xl:w-1/3">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in the history of an ever-evolving neighborhood, The Huron is a striking tribute to Greenpoint’s heritage, interweaving past and present through stunning design and inspired creativity.</p>
-            </div>                    
-          </div>
-        </div>
-        <div className="px-4 relative">
+        <div className="px-4 relative mt-[40px]">
           <div className="m-auto">
             <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">A BRIEF HISTORY</p>
           </div>
           <div className="xl:w-[600px] m-auto">
-            <p className="text-center font-GTPressura-Light text-4xl text-white px-4">A quintessential NYC Story</p>
+            <p className="text-center font-GTPressura-Light text-[45px] text-white px-4">A quintessential NYC Story</p>
           </div>
         </div>
         <div>
