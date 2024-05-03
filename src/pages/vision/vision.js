@@ -34,7 +34,7 @@ export default function Vision() {
           style={{ width: '100%' }}
         />
       </div> */}
-      <div className="w-full bg-center bg-cover h-[100vh]" style={{ backgroundImage: "url(./img/gallery/gallery20.jpg )"}}></div>
+      <div className="w-full bg-center bg-cover h-[100vh]" style={{ backgroundImage: "url(./img/gallery/gallery22.jpg )"}}></div>
       <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#B68064" }} >
         <div className="px-4 relative mt-[40px]">
           <div className="m-auto">
