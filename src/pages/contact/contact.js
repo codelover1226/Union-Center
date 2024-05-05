@@ -117,9 +117,9 @@ export default function Contact() {
     if(allValid){
       if (Object.values(errors).every(value => isEmpty(value))) {
         try {
-          const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/send-email`, {
+          const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/send-email`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json', },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               from: 'onboarding@resend.dev',
               to: 'wmeng0103@gmail.com',
