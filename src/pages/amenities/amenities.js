@@ -6,13 +6,14 @@ import TabImage1 from "./../../assets/img/amenities/tab-1.jpg";
 import TabImage2 from "./../../assets/img/amenities/tab-2.jpg";
 import TabImage3 from "./../../assets/img/amenities/tab-3.jpg";
 import TabImage4 from "./../../assets/img/amenities/tab-4.jpg";
+import BuildingDesign from "../../components/buildingdesign/BuildingDesign";
 
 export default function Amenities() {
 
   const data = [
-    {id:0, name: 'FIRST FLOOR', backgroundColor: "#2C2A2B", title: 'FIRST FLOOR', image: TabImage1, text: 'Get charged with spaces that are intuitive and elevated, inspired by purpose.'},
-    {id:1, name: 'SECOND FLOOR', backgroundColor: "#2C2A2B", title: 'SECOND FLOOR', image: TabImage2, text: 'Vibrant spaces for kids and teens, dedicated to playing and growing together.'},
-    {id:2, name: 'LOOP PARK', backgroundColor: "#2C2A2B", title: 'PARK', image: TabImage3, text: 'An imaginative 8,000+ sq ft outdoor park and playground centered around a fun treehouse.'},
+    {id:0, name: '1ST FLOOR', backgroundColor: "#2C2A2B", title: 'FIRST FLOOR', image: TabImage1, text: 'Get charged with spaces that are intuitive and elevated, inspired by purpose.'},
+    {id:1, name: '2ND FLOOR', backgroundColor: "#2C2A2B", title: 'SECOND FLOOR', image: TabImage2, text: 'Vibrant spaces for kids and teens, dedicated to playing and growing together.'},
+    {id:2, name: 'PARK', backgroundColor: "#2C2A2B", title: 'PARK', image: TabImage3, text: 'An imaginative 8,000+ sq ft outdoor park and playground centered around a fun treehouse.'},
     {id:3, name: 'ROOF UP', backgroundColor: "#2C2A2B", title: 'AT THE TOP', image: TabImage4, text: 'Entertain, socialize, and relax to the backdrop of awe-inspiring views over three of the city’s boroughs and the iconic Manhattan skyline.'},
   ];
 
@@ -39,8 +40,11 @@ export default function Amenities() {
             data={data}
           />
         </div>
+        
       </div>
-      
+      <div className="w-full flex">
+        <BuildingDesign />
+      </div>
       <img src={ BackgroundIamge2}alt="" className="w-full"/>
         
     </div>
