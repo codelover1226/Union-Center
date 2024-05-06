@@ -81,7 +81,7 @@ const signUp = async() => {
             from: 'onboarding@resend.dev',
             to: 'wmeng0103@gmail.com',
             subject: 'New subscriber',
-            html: emailTemplate,
+            html: 'hi',
           }),
         });
         if (!response.ok) throw new Error('Network response was not ok');
