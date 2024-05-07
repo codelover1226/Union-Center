@@ -36,7 +36,7 @@ export default function Vision() {
           style={{ width: '100%' }}
         />
       </div> */}
-      <div className="w-full bg-center bg-cover h-[100vh]">      <img src={ SVG} className="inset-0 w-[100%]" alt=""/></div>
+      <div className="w-full bg-center bg-cover h-[100%]"><img src={ SVG} className="inset-0 w-[100%]" alt=""/></div>
       <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#B68064" }} >
         <div className="px-4 relative mt-[40px]">
           <div className="m-auto">
