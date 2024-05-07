@@ -78,7 +78,7 @@ export default function Availability() {
               </div>
               <div className="flex items-center mb-20">
                 <div className="w-auto mx-auto xl:w-2/3">
-                  <p className="font-GTPressura-Light text-center text-2xl text-black px-4 mt-4">Please reach out to <a href="TheHuron@serhant.com" className="text-[#B68064] hover:text-[#f5d7cc]">TheHuron@serhant.com</a> for more information</p>
+                  <p className="font-GTPressura-Light text-center text-2xl text-black px-4 mt-4">Please reach out to <a href="info@barbieliteam.com" className="text-[#B68064] hover:text-[#f5d7cc]">info@barbieliteam.com</a> for more information</p>
                 </div>
               </div>
             </div>

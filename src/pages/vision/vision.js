@@ -12,7 +12,7 @@ import CarouselImage3 from './../../assets/img/text-image3.jpg'
 import SliderImage1 from './../../assets/img/slider1.jpg'
 import SliderImage2 from './../../assets/img/slider2.jpg'
 import SliderImage3 from './../../assets/img/slider3.jpg'
-import SVG from './../../assets/img/home-2.jpg'
+import SVG from './../../assets/img/office_space.jpeg'
 import ImageTitleCarousel from "../../components/Carousel/ImageTitleCarousel";
 
 
