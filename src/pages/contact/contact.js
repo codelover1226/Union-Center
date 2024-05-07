@@ -258,12 +258,12 @@ export default function Contact() {
                 SALES GALLERY
               </p>
               <p className="text-[#153644] text-sm py-2">
-                29 HURON STREET, BROOKLYN, NY 11222
+                3716 UNION STREET, FLUSHING, NY 11354
               </p>
-              <a href="tel:+646.863.1846">
+              <a href="tel:+646.889.9988">
                 <p className="text-[#153644] flex flex-col hover-after after:bg-[#153644] after:transition-all after:h-[1px]">
                   {" "}
-                  646.863.1846
+                  646.889.9988
                 </p>
               </a>
             </div>
@@ -274,7 +274,7 @@ export default function Contact() {
                 BUILDING ADDRESS
               </p>
               <p className="text-[#153644] text-sm py-2">
-                29 HURON STREET, BROOKLYN, NY 11222
+              3716 UNION STREET, FLUSHING, NY 11354
               </p>
             </div>
           </div>
@@ -283,10 +283,10 @@ export default function Contact() {
               <p className="text-[#153644] py-1 font-GTPressura-Bold">
                 GENERAL INQUIRIES
               </p>
-              <a href="tel:+646.863.1846">
+              <a href="tel:+646.889.9988">
                 <p className="text-[#153644] flex flex-col email1-hover-after after:bg-[#153644] after:transition-all after:h-[1px]">
                   {" "}
-                  thehuron@serhant.com
+                  info@barbieliteam.com
                 </p>
               </a>
             </div>
@@ -296,10 +296,10 @@ export default function Contact() {
               <p className="text-[#153644] py-1 font-GTPressura-Bold">
                 PRESS INQUIRIES
               </p>
-              <a href="tel:+646.863.1846">
+              <a href="tel:+646.889.9988">
                 <p className="text-[#153644] flex flex-col email2-hover-after after:bg-[#153644] after:transition-all after:h-[1px]">
                   {" "}
-                  tierney@augustprny.com
+                  info@barbieliteam.com
                 </p>
               </a>
             </div>

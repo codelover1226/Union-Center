@@ -7,12 +7,12 @@ import design5 from './../../assets/img/floor/5.jpg'
 import design6 from './../../assets/img/floor/6.jpg'
 
 const floor_data = [
-  {id: 1,title: "Floor 14", src: design6, brief: "Brief1"},
-  {id: 2,title: "Floor 13", src: design5, brief: "Brief2"},
-  {id: 3,title: "Floor 12", src: design4, brief: "Brief3"},
-  {id: 4,title: "Floor 11", src: design3, brief: "Brief4"},
-  {id: 5,title: "Floor 5-10", src: design2, brief: "Brief5"},
-  {id: 6,title: "Floor 4", src: design1, brief: "Brief6"}
+  {id: 1,title: "Floor 16", src: design6, brief: "Brief1"},
+  {id: 2,title: "Floor 15", src: design5, brief: "Brief2"},
+  {id: 3,title: "Floor 14", src: design4, brief: "Brief3"},
+  {id: 4,title: "Floor 12", src: design3, brief: "Brief4"},
+  {id: 5,title: "Floor 6-11", src: design2, brief: "Brief5"},
+  {id: 6,title: "Floor 5", src: design1, brief: "Brief6"}
 ]
 
 export default function BuildingDesign () {

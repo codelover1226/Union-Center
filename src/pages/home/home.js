@@ -139,7 +139,7 @@ export default function Home() {
           </div>
           <div className="content-center">
             <div className="m-auto my-4 flex">
-            <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
+            <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Explore Our Vision</button>
             </div>
           </div>  
         </div>
@@ -153,7 +153,7 @@ export default function Home() {
         </section>
 
         <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#153644" }} >
-          <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">RESIDENCES</p>
+          <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">OFFICE SPACES</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Effortlessly Refined</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
@@ -162,7 +162,7 @@ export default function Home() {
           </div>
           <div className="content-center">
             <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Explore Our Spaces</button>
             </div>
           </div>  
         </div>
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
           <div className="content-center">
             <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > Explore Our Amenities</button>
             </div>
           </div>  
         </div>
@@ -210,7 +210,7 @@ export default function Home() {
           </div>
           <div className="content-center">
             <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-main-font  hover:text-main-font animate-duration" > COMING SOON</button>
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-main-font  hover:text-main-font animate-duration" >Explore Flushing</button>
             </div>
           </div>  
         </div>
@@ -225,9 +225,9 @@ export default function Home() {
         </section>
         
         <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#75989C" }} >
-          <p className="text-sm font-bold text-center text-white pb-5">VISION</p>
-          <p className="text-center font-normal text-6xl text-white px-4">Endless</p>
-          <p className="text-center font-normal text-6xl text-white pb-7">Horizons</p>
+          <p className="text-sm font-bold text-center text-white pb-5">CONTACT US</p>
+          <p className="text-center font-normal text-6xl text-white px-4">Find Out</p>
+          <p className="text-center font-normal text-6xl text-white pb-7">More</p>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/4">
               <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
@@ -235,7 +235,7 @@ export default function Home() {
           </div>
           <div className="content-center flex">
             <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > COMING SOON</button>
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Contact Us For More Information</button>
             </div>
           </div>  
         </div>

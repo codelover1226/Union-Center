@@ -190,7 +190,7 @@ return (
     <div className="w-full flex">
       <div className="max-w-[1280px] footer_container md:flex">
         <div className="w-[400px] p-6" style={{ placeSelf: "center" }}>
-          <p className="text-main-font text-[14px]">Another innovative development by</p>
+          <p className="text-main-font text-[14px]">Another innovative development by:</p>
         </div>
         <div className="w-full lg:flex mx-auto">  
           <div className="flex w-[320px] lg:w-full mx-auto">

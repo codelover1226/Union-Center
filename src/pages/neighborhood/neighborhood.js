@@ -84,7 +84,7 @@ export default function Neighborhood() {
                 isScrolledToSection.section1 ? "text-dark-bg" : "text-main-bg"
               } animate-font-duration pb-5`}
             >
-              GREENPOINT
+              FLUSHING
             </p>
           </div>
           <div className="xl:w-[600px] m-auto mb-4">
@@ -93,7 +93,7 @@ export default function Neighborhood() {
                 isScrolledToSection.section1 ? "text-dark-bg" : "text-main-bg"
               } animate-font-duration px-4`}
             >
-              TAn Authenically Brooklyn Condo
+              Welcome to the Heart of Flushing
             </p>
           </div>
           <div className="flex items-center">
@@ -103,8 +103,7 @@ export default function Neighborhood() {
                   isScrolledToSection.section1 ? "text-dark-bg" : "text-main-bg"
                 } animate-font-duration px-4`}
               >
-                An ever-evolving, vibrant enclave, Greenpoint’s authenticity is
-                emphatically Brooklyn. Both gritty and refined, Greenpoint is
+                An ever-evolving, vibrant enclave. Both gritty and refined, Flushing is
                 home to artists, restaurants, shops, and culture that keep New
                 York exciting.
               </p>

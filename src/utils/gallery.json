@@ -20,12 +20,6 @@
       "key": "exterior"    
     },
     {
-      "src":"./img/gallery/gallery5.jpg",
-      "width": 1540, 
-      "height": 2459,
-      "key": "exterior"    
-    },
-    {
       "src":"./img/gallery/gallery6.jpg",
       "width": 1920, 
       "height": 1281,
@@ -44,12 +38,6 @@
       "key": "residences"    
     },
     {
-      "src":"./img/gallery/gallery1.jpg",
-      "width": 1400, 
-      "height": 1200,
-      "key": "exterior"
-    },
-    {
       "src":"./img/gallery/gallery9.jpg",
       "width": 6000, 
       "height": 4000,
@@ -62,27 +50,9 @@
         "key": "residences"    
     },
     {
-        "src":"./img/gallery/gallery11.jpg",
-        "width": 4032, 
-        "height": 3024,
-        "key": "residences"    
-    },
-    {
-        "src":"./img/gallery/gallery12.jpg",
-        "width": 1400, 
-        "height": 1120,
-        "key": "residences"    
-    },
-    {
         "src":"./img/gallery/gallery13.jpg",
         "width": 4830, 
         "height": 3219,
-        "key": "amenities"    
-    },
-    {
-        "src":"./img/gallery/gallery14.jpg",
-        "width": 1120, 
-        "height": 900,
         "key": "amenities"    
     },
     {
@@ -96,18 +66,6 @@
         "width": 1901, 
         "height": 1027,
         "key": "amenities"    
-    },
-    {
-        "src":"./img/gallery/gallery15.jpg",
-        "width": 4830, 
-        "height": 3219,
-        "key": "greenpoint"    
-    },
-    {
-        "src":"./img/gallery/gallery16.jpg",
-        "width": 2455,
-        "height": 3500,
-        "key": "greenpoint"    
     },
     {
         "src":"./img/gallery/gallery17.jpg",
@@ -133,24 +91,7 @@
         "height": 853,
         "key": "greenpoint"    
     },
-    {
-        "src":"./img/gallery/gallery21.jpg",
-        "width": 1280, 
-        "height": 1058,
-        "key": "greenpoint"    
-    },
-    {
-        "src":"./img/gallery/gallery22.jpg",
-        "width": 1280, 
-        "height": 796,
-        "key": "greenpoint"    
-    },
-    {
-        "src":"./img/gallery/gallery23.jpg",
-        "width": 1871, 
-        "height": 960,
-        "key": "greenpoint"    
-    },
+  
     {
         "src":"./img/gallery/gallery24.jpg",
         "width": 1280, 
