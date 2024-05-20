@@ -10,7 +10,7 @@ import CarouselImage1 from './../../assets/img/text-image1.jpg'
 import CarouselImage2 from './../../assets/img/text-image2.jpg'
 import CarouselImage3 from './../../assets/img/text-image3.jpg'
 import SliderImage1 from './../../assets/img/slider1.jpg'
-import SliderImage2 from './../../assets/img/slider2.jpg'
+import SliderImage2 from './../../assets/img/logobanner.jpg'
 import SliderImage3 from './../../assets/img/slider3.jpg'
 import SVG from './../../assets/img/office_space.jpeg'
 import ImageTitleCarousel from "../../components/Carousel/ImageTitleCarousel";
@@ -19,7 +19,7 @@ import ImageTitleCarousel from "../../components/Carousel/ImageTitleCarousel";
 export default function Vision() {
 
   const data = [
-    {id:0, name: 'FIRST FLOOR', backgroundColor: "#2C2A2B", title: 'FIRST FLOOR', image: SliderImage1, text: 'The name "Flushing" comes from the verdant and beautiful nature of the area gracefully adjacent to the East River. Once covered with lush forests, meadows, and freshwater creeks, the area evolved together with the development of New York City, in the 18th and 19th centuries.   In the 1830s, Flushing transitioned into an innovative manufacturing district, opening a public road and establishing regular ferry service to Manhattan. The streets were named alphabetically and eventually given full names in the 1850s; H Street became Huron Street, probably after the U.S.S. Huron – a locally built steamship.'},
+    {id:0, name: 'FIRST FLOOR', backgroundColor: "#2C2A2B", title: 'FIRST FLOOR', image: SliderImage2, text: 'The name "Flushing" comes from the verdant and beautiful nature of the area gracefully adjacent to the East River. Once covered with lush forests, meadows, and freshwater creeks, the area evolved together with the development of New York City, in the 18th and 19th centuries.   In the 1830s, Flushing transitioned into an innovative manufacturing district, opening a public road and establishing regular ferry service to Manhattan. The streets were named alphabetically and eventually given full names in the 1850s; H Street became Huron Street, probably after the U.S.S. Huron – a locally built steamship.'},
     {id:1, name: 'SECOND FLOOR', backgroundColor: "#2C2A2B", title: 'SECOND FLOOR', image: SliderImage2, text: 'Flushing developed into a bustling industry hub for shipbuilding, porcelain, pottery, and glassworks, with rope factories, lumber yards, brass and iron foundries alongside furniture, box, and boiler makers, as well as Eberhard Faber’s pencil factory – once the largest manufacturer of pencils in the United States. Flushing was home to the shipbuilding and engineering company Continental Iron Works, which built the USS Monitor – the US Navy’s first iron-hulled warship. The USS Monitor was pivotal during the Civil War, in the Battle of Hampton Roads, the world’s first battle between ironclad warships, which marked a turning point in favor of the Union. Continental Iron Works’ masterpiece influenced American naval strategy for decades.'},
     {id:2, name: 'FLOOR PARK', backgroundColor: "#2C2A2B", title: 'PARK', image: SliderImage3, text: 'As industries expanded, so did housing, turning Flushing into a lively, multicultural neighborhood and some of the best condos in New York City. A quintessential New York story. In the 21st century, an eclectic Flushing matured into a distinct and desirable enclave, welcoming those who march to the beat of their own drum and desire the best neighborhoods to live in Brooklyn.'}
   ];
@@ -37,13 +37,13 @@ export default function Vision() {
         />
       </div> */}
       <div className="w-full bg-center bg-cover h-[100%]"><img src={ SVG} className="inset-0 w-[100%]" alt=""/></div>
-      <div className="px-4 content-center z-10 relative bg-main-bg" >
+      <div className="px-4 content-center z-10 relative bg-white" >
         <div className="px-4 relative mt-[40px]">
           <div className="m-auto">
             <p className="text-sm font-GTPressura-Bold text-center text-dark-font pb-5">A BRIEF HISTORY</p>
           </div>
           <div className="xl:w-[600px] m-auto">
-            <p className="text-center font-GTPressura-Light text-[45px] text-dark-font px-4">From Humble Beginnings to a Thriving City.</p>
+            <p className="text-center font-GTPressura-Light text-[45px] text-dark-font px-4">From Humble Beginnings to a Bustling Central City.</p>
           </div>
         </div>
         <div>
@@ -56,7 +56,7 @@ export default function Vision() {
       {/* <div className="w-full bg-main-bg">
         <ImageTitleCarousel />
       </div> */}
-      <div className="px-8 content-center py-10 z-10 relative bg-main-bg">
+      <div className="px-8 content-center py-10 z-10 relative bg-white">
         <div className="content-center py-12">
           <div className="m-auto">
             <p className="text-sm font-GTPressura-Bold text-center text-dark-font pb-5">DESIGN & ARCHITECTURE</p>
