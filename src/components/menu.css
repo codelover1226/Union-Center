@@ -40,12 +40,12 @@
       max-width: 400px;
       height: 100%;
       transform: translateX(-101%);
-      transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+      transition: all 1s cubic-bezier(0,0.05,0,1.3);
       overflow: hidden;
-      -webkit-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
-      -moz-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
-      -ms-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
-      -o-transition: all 1.5s cubic-bezier(0,0.05,0,1.3);
+      -webkit-transition: all 1s cubic-bezier(0,0.05,0,1.3);
+      -moz-transition: all 1s cubic-bezier(0,0.05,0,1.3);
+      -ms-transition: all 1s cubic-bezier(0,0.05,0,1.3);
+      -o-transition: all 1s cubic-bezier(0,0.05,0,1.3);
 }
   
     .in {

@@ -36,13 +36,14 @@ const Sidebar = forwardRef((props, ref) => {
     { name: "CONTACT", link: "./contact" },
   ];
   return (
-    <div>
-      <Drawer
+    <div className="opacity-0.8">
+      {/* <Drawer
         transition={{ duration: 1.0 }}
         size={360}
         open={isDrawerOpen}
-        className="z-[9996] bg-[#153644]"
-      >
+        opacity={0.8}
+      > */}
+      <div className="opacity-80">
         <div className={outside}>
           <div>
             <ul className="menu">
@@ -90,7 +91,8 @@ const Sidebar = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-      </Drawer>
+      {/* </Drawer> */}
+      </div>
     </div>
   );
 });

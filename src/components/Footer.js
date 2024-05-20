@@ -9,7 +9,7 @@ import wechaticon from './../assets/img/wechat.svg'
 import credit1 from './../assets/img/credits_logo1.png'
 import credit2 from './../assets/img/credits_logo2.png'
 import credit3 from './../assets/img/credits_logo5.png'
-import credit4 from './../assets/img/credits_logo6.png'
+import credit4 from './../assets/img/credits_logo3.png'
 import wechatQR from './../assets/img/wechat.jpg'
 import PageButtonLayout from "./PageButton/PageButtonLayout";
 import { isEmail, isEmpty } from './../utils/validation'
