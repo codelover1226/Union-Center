@@ -176,7 +176,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
+        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "rgb(182, 128, 100)" }} >
           <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
           <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Office Elegance</p>
           <div className="flex items-center">
