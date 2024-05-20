@@ -3,11 +3,10 @@ import { Card, Typography } from "@material-tailwind/react";
 import HomeIcon from '@mui/icons-material/Home';
 
 
-const TABLE_HEAD = ["RESIDENCES", "BEDS/BATHS","INT/EXT SQ FT","EXPOSURE","PRICE","EST. MONTHLY CC","EST. MONTHLY TAXES","FLOORPLANS", ""];
+const TABLE_HEAD = ["SPACES","INT/EXT SQ FT","EXPOSURE","PRICE","EST. MONTHLY CC","EST. MONTHLY TAXES","FLOORPLANS", ""];
 const TABLE_ROWS = [
   {
-    residences: "4A-E",
-    beds: "0/1",
+    residences: "5th Fl",
     ext: "508",
     exposure: "N",
     price: "$750,000",
@@ -16,8 +15,7 @@ const TABLE_ROWS = [
     image: './img/floor/1.jpg'
   }, 
   {
-    residences: "4A-E",
-    beds: "0/1",
+    residences: "6th Fl",
     ext: "508",
     exposure: "N",
     price: "$750,000",
@@ -26,8 +24,7 @@ const TABLE_ROWS = [
     image: './img/floor/2.jpg'
   },
   {
-    residences: "4A-E",
-    beds: "0/1",
+    residences: "7th Fl",
     ext: "508",
     exposure: "N",
     price: "$750,000",
@@ -36,8 +33,7 @@ const TABLE_ROWS = [
     image: './img/floor/3.jpg'
   },
   {
-    residences: "4A-E",
-    beds: "0/1",
+    residences: "8-14 Fl",
     ext: "508",
     exposure: "N",
     price: "$750,000",
@@ -46,8 +42,7 @@ const TABLE_ROWS = [
     image: './img/floor/4.jpg'
   },
   {
-    residences: "4A-E",
-    beds: "0/1",
+    residences: "15th Fl",
     ext: "508",
     exposure: "N",
     price: "$750,000",
@@ -56,8 +51,7 @@ const TABLE_ROWS = [
     image: './img/floor/5.jpg'
   },
   {
-    residences: "4A-E",
-    beds: "0/1",
+    residences: "16th Fl",
     ext: "508",
     exposure: "N",
     price: "$750,000",
@@ -100,16 +94,11 @@ export default function Availability() {
                   </tr>
                 </thead>
                 <tbody>
-                  {TABLE_ROWS.map(({ residences, beds, ext, exposure, price, est, taxes, image }, index) => (
+                  {TABLE_ROWS.map(({ residences, ext, exposure, price, est, taxes, image }, index) => (
                     <tr key={index} className="even:bg-[#EAE2D4] h-[108px]">
                     <td className="p-4">
                       <Typography variant="small" color="blue-gray" className="font-normal">
                       {residences}
-                      </Typography>
-                    </td>
-                    <td className="p-4">
-                      <Typography variant="small" color="blue-gray" className="font-normal">
-                      {beds}
                       </Typography>
                     </td>
                     <td className="p-4">

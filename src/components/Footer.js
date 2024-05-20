@@ -208,7 +208,7 @@ return (
               <a href="https://www.barbieliteam.com/" className="text-center flex w-full">
                 <img
                   alt=""
-                  src={credit2}
+                  src={credit3}
                   className="mx-auto w-[130px]"
                 />
               </a>
@@ -230,7 +230,7 @@ return (
                 <a href="https://www.lionsgroupnyc.com/" className="text-center flex w-full">
                   <img
                     alt=""
-                    src={credit3}
+                    src={credit2}
                     className="mx-auto w-[130px]"
                   />
                 </a>

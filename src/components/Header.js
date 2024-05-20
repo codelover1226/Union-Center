@@ -118,7 +118,7 @@ export default function Header() {
               transition={{ duration: 0.75 }}
               size={360}
               open={isDrawerOpen}
-              className="z-[9996] bg-[#153644] opacity-80"
+              className="z-[9996] bg-[#153644] opacity-90"
             >
               <div className={outside}>
                 <div>
