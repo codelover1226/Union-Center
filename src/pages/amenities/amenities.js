@@ -21,17 +21,17 @@ export default function Amenities() {
   return (
     <div>
       <img src={ BackgroundIamge1} className="inset-0 w-[100%]" alt=""/>
-      <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#2C2A2B" }} >
+      <div className="px-4 content-center z-10 relative bg-main-bg">
         <div className="content-center py-10">
           <div className="m-auto">
-            <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
+            <p className="text-sm font-GTPressura-Bold text-center text-dark-font pb-5">AMENITIES</p>
           </div>
           <div className="xl:w-[600px] m-auto">
-            <p className="text-center font-GTPressura-Light text-4xl text-white px-4">Perfect Balance</p>
+            <p className="text-center font-GTPressura-Light text-4xl text-dark-font px-4">Perfect Balance</p>
           </div>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/3">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">The Huron amenities offering is exceptional. With its carefully curated 30,000 square feet, designed as a serene sanctuary and a thriving resident community, it flows like the river to the unique pace of life.</p>
+              <p className="text-base font-GTPressura-Light text-center text-dark-font px-4">The Huron amenities offering is exceptional. With its carefully curated 30,000 square feet, designed as a serene sanctuary and a thriving resident community, it flows like the river to the unique pace of life.</p>
             </div>
           </div>
         </div>

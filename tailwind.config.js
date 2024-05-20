@@ -22,7 +22,16 @@ module.exports = withMT({
         'SctoGroteskA-Light': ['SctoGroteskA-Light', 'fallback-font-family'],
         'SctoGroteskADemo-Regular': ['SctoGroteskADemo-Regular', 'fallback-font-family'],
         'custom-sans': ['Helvetica', 'Arial', 'sans-serif']
-      }      
+      },animation: {
+        fadeIn: 'fadeIn 2s ease-in',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 1 },
+          '50%': { opacity: 0 },
+          '100%': { opacity: 0 },
+        },
+      },
     },
   },
   plugins: [],

@@ -37,13 +37,13 @@ export default function Vision() {
         />
       </div> */}
       <div className="w-full bg-center bg-cover h-[100%]"><img src={ SVG} className="inset-0 w-[100%]" alt=""/></div>
-      <div className="px-4 content-center z-10 relative" style={{ backgroundColor: "#B68064" }} >
+      <div className="px-4 content-center z-10 relative bg-main-bg" >
         <div className="px-4 relative mt-[40px]">
           <div className="m-auto">
-            <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">A BRIEF HISTORY</p>
+            <p className="text-sm font-GTPressura-Bold text-center text-dark-font pb-5">A BRIEF HISTORY</p>
           </div>
           <div className="xl:w-[600px] m-auto">
-            <p className="text-center font-GTPressura-Light text-[45px] text-white px-4">From Humble Beginnings to a Thriving City.</p>
+            <p className="text-center font-GTPressura-Light text-[45px] text-dark-font px-4">From Humble Beginnings to a Thriving City.</p>
           </div>
         </div>
         <div>
@@ -56,17 +56,17 @@ export default function Vision() {
       {/* <div className="w-full bg-main-bg">
         <ImageTitleCarousel />
       </div> */}
-      <div className="px-8 content-center py-10 z-10 relative" style={{ backgroundColor: "#B68064" }} >
+      <div className="px-8 content-center py-10 z-10 relative bg-main-bg">
         <div className="content-center py-12">
           <div className="m-auto">
-            <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">DESIGN & ARCHITECTURE</p>
+            <p className="text-sm font-GTPressura-Bold text-center text-dark-font pb-5">DESIGN & ARCHITECTURE</p>
           </div>
           <div className="xl:w-[600px] m-auto">
-            <p className="text-center font-GTPressura-Light text-4xl text-white px-4">A Remarkable Tribute</p>
+            <p className="text-center font-GTPressura-Light text-4xl text-dark-font px-4">A Remarkable Tribute</p>
           </div>
           <div className="flex items-center">
             <div className="w-auto mx-auto xl:w-1/3">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">Guided by a life-long passion and renowned reputation for re-interpreting historic districts through architecture, Morris Adjmi designed The Huron with his signature thoughtful engagement with history, distinct interpretation of industrial forms, and creative expression of materials.</p>
+              <p className="text-base font-GTPressura-Light text-center text-dark-font px-4">Guided by a life-long passion and renowned reputation for re-interpreting historic districts through architecture, Morris Adjmi designed The Huron with his signature thoughtful engagement with history, distinct interpretation of industrial forms, and creative expression of materials.</p>
             </div>               
           </div>
         </div>
@@ -77,17 +77,17 @@ export default function Vision() {
               <img  src={ CarouselImage1 } alt=""/>
             </div>
             <div className="w-full md:w-1/5 left-0">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in Flushing's industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
+              <p className="text-base font-GTPressura-Light text-center text-dark-font px-4">Rooted in Flushing's industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
             </div>
           </div>
         </div>
         <div className="content-center py-12 xl:w-[1280px] m-auto">
           <div className="m-auto mb-10">
-            <p className="text-center font-GTPressura-Light text-5xl text-white">“We create buildings that stand out by fitting in.”</p>
+            <p className="text-center font-GTPressura-Light text-5xl text-dark-font">“We create buildings that stand out by fitting in.”</p>
           </div>
           <div className="flex items-center mt-10">
             <div className="w-auto mx-auto xl:w-1/3">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">MORRIS ADJMI</p>
+              <p className="text-base font-GTPressura-Light text-center text-dark-font px-4">MORRIS ADJMI</p>
             </div>               
           </div>
           
@@ -96,7 +96,7 @@ export default function Vision() {
               <img  src={ CarouselImage3 } alt=""/>
             </div>
             <div className="w-full md:w-1/5 left-0">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in Flushing's industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
+              <p className="text-base font-GTPressura-Light text-center text-dark-font px-4">Rooted in Flushing's industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
             </div>
           </div>
           <div className="max-w-[1280px] w-full m-auto mt-[90px] pr-6 sm sm:flex  sm:flex-row-reverse">
@@ -104,7 +104,7 @@ export default function Vision() {
               <img  src={ CarouselImage2 } alt=""  className="sm:w-[400px] sm:ml-10"/>
             </div>
             <div className="w-full md:w-1/5 left-0">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">Rooted in Flushing's industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
+              <p className="text-base font-GTPressura-Light text-center text-dark-font px-4">Rooted in Flushing's industrial heritage, The Huron is uniquely contemporary, functional, and inspirational. The H shaped two-tower configuration, with its long, linear connected lobby, is reminiscent of a ship with two smoke stacks.</p>
             </div>
           </div>
         </div>

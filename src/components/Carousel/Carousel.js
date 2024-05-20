@@ -32,8 +32,8 @@ const Carousel = ({ items }) => {
     const prev = () => {
       setId(id-1);
     }
-    const prevClass = id === 0 ? ' text-[#DAC2B1] ml-[20px]' : ' text-[#f2ede4] hover:text-[#b95a01] ml-[20px]';
-    const nextClass = id === items.length-1 ? ' text-[#DAC2B1] ml-[20px]' : ' text-[#f2ede4] hover:text-[#b95a01] ml-[20px]'; 
+    const prevClass = id === 0 ? ' text-[#DAC2B1] ml-[20px]' : ' text-dark-font hover:text-dark-bg ml-[20px]';
+    const nextClass = id === items.length-1 ? ' text-[#DAC2B1] ml-[20px]' : ' text-dark-font hover:text-dark-bg ml-[20px]'; 
 
     return (
       <div className='py-12 max-w-[1280px] lg:flex lg:max-h-[600] lg:flex-row-reverse lg:flex-wrap lg:justify-between content-center m-auto'>
@@ -41,7 +41,7 @@ const Carousel = ({ items }) => {
           <img src={items[id].image} alt=""/>
         </div>
         <div className='lg:w-[50%] px-5 md:pl-40'>
-          <p className="md:text-right md:w-full text-[#F1ECE2]">
+          <p className="md:text-right md:w-full text-dark-font">
             {items[id].text}
           </p>
           <div className='flex mt-3'>
@@ -50,7 +50,7 @@ const Carousel = ({ items }) => {
                 <div className="">
                   <button className="flex-grow px-2" onClick={id === 0 ? null : prev }><p className={prevClass}>{'< '+' PREV '}</p></button>
                 </div>
-                <p className="text-[#f2ede4]"> {"  |  "}</p>
+                <p className="text-dark-font"> {"  |  "}</p>
                 <div className="page-button-next px-2">
                   <button className="flex-grow" onClick={id === items.length-1 ? null : next}><p className={nextClass}>{' NEXT '+' >'}</p></button>
                 </div>

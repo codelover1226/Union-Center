@@ -8,8 +8,8 @@ import Fade from '@mui/material/Fade';
 import wechaticon from './../assets/img/wechat.svg'
 import credit1 from './../assets/img/credits_logo1.png'
 import credit2 from './../assets/img/credits_logo2.png'
-import credit3 from './../assets/img/credits_logo3.png'
-import credit4 from './../assets/img/credits_logo4.png'
+import credit3 from './../assets/img/credits_logo5.png'
+import credit4 from './../assets/img/credits_logo6.png'
 import wechatQR from './../assets/img/wechat.jpg'
 import PageButtonLayout from "./PageButton/PageButtonLayout";
 import { isEmail, isEmpty } from './../utils/validation'
@@ -74,24 +74,25 @@ const signUp = async() => {
     }
     else {
       try {
-        const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/`, {
+        const formData = new FormData();
+        formData.append("from", 'onboarding@resend.dev');
+        formData.append("to", 'wmeng0103@gmail.com');
+        formData.append("subject", 'New Subscriber');
+        formData.append("html", emailTemplate);
+      
+        const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/send`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', },
-          body: JSON.stringify({
-            from: 'onboarding@resend.dev',
-            to: 'wmeng0103@gmail.com',
-            subject: 'New subscriber',
-            html: 'hi',
-          }),
+          body: formData,
         });
+      
         if (!response.ok) throw new Error('Network response was not ok');
-        setSeverity("success")
-        setMessage("You have been successfully subscribed.")
-        setOpen(true)
+        setSeverity("success");
+        setMessage("You have been successfully subscribed.");
+        setOpen(true);
       } catch (error) {
-        setSeverity("error")
-        setMessage("Network Error")
-        setOpen(true)
+        setSeverity("error");
+        setMessage("Network Error");
+        setOpen(true);
       }
     }
   }
@@ -190,7 +191,7 @@ return (
     <div className="w-full flex">
       <div className="max-w-[1280px] footer_container md:flex">
         <div className="w-[400px] p-6" style={{ placeSelf: "center" }}>
-          <p className="text-main-font text-[14px]">Another innovative development by:</p>
+          <p className="text-main-font text-[14px]">Another innovative development by :</p>
         </div>
         <div className="w-full lg:flex mx-auto">  
           <div className="flex w-[320px] lg:w-full mx-auto">

@@ -117,24 +117,25 @@ export default function Contact() {
     if(allValid){
       if (Object.values(errors).every(value => isEmpty(value))) {
         try {
+          const formData = new FormData();
+          formData.append("from", 'onboarding@resend.dev');
+          formData.append("to", 'wmeng0103@gmail.com');
+          formData.append("subject", 'New Subscriber');
+          formData.append("html", emailTemplate);
+        
           const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/send`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              from: 'onboarding@resend.dev',
-              to: 'wmeng0103@gmail.com',
-              subject: 'New subscriber',
-              html: emailTemplate,
-            }),
+            body: formData,
           });
+        
           if (!response.ok) throw new Error('Network response was not ok');
-          setSeverity("success")
-          setMessage("Your message has been successfully sent to our team.")
-          setOpen(true)
+          setSeverity("success");
+          setMessage("You have been successfully subscribed.");
+          setOpen(true);
         } catch (error) {
-          setSeverity("error")
-          setMessage("Network Error")
-          setOpen(true)
+          setSeverity("error");
+          setMessage("Network Error");
+          setOpen(true);
         }
       }
     }

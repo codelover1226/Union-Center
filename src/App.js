@@ -31,9 +31,9 @@ function App() {
   }, []);
   return (
     <>
-      <div className={`z-[100] h-screen flex items-center justify-center bg-main-bg text-white splash-screen transition-all ${slideOut? 'slide-out-left' : ''} ${!loading? 'hidden': ""}`}>
+      <div className={`z-[100] h-screen flex items-center justify-center bg-main-bg text-white splash-screen transition-all ${slideOut? 'slide-out-top' : ''} ${!loading? 'hidden': ""}`}>
         <div className='items-center justify-center'>
-          <img src={lightLogo} alt='' className='w-full p-6 md:p-none sm:w-[400px] mx-auto'></img>
+          <img src={lightLogo} alt='' className={`w-full p-6 md:p-none sm:w-[400px] mx-auto transition-opacity ${slideOut? 'animate-fadeIn' : ''}`}></img>
         </div>
       </div> 
       <BrowserRouter>

@@ -66,7 +66,7 @@ export default function ImageTitleCarousel(props){
             ></div>
           ))}
         </div>
-        <div className='absolute md:w-[50%] lg:w-[75%] top-0 left-0 bg-dark-bg h-full hidden md:block z-0' />
+        <div className='absolute md:w-[50%] lg:w-[75%] top-0 left-0 h-full hidden md:block z-0' />
 
         <div className='absolute bottom-0 right-0 left-0 w-full flex h-24 z-20'>
           <div className='mx-auto flex items-center'>

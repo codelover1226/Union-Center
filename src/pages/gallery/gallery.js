@@ -39,53 +39,52 @@ export default function Gallery() {
 
   return (
     <div
-      className="px-4 content-center py-2 z-10 relative"
-      style={{ backgroundColor: "#153644" }}
+      className="px-4 content-center py-2 z-10 relative bg-main-bg"
     >
       <div className="content-center xl:w-[1300px] m-auto">
         <div className="max-w-[1280px] w-full m-auto mt-[10px]">
           <div className="xl:w-[600px] m-auto mb-4 mt-20">
-            <p className="text-center font-GTPressura-Light text-5xl text-white px-4">
+            <p className="text-center font-GTPressura-Light text-5xl text-dark-font px-4">
               GALLERY
             </p>
           </div>
           <div className="flex items-center mb-20">
             <div className="w-auto mx-auto xl:w-1/3">
-              <p className="font-GTPressura-Light text-center text-1xl text-white px-4 mt-4">
+              <p className="font-GTPressura-Light text-center text-1xl text-dark-font px-4 mt-4">
                 An iconic Greenpoint landmark, with refined residences on Brooklyn’s scenic waterfront, breathtaking views of the New York City skyline, prestigious positioning and awe-inspiring design.
               </p>
               <div className="w-full flex mt-5">
                 <select
-                  className="m-auto w-full sm:w-1/2 bg-[#153644] border-[1px] text-main-bg rounded-none outline-none p-1"
+                  className="m-auto w-full sm:w-1/2 bg-main-bg border-[1px] text-dark-font border-dark-font rounded-none outline-none p-1"
                   onChange={onchange}
                 >
                   <option
                     value="all"
-                    className="m-auto w-1/3 bg-[#153644] border-[1px] outline-main-bg text-main-bg"
+                    className="m-auto w-1/3 bg-main-bg border-[1px] outline-dark-font text-dark-font"
                   >
                     All
                   </option>
                   <option
                     value="exterior"
-                    className="m-auto w-1/3 bg-[#153644] border-[1px] outline-main-bg text-main-bg"
+                    className="m-auto w-1/3 bg-main-bg border-[1px] outline-dark-font text-dark-font"
                   >
                     Exterior
                   </option>
                   <option
                     value="residences"
-                    className="m-auto w-1/3 bg-[#153644] border-[1px] outline-main-bg text-main-bg"
+                    className="m-auto w-1/3 bg-main-bg border-[1px] outline-dark-font text-dark-font"
                   >
                     Residences
                   </option>
                   <option
                     value="amenities"
-                    className="m-auto w-1/3 bg-[#153644] border-[1px] outline-main-bg text-main-bg"
+                    className="m-auto w-1/3 bg-main-bg border-[1px] outline-dark-font text-dark-font"
                   >
                     Amenities
                   </option>
                   <option
                     value="greenpoint"
-                    className="m-auto w-1/3 bg-[#153644] border-[1px] outline-main-bg text-main-bg"
+                    className="m-auto w-1/3 bg-main-bg border-[1px] outline-dark-font text-dark-font"
                   >
                     Greenpoint
                   </option>

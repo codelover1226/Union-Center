@@ -114,9 +114,25 @@ code {
     transform: translateX(0);
     opacity: 1;
   }
-  .slide-out-left {
-    transform: translateX(-100%);
-    opacity: 1;
+  @keyframes slideOutTop {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    60% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+  }
+  
+  .slide-out-top {
+    animation-name: slideOutTop;
+    animation-duration: 2s; /* Adjust duration as needed */
+    animation-fill-mode: forwards; /* Keeps the final state after animation ends */
   }
   .splash-screen.hidden {
     opacity: 0; /* Hide the splash screen when opacity is 0 */
