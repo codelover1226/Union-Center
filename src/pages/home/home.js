@@ -24,8 +24,9 @@ export default function Home() {
       <div>
         <section className="h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover bg-black opacity-30" style={{ backgroundImage: `url(${HomeImage5})` }}></div>
-            <div className="relative z-10 flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+          <div className="relative z-10 flex items-center justify-center">
+            <motion.div initial={{ zIndex: 100, y: -50 }} animate={{ zIndex: 1, y: 0 }} transition={{ duration: 1 }}>
+              asdfasdfasd
             </motion.div>
           </div>
         </section>
@@ -147,8 +148,8 @@ export default function Home() {
         <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover " style={{ backgroundImage: `url(${Image1})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-            </motion.div>
+            {/* <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+            </motion.div> */}
           </div>
         </section>
 
@@ -170,9 +171,8 @@ export default function Home() {
         <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image2})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-              {/* Letters for section 1 */}
-            </motion.div>
+            {/* <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+            </motion.div> */}
           </div>
         </section>
         
@@ -194,9 +194,8 @@ export default function Home() {
         <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image3})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-              {/* Letters for section 1 */}
-            </motion.div>
+            {/* <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+            </motion.div> */}
           </div>
         </section>
         
@@ -218,9 +217,8 @@ export default function Home() {
         <section className="h-[50vh] md:h-screen relative">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover" style={{ backgroundImage: `url(${Image4})` }}></div>
             <div className="relative z-10 flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-              {/* Letters for section 1 */}
-            </motion.div>
+            {/* <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+            </motion.div> */}
           </div>
         </section>
         

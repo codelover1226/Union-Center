@@ -127,7 +127,7 @@ export default function Availability() {
                       </Typography>
                     </td>
                     <td className="p-4">
-                      <Typography as="a" variant="small" color="blue-gray"href={image} target="blank"  >
+                      <Typography as="a" variant="small" color="blue-gray" href={image} target="blank"  >
                         <p className="hover:scale-[120%] transition-all ease-in-out hover:ml-[10%]">
                           <HomeIcon/>
                         </p>
