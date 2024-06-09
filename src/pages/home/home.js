@@ -71,7 +71,7 @@ export default function Home() {
             <div className="w-full max-w-[1280px] mx-auto my-6 md:mx-auto">
               <p className="text-brown-bg px-5 my-6 text-lg">Approximately</p>
 
-<div className="w-full md:flex md:justify-between">
+              <div className="w-full md:flex md:justify-between">
                 <div className="w-full md:w-[260px] px-6 md:px-4 mb-2">
                   <p className="text-title-font-1 text-[40px] font-sans">133,000</p>
                   <p className="text-brown-bg text-[16px] font-GTPressura">Square Feet of Prime Class A Office & Medical Space for Sale</p>
@@ -130,19 +130,24 @@ export default function Home() {
           </div>
         </div>
         <div className="py-10 px-4 content-center md:py-24  z-10 relative" style={{ backgroundColor: "#B68064" }} >
-          <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
-          <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
-          <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
-          <div className="flex items-center">
-            <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
-            </div>        
-          </div>
-          <div className="content-center">
-            <div className="m-auto my-4 flex">
-            <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Explore Our Vision</button>
+          {/* <div className="absolute top-0 left-0 right-0 bottom-0 opacity-45z-0" style={{ backgroundImage : 'url("./img/banner.png")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+
+          </div> */}
+          <div className="relative z-10">
+            <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
+            <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
+            <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
+            <div className="flex items-center">
+              <div className="w-auto mx-auto xl:w-1/4">
+                <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
+              </div>        
             </div>
-          </div>  
+            <div className="content-center">
+              <div className="m-auto my-4 flex">
+              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Explore Our Vision</button>
+              </div>
+            </div>  
+          </div>
         </div>
 
         <section className="h-[50vh] md:h-screen relative">
