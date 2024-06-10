@@ -1,22 +1,13 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import CustomButton from "../../components/Button/CustomButton";
 import Image1 from './../../assets/img/1.jpg'
 import Image2 from './../../assets/img/2.jpg'
 import Image3 from './../../assets/img/3.jpg'
 import Image4 from './../../assets/img/4.jpg'
-import HomeImage from './../../assets/img/home-1.jpg'
 import HomeImage2 from './../../assets/img/home-2.jpg'
 import HomeImage5 from './../../assets/img/home-5.jpg'
-import lightLogo from './../../assets/img/logo1.png'
 import darkLogo from './../../assets/img/logo2.png'
 import SVG from './../../assets/img/Union_8.svg'
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import FolderSharedIcon from '@mui/icons-material/FolderShared';
-import RemoveDoneIcon from '@mui/icons-material/RemoveDone';
-import LocalParkingIcon from '@mui/icons-material/LocalParking';
-import InterestsIcon from '@mui/icons-material/Interests';
-import FaxIcon from '@mui/icons-material/Fax';
 
 export default function Home() {
     
@@ -113,7 +104,7 @@ export default function Home() {
                     <p className="text-[50px] text-title-font-2 font-sans leading-[50px] mt-3">BEAUTIFUL FORM. IMPECCABLE FUNCTION.</p>
                   </div>
                   <div className="w-full">
-                    <div className="w-full md:w-[640px] my-3 px-6">
+                    <div className="w-full md:w-[640px] px-6">
                       <p className="text-title-font-2 text-lg uppercase font-sans">UNION CENTER’S HIGH CEILINGS, SOFT LIGHTING, SOOTHING MATERIALS, AND COLUMN-LESS INTERIOR UNIT DESIGN CREATE A SENSE OF OPENNESS, ACHIEVING A TIMELESS AESTHETIC IN A MODERN SPACE.</p>
                     </div>
                     <div className="w-full sm:flex md:my-10 ">
@@ -129,24 +120,29 @@ export default function Home() {
               </div>
           </div>
         </div>
-        <div className="py-10 px-4 content-center md:py-24  z-10 relative" style={{ backgroundColor: "#B68064" }} >
-          {/* <div className="absolute top-0 left-0 right-0 bottom-0 opacity-45z-0" style={{ backgroundImage : 'url("./img/banner.png")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section1.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+          <div className="relative z-10 md:flex max-w-[980px] mx-auto">
+            <div className="w-full py-6 pt-6 lg:pt-0  px-6">
+              <div className="w-full h-full" style={{backgroundImage: 'url("./img/1.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
 
-          </div> */}
-          <div className="relative z-10">
-            <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">VISION</p>
-            <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Endless</p>
-            <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Horizons</p>
-            <div className="flex items-center">
-              <div className="w-auto mx-auto xl:w-1/4">
-                <p className="text-base font-GTPressura-Light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
-              </div>        
-            </div>
-            <div className="content-center">
-              <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Explore Our Vision</button>
               </div>
-            </div>  
+            </div>
+            <div className="w-full">
+              <p className="text-sm font-GTPressura-Bold text-left text-dark-bg pb-5 px-6 lg:px-16">VISION</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-2 px-6 lg:px-16">Endless</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-7 px-6 lg:px-16">Horizons</p>
+              <div className="flex items-center">
+                <div className="w-auto mx-auto">
+                  <p className="text-base font-GTPressura-Light text-left text-dark-bg px-6 lg:px-16">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
+                </div>        
+              </div>
+              <div className="">
+                <div className="m-auto my-4 flex mx-6 lg:mx-16">
+                <button className="p-4 text-left border-dark-bg rounded-full border-[1px] hover:bg-dark-bg uppercase text-dark-bg hover:text-main-bg animate-duration" >Explore Our Vision</button>
+                </div>
+              </div>  
+            </div>
+            
           </div>
         </div>
 
@@ -158,19 +154,29 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#153644" }} >
-          <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">OFFICE SPACES</p>
-          <p className="text-center font-GTPressura-Light text-6xl text-white px-4">Effortlessly Refined</p>
-          <div className="flex items-center">
-            <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">An office that matches your style, where every detail is carefully crafted, framing dramatic views with inspired design, sprawling layouts and outdoor spaces.</p>
-            </div>  
-          </div>
-          <div className="content-center">
-            <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Explore Our Spaces</button>
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section2.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+          <div className="relative z-10 md:flex max-w-[980px] mx-auto">
+            <div className="w-full py-6 pt-6 lg:pt-0  px-6">
+              <div className="w-full h-full" style={{backgroundImage: 'url("./img/2.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
+
+              </div>
             </div>
-          </div>  
+            <div className="w-full">
+              <p className="text-sm font-GTPressura-Bold text-left text-dark-bg pb-5 px-6 lg:px-16">OFFICE SPACES</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg p2-5 px-6 lg:px-16">Effortlessly</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-7 px-6 lg:px-16">Refined</p>
+              <div className="flex items-center">
+                <div className="w-auto mx-auto">
+                  <p className="text-base font-GTPressura-Light text-left text-dark-bg px-6 lg:px-16">An office that matches your style, where every detail is carefully crafted, framing dramatic views with inspired design, sprawling layouts and outdoor spaces.</p>
+                </div>        
+              </div>
+              <div className="">
+                <div className="m-auto my-4 flex mx-6 lg:mx-16">
+                <button className="p-4 text-left border-dark-bg rounded-full border-[1px] hover:bg-dark-bg uppercase text-dark-bg hover:text-main-bg animate-duration" >Explore Our Spaces</button>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
 
         <section className="h-[50vh] md:h-screen relative">
@@ -181,19 +187,29 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "rgb(182, 128, 100)" }} >
-          <p className="text-sm font-GTPressura-Bold text-center text-white pb-5">AMENITIES</p>
-          <p className="text-center font-GTPressura-Light text-6xl text-white pb-7">Elevated Office Elegance</p>
-          <div className="flex items-center">
-            <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-white px-4">Thoughtfully curated and always evolving, with every aspect created to exhilarate and inspire residents with endless possibilities.</p>
-            </div>                    
-          </div>
-          <div className="content-center">
-            <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" > Explore Our Amenities</button>
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section3.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+          <div className="relative z-10 md:flex max-w-[980px] mx-auto">
+            <div className="w-full py-6 pt-6 lg:pt-0  px-6">
+              <div className="w-full h-full" style={{backgroundImage: 'url("./img/3.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
+
+              </div>
             </div>
-          </div>  
+            <div className="w-full">
+              <p className="text-sm font-GTPressura-Bold text-left text-dark-bg pb-5 px-6 lg:px-16">AMENITIES</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-2 px-6 lg:px-16">Elevated</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-7 px-6 lg:px-16">Office Elegance</p>
+              <div className="flex items-center">
+                <div className="w-auto mx-auto">
+                  <p className="text-base font-GTPressura-Light text-left text-dark-bg px-6 lg:px-16">Thoughtfully curated and always evolving, with every aspect created to exhilarate and inspire residents with endless possibilities.</p>
+                </div>        
+              </div>
+              <div className="">
+                <div className="m-auto my-4 flex mx-6 lg:mx-16">
+                <button className="p-4 text-left border-dark-bg rounded-full border-[1px] hover:bg-dark-bg uppercase text-dark-bg hover:text-main-bg animate-duration" >Explore Our Spaces</button>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
         
         <section className="h-[50vh] md:h-screen relative">
@@ -204,19 +220,29 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-24 z-10 relative bg-main-bg">
-        <p className="text-sm font-GTPressura-Bold text-center text-amber-950 pb-5">NEIGHBORHOOD</p>
-          <p className="text-center font-GTPressura-Light text-6xl text-amber-950 pb-7">Deep Roots, New Beat</p>
-          <div className="flex items-center">
-            <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-GTPressura-Light text-center text-amber-950 px-4">Discover a unique opportunity to have an office in an iconic Flushing landmark, with residences ranging from 500-1000 sqft offices.</p>
-            </div>                  
-          </div>
-          <div className="content-center">
-            <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-main-font  hover:text-main-font animate-duration" >Explore Flushing</button>
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section4.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+          <div className="relative z-10 md:flex max-w-[980px] mx-auto">
+            <div className="w-full py-6 pt-6 lg:pt-0  px-6">
+              <div className="w-full h-full" style={{backgroundImage: 'url("./img/4.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
+
+              </div>
             </div>
-          </div>  
+            <div className="w-full">
+              <p className="text-sm font-GTPressura-Bold text-left text-dark-bg pb-5 px-6 lg:px-16">NEIGHBORHOOD</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-2 px-6 lg:px-16">Deep Roots,</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-7 px-6 lg:px-16">New Beat</p>
+              <div className="flex items-center">
+                <div className="w-auto mx-auto">
+                  <p className="text-base font-GTPressura-Light text-left text-dark-bg px-6 lg:px-16">Discover a unique opportunity to have an office in an iconic Flushing landmark, with residences ranging from 500-1000 sqft offices.</p>
+                </div>        
+              </div>
+              <div className="">
+                <div className="m-auto my-4 flex mx-6 lg:mx-16">
+                <button className="p-4 text-left border-dark-bg rounded-full border-[1px] hover:bg-dark-bg uppercase text-dark-bg hover:text-main-bg animate-duration" >Explore Our Spaces</button>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
 
         <section className="h-[50vh] md:h-screen relative">
@@ -227,20 +253,29 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-24 z-10 relative" style={{ backgroundColor: "#75989C" }} >
-          <p className="text-sm font-bold text-center text-white pb-5">CONTACT US</p>
-          <p className="text-center font-normal text-6xl text-white px-4">Find Out</p>
-          <p className="text-center font-normal text-6xl text-white pb-7">More</p>
-          <div className="flex items-center">
-            <div className="w-auto mx-auto xl:w-1/4">
-              <p className="text-base font-light text-center text-white px-4">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
-            </div>                    
-          </div>
-          <div className="content-center flex">
-            <div className="m-auto my-4 flex">
-              <button className="p-4 text-center mx-auto border-white rounded-full border-[1px] hover:bg-white uppercase text-white hover:text-main-font animate-duration" >Contact Us For More Information</button>
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section5.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+          <div className="relative z-10 md:flex max-w-[980px] mx-auto">
+            <div className="w-full py-6 pt-6 lg:pt-0  px-6">
+              <div className="w-full h-full" style={{backgroundImage: 'url("./img/5.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
+
+              </div>
             </div>
-          </div>  
+            <div className="w-full">
+              <p className="text-sm font-GTPressura-Bold text-left text-dark-bg pb-5 px-6 lg:px-16">CONTACT US</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-2 px-6 lg:px-16">Find Out</p>
+              <p className="text-left font-GTPressura-Light text-6xl text-dark-bg pb-7 px-6 lg:px-16">More</p>
+              <div className="flex items-center">
+                <div className="w-auto mx-auto">
+                  <p className="text-base font-GTPressura-Light text-left text-dark-bg px-6 lg:px-16">A graceful masterpiece, a brilliant new lifestyle experience, a true embodiment of the incredible spirit of Flushing.</p>
+                </div>        
+              </div>
+              <div className="">
+                <div className="m-auto my-4 flex mx-6 lg:mx-16">
+                <button className="p-4 text-left border-dark-bg rounded-full border-[1px] hover:bg-dark-bg uppercase text-dark-bg hover:text-main-bg animate-duration" >Explore Our Spaces</button>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
       </div>
   )
