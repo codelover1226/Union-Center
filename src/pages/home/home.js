@@ -17,7 +17,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat xl:bg-fixed xl:bg-cover md:bg-center md:object-cover bg-black opacity-30" style={{ backgroundImage: `url(${HomeImage5})` }}></div>
           <div className="relative z-10 flex items-center justify-center">
             <motion.div initial={{ zIndex: 100, y: -50 }} animate={{ zIndex: 1, y: 0 }} transition={{ duration: 1 }}>
-              asdfasdfasd
+              
             </motion.div>
           </div>
         </section>
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
           </div>
         </div>
-        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section1.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section2.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
           <div className="relative z-10 md:flex max-w-[980px] mx-auto">
             <div className="w-full py-6 pt-6 lg:pt-0  px-6">
               <div className="w-full h-full" style={{backgroundImage: 'url("./img/1.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section2.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section1.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
           <div className="relative z-10 md:flex max-w-[980px] mx-auto">
             <div className="w-full py-6 pt-6 lg:pt-0  px-6">
               <div className="w-full h-full" style={{backgroundImage: 'url("./img/2.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section3.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section5.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
           <div className="relative z-10 md:flex max-w-[980px] mx-auto">
             <div className="w-full py-6 pt-6 lg:pt-0  px-6">
               <div className="w-full h-full" style={{backgroundImage: 'url("./img/3.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
@@ -220,7 +220,7 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section4.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
+        <div className="py-10 px-4 content-center md:py-20 flex  z-10 relative" style={{ backgroundImage: 'url("./img/section1.jpg")', backgroundSize: 'cover', backgroundPosition:  'center'}} >
           <div className="relative z-10 md:flex max-w-[980px] mx-auto">
             <div className="w-full py-6 pt-6 lg:pt-0  px-6">
               <div className="w-full h-full" style={{backgroundImage: 'url("./img/4.jpg")', backgroundSize: 'cover', backgroundPosition:'center'}}>
