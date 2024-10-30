@@ -76,7 +76,7 @@ const signUp = async() => {
       try {
         const formData = new FormData();
         formData.append("from", 'onboarding@resend.dev');
-        formData.append("to", 'simonxmachine@gmail.com');
+        formData.append("to", 'anonymous@gmail.com');
         formData.append("subject", 'New Subscriber');
         formData.append("html", emailTemplate);
       
